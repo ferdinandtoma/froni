@@ -1,0 +1,545 @@
+Froni | FRN-001 | Custom-development technical pack                                                                                        Revision  Date Page
+
+Document control and development status                                                                                                    10 20 Jul 2026 1 / 14
+
+Document control                                                 Development status                                                        Revision record
+
+Document         FRN-001                                         Bulk cutting may begin only after all six listed approvals are                Hood assembly illustrations replaced with drawn illustrations;
+Revision                                                         recorded.                                                                     register corrections applied.
+Build date       10                                                                                                                            Construction flats replaced with approved drawn flats; coded
+Classification                                                    1. Factory pattern development                                               callouts repositioned.
+                 20 Jul 2026                                      2. Fit-sample approval                                                       Set-in sleeve flats corrected; flat labels converted to coded
+Purpose                                                           3. Final graded pattern approval                                             callouts; interior verse locator image added; wording revised
+                 Custom-development technical                     4. Production fabric approval                                                throughout.
+                 pack                                             5. Embroidery strike-off approval                                            Quotation basis set to 200 garments with final size split supplied
+                                                                  6. Pre-production sample approval                                            at order placement.
+                 Factory feasibility, development                                                                                              Current blank-neck and four-decoration requirements applied.
+                 pricing, sampling, embroidery                   This pack is the basis for the acceptance decision and for quoting            Construction-only vector flats and hood assembly schematics
+                 setup, lead time, and                           development, sampling, embroidery setup, lead times, and a provisional        added.
+                 provisional bulk pricing                        bulk unit price.                                                              Construction, measurement, bill-of-materials, responsibility,
+                                                                                                                                               development, and factory-response schedules added.
+Project contact                                                  Factory states its earliest committed ex-factory date after the approved      Current artwork authorities and unavailable production
+                                                                 pre-production sample.                                                        deliverables identified.
+
+Name             Ferdinand Toma                                                                                                            Factory decision required
+Email            house@froni.co
+Order basis      200 garments                                                                                                              Confirm yes or no on accepting a fully custom cut-and-sew
+Size split                                                                                                                                 development that includes pattern development, sampling,
+                 Final size split is supplied at                                                                                           embroidery coordination, and bulk manufacture under the garment
+                 order placement.                                                                                                          factory's responsibility.
+
+                                                                                                                                           No stock blank is authorized as the garment basis.
+
+Froni FRN-001 | Revision 10 | Factory development and quotation                                                                            All measurements in cm unless stated
+Froni | FRN-001 | Custom-development technical pack                                                                                                       Revision                                  Date Page
+
+Garment, fabric, rib, and care specification                                                                                                                                            10 20 Jul 2026 2 / 14
+
+Fixed garment specification                                       Body fabric                                                              Rib
+
+Garment     Relaxed drop-shoulder pullover                        Composition        100% combed ring-spun cotton                            Structure    2x2 rib
+Pattern     hoodie                                                Knit               Three-end loopback French terry, unbrushed interior     Composition  95-98% cotton, 2-5% elastane
+Silhouette                                                        Weight             420-450 gsm, tolerance +/- 5%                           Color        Matched reactive-dyed black
+            Fully custom cut and sew with                         Body elastane      Zero                                                    Use          Cuffs and hem
+Hood        factory pattern development                           Dye                Reactive-dyed black. Sulfur black is not accepted.
+                                                                                     Dye class confirmed in writing.                       Care wording
+Neck        Relaxed fit with moderate drop                        Finish             Enzyme pre-shrunk, compacted, open-width
+Colorway    shoulder and a straight, clean set-in                                    finished, minimal softener                                Machine wash 30 C inside out, gentle cycle
+            sleeve seam                                           Hand               Dry, dense, firm, matte                                   Do not tumble dry
+                                                                  Residual           Maximum 5%                                                Do not bleach
+            Three-panel, double-layer, self-fabric                shrinkage                                                                    Iron inside out only with pressing cloth
+            hood with two side panels and one                     Spirality          Maximum 5%                                                Never iron directly on embroidery
+            center gusset                                         Pilling            ISO 12945-2 grade 4+
+                                                                  Wash fastness      ISO 105-C06 grade 4-5+
+            Blank neck with no applied label                      Rubbing fastness   Dry 4+, wet 3-4+
+                                                                  Light fastness     Grade 4+
+            Reactive-dyed black                                   Relaxation         At least 24 hours after finishing and before cutting
+                                                                  Shrinkage control  Fully shrunk before cutting. No aggressive garment
+Excluded features                                                                    wash after assembly.                                  Printed tape and blank neck
+
+    No pocket                                                     Evidence with quotation and sampling                                         Printed care, fibre, origin, and wordmark tape only
+    No drawcord                                                       Mill performance sheet with quotation                                    Body: 100% cotton
+    No eyelets or aglets                                              Production-cloth swatch for approval                                     Rib: 95-98% cotton, 2-5% elastane
+    No body gussets                                                   Brushed version of the same cloth as a hand-feel control only            Made in Portugal
+    No hardware                                                                                                                                FRONI is permitted only on this printed tape
+    No exterior print or applied graphic
+                                                                                                                                             Production artwork unavailable
+Four decoration placements                                                                                                                   Final printed tape artwork has not been supplied.
+
+Front ornamental embroidery                                                                                                                Panel sequence
+Front panel, uninterrupted ornament with the cross at its center
+                                                                                                                                           All four decorations are embroidered on flat panels before garment
+Back Christ Pantocrator embroidery                                                                                                         assembly.
+Centered on the back panel
+
+   on the exterior hood gusset
+Stacked upright from top to bottom on the exterior center gusset
+
+Verse inside the hood
+Inner hood layer; exact position finalized from the approved fit
+sample
+
+Froni FRN-001 | Revision 10 | Factory development and quotation                                                                                           All measurements in cm unless stated
+Froni | FRN-001 | Custom-development technical pack                                           Revision                                                                                                                                                  Date Page
+
+Construction flats: front and back                                                                                                                                                                                                                      10 20 Jul 2026 3 / 14
+
+                                                                                                                                                                                                                                                        C3
+
+C1
+                                                                               C2
+
+Front view                                                                         Back view
+
+               Solid construction lines � Shoulder � Armhole � Sleeve / underarm � Body side seam � Cuff � Hem � Rib boundary � Neckline
+               Dashed attachment line � Hood attachment at neckline
+
+Coded callouts: C1 Cuff rib; C2 Hem rib; C3 Center gusset.
+
+                                         Technical flats are schematic development drawings, not cutting patterns. Visual constants do not define garment measurements. Construction locations and panel boundaries are identified for factory review.
+
+Froni FRN-001 | Revision 10 | Factory development and quotation                               All measurements in cm unless stated
+Froni | FRN-001 | Custom-development technical pack                                                                           Revision                                                                                                               Date Page
+
+Construction flats: side and hood views                                                                                                                                                                                                              10 20 Jul 2026 4 / 14
+
+                                                                                                                          C4
+
+                                                                                                                                                                                                                                                     C5
+
+                                                   C2
+C1
+
+Side view                                                        Hood-up view                                                 Hood-down view
+
+               Solid construction lines � Shoulder � Armhole � Sleeve / underarm � Body side seam � Cuff � Hem � Rib boundary � Neckline
+               Dashed attachment line � Hood attachment at neckline
+
+Coded callouts: C1 Cuff rib; C2 Hem rib; C4 Three-panel hood; C5 Hood attachment line.
+
+                                          Technical flats are schematic development drawings, not cutting patterns. Visual constants do not define garment measurements. Hood volume and drape are finalized from the approved physical fit sample.
+
+Froni FRN-001 | Revision 10 | Factory development and quotation                                                               All measurements in cm unless stated
+Froni | FRN-001 | Custom-development technical pack                                                                                                                                               Revision                                   Date Page
+
+Three-panel hood and double-layer assembly                                                                                                                                                        10 20 Jul 2026 5 / 14
+
+ Exploded three-panel hood                                                                                    Double-layer assembly cross-section
+
+                                                                                                              Outer self-fabric layer
+
+                                                                                                                                       Embroidery back concealed inside assembly
+                                                                                                                                                                                                              Inner self-fabric layer
+
+Left side panel  Center gusset                                   Right side panel
+
+                 Outer and inner geometry, control points, and notches are derived from the approved pattern                           Finished hood assembly attaches to approved neckline seam
+
+Technical flats are schematic development drawings, not cutting patterns. Visual constants do not define garment measurements. Factory proposes seams, allowances, notches, turning sequence, and bulk control before development approval.
+
+Froni FRN-001 | Revision 10 | Factory development and quotation                                                                                                                                   All measurements in cm unless stated
+Froni | FRN-001 | Custom-development technical pack                                                                                                                                                         Revision               Date Page
+
+Construction matrix                                                                                                                                                                                         10 20 Jul 2026 6 / 14
+
+Engineering proposal baseline: For every seam and attachment area, the garment factory must propose stitch class, stitches per inch, seam allowance, seam finish, thread ticket, needle system, reinforcement, and
+stabilization as applicable, together with the row-specific requirements below.
+
+Construction area             Fixed client requirement                                  Factory engineering proposal required                                        Approved at first fit sample           Approved at pre-production
+Shoulder seam                                                                                                                                                                                               sample
+Armhole seam
+                              Clean exterior; preserve the relaxed drop-shoulder        Propose stitch class, stitches per inch, seam allowance, seam finish,        Approve shoulder position, balance,    Confirm approved production
+Sleeve underarm seam          silhouette.                                               thread ticket, needle system, and reinforcement for the specified cloth.     comfort, and exterior appearance.      construction and repeatability.
+Body side seam
+Cuff rib attachment           Straight, clean set-in sleeve seam; no raglan             Propose stitch class, stitches per inch, allowance, finish, needle system,   Approve armhole shape, mobility, sleeve Confirm seam shape and
+Hem rib attachment            construction.                                             thread, and clean bulk control.
+Hood side-panel assembly                                                                                                                                             pitch, and exterior line.              production method against the
+Hood center-gusset assembly
+Inner and outer hood joining                                                                                                                                                                                approved pattern.
+Hood-to-neckline attachment
+Neckline stabilization        Continuous clean sleeve line without exterior decoration. Propose stitch class, stitches per inch, allowance, finish, needle system,   Approve sleeve rotation, comfort, and  Confirm production seam and
+                                                                                                            thread, and reinforcement at joins.                      seam appearance.                       junction alignment.
+Care-tape attachment
+Embroidery stabilization and  Standard side seams; no body gusset.                      Propose stitch class, stitches per inch, allowance, finish, needle system,   Approve balance, hang, and clean       Confirm production seam,
+removal                                                                                 thread, and hem-junction control.                                            exterior.                              alignment, and bulk control.
+
+                              2x2 matched-black rib with the fixed fibre range.         Propose ratio, stitch class, stitches per inch, allowance, finish, needle    Approve opening, recovery, comfort, and Confirm approved dimensions and
+                                                                                        system, thread, and join placement.
+                                                                                                                                                                     sleeve transition.                     production recovery.
+
+                              2x2 matched-black rib; clean exterior with no waviness. Propose ratio, stitch class, stitches per inch, allowance, finish, needle      Approve relaxed width, recovery, body  Confirm approved dimensions and
+                                                                                                            system, thread, and side-join treatment.                 hang, and junctions.                   production method.
+
+                              Two outer side panels and two inner side panels in self Propose stitch class, stitches per inch, allowance, finish, notches, needle    Approve side-panel shape, face opening, Confirm approved pattern matching
+
+                              fabric.                                                   system, thread, and bulk control.                                            volume, and drape.                     and clean exterior.
+
+                              One center gusset per hood layer; exterior gusset         Propose stitch class, stitches per inch, allowance, finish, notches, needle  Approve gusset geometry, centering,    Confirm panel matching and
+                              carries the locator for   .                               system, thread, and alignment control.                                       volume, and hood fall.                 centered placement.
+
+                              Double-layer self-fabric hood; embroidery backs hidden Propose joining and turning sequence, stitch class, stitches per inch,          Approve face-edge roll, weight, comfort, Confirm no exposed embroidery
+
+                              between layers.                                           allowance, finish, needle system, and bulk control.                          and clean finish.                      back or unintended turn-out.
+
+                              Blank neck with no applied label; hood centered to the Propose stitch class, stitches per inch, allowance, finish, needle system,      Approve neckline shape, hood balance, Confirm approved pattern match
+
+                              neckline.                                                 thread, notches, and seam-bulk control.                                      comfort, and back-icon drape rule.     and clean attachment.
+
+                              No visible stabilizer and no applied neck branding.       State whether stabilization is needed and propose material, width,           Approve comfort, recovery, and         Confirm approved material and
+                                                                                        position, attachment, and wash behavior.                                     concealed appearance if used.          placement or record that none is
+                                                                                                                                                                                                            used.
+
+                              Printed care, fibre, origin, and wordmark tape; no other  Propose side-seam position, fold, attachment method, needle system,          Approve position, comfort, legibility, and Approve final printed tape and
+                              label application.                                        thread, and skin-contact finish.
+                                                                                                                                                                     content route.                         attachment.
+                              Front temporary tearaway or washaway only; localized      Propose named stabilizer types, layer count, hooping, removal, residue
+                              permanent back cutaway only; no full-panel cutaway.       control, and panel handling.                                                 Review drape, skin side, pucker, residue, Confirm approved stabilizers,
+
+                                                                                                                                                                     and panel distortion after wash.       removal, and production handling.
+
+Froni FRN-001 | Revision 10 | Factory development and quotation                                                                                                                                             All measurements in cm unless stated
+Froni | FRN-001 | Custom-development technical pack                                                                                                                                                 Revision                         Date Page
+
+Body and sleeve measurement methods                                                                                                                                                                     10 20 Jul 2026 7 / 14
+
+                                                                                                   Code Point                  Method                                             S     M     L     XL        Tolerance
+
+                                                                                                   A Body length               High shoulder point to finished hem, straight      68    70    72    74                               +/- 1 cm
+
+                                                                                                   B Chest 1 cm below armhole  Half chest, edge to edge, 1 cm below armhole       57    59    61    63                               +/- 1 cm
+
+                                                                                                   C Armhole                   Retained target; factory confirms the exact seam-  24    25    26    27                               +/- 1 cm
+
+                                                                                                                               line method
+
+                                                                                                   D Cuff opening              Half opening at finished cuff edge, relaxed        8     8     8.5   9                                +/- 1 cm
+
+                                                                                                   E Sleeve length             Shoulder seam to finished cuff along upper sleeve  57    58    59    60                               +/- 1 cm
+
+                                                                                                   F Shoulder                  Neck seam to armhole seam along shoulder           18    19    20    21                               +/- 1 cm
+
+   N1  G                                                   N2                                      G Neck opening              Straight across finished neckline                  26    26    26    26                               +/- 1 cm
+   F
+                                                                         N6
+                                                       N3                          N4              H Bottom width              Half width at body-to-rib seam                     49    51    53    55                               +/- 1 cm
+              EC                                                                               N5
+                                                                                                   I Bottom hem rib height     Finished vertical rib height                       6     6     6     6                                +/- 1 cm
+                                                       B                       A
+                                                                                                   J Cuff rib length           Finished cuff rib length along sleeve              6     6     6     6                                +/- 1 cm
+   J
+
+D                                                                                                  K Hood length               Retained outer-shell target; factory confirms      38    38    38    38                               +/- 1 cm
+                                                                                                                               points
+
+                                                                                                   L Hood width                Retained outer-shell target; factory confirms      26.5  26.5  26.5  26.5                             +/- 1 cm
+                                                                                                                               points
+
+   I                                                                                               M Hood gusset width         Finished center-gusset width at defined control    10    10    10    10                               +/- 1 cm
+                                       H
+                                                                                                                               line
+
+                                                                                                   Development tolerance: Every retained A-M target carries +/- 1 cm. Final production control uses the approved graded pattern and
+                                                                                                   measurement chart.
+
+  Method notes                                                                                                                                                                                      All measurements in cm unless stated
+
+  Lay the sample flat without stretch. Retained values are first-fit
+  targets. Record actual sample values beside the factory's
+  confirmed method.
+
+  Method key: N1 Front neck drop (Factory proposes at first
+  pattern); N2 Back neck drop (Factory proposes at first pattern); N3
+  Across shoulder (Factory proposes at first pattern); N4 Half bicep
+  (Factory proposes at first pattern); N5 Sleeve width at defined
+  points (Derived from approved pattern); N6 Armhole measurement
+  method (Derived from approved pattern). No target values are
+  assigned.
+
+  Technical flats are schematic development drawings, not cutting
+  patterns. Visual constants do not define garment measurements.
+
+Froni FRN-001 | Revision 10 | Factory development and quotation
+Froni | FRN-001 | Custom-development technical pack                                                                                                                            Revision               Date Page
+
+Hood and rib measurement methods                                                                                                                                               10 20 Jul 2026 8 / 14
+
+                                                                              Schematic map: N1-N6 are drawn on the body and sleeve schematic on page 7. N7-N15 are drawn on the hood and rib schematic on
+                                                                              this page.
+
+                    N9                 N10                                    Key    Pattern-defining point of       Measurement method                                        Value disposition
+                        M                                                            measurement
+                                            R1   N12                             N1  Front neck drop                 High shoulder line to lowest front neckline point         Factory proposes at first pattern
+                                                                                 N2  Back neck drop                  High shoulder line to center-back neckline                Factory proposes at first pattern
+       N8                                                                        N3  Across shoulder                 Shoulder point to shoulder point across back              Factory proposes at first pattern
+                                                                                 N4  Half bicep                      Half sleeve width at the factory-defined bicep line       Factory proposes at first pattern
+K  N7                                                                            N5  Sleeve width at defined points  Half widths at factory-marked sleeve control lines        Derived from approved pattern
+                                                                                 N6  Armhole measurement method      Factory marks seam-line start, end, and path on pattern   Derived from approved pattern
+                                            N13                                  N7  Hood face opening               Finished opening measured along the seam line             Finalized from approved fit sample
+                                                                                 N8  Hood depth                      Front opening to furthest back point on side panel        Finalized from approved fit sample
+                                            R2   N14                             N9  Hood side-panel geometry        Approved side-panel pattern perimeter and control points  Derived from approved pattern
+                                                                                N10  Center-gusset geometry          Approved gusset length, width controls, and notches       Derived from approved pattern
+               N11                          N15                                 N11  Hood neckline seam length       Stitching-line length matched to the approved neckline    Derived from approved pattern
+       L                                                                        N12  Cuff rib width                  Cut and finished rib width stated separately              Factory proposes at first pattern
+                                                                                N13  Cuff relaxed opening            Finished cuff opening measured relaxed                    Finalized from approved fit sample
+  Rib key: R1 Cuff rib; R2 Hem rib.                                             N14  Hem rib dimensions              Cut length, cut height, and finished height               Derived from approved pattern
+                                                                                N15  Hem relaxed width               Finished half width at lower rib edge, relaxed            Finalized from approved fit sample
+Retained hood targets
+                                                                              No new target number is authorized. Factory proposes a production tolerance for approval where no tolerance is stated.
+K hood length: 38 / 38 / 38 / 38
+L hood width: 26.5 / 26.5 / 26.5 / 26.5
+M gusset width: 10 / 10 / 10 / 10
+Order: S / M / L / XL. Each retained target uses +/- 1 cm at development
+sample.
+
+  Method key                                                                                                                                                                   All measurements in cm unless stated
+
+  N7 Hood face opening (Finalized from approved fit sample); N8 Hood depth
+  (Finalized from approved fit sample); N9 Hood side-panel geometry
+  (Derived from approved pattern); N10 Center-gusset geometry (Derived
+  from approved pattern); N11 Hood neckline seam length (Derived from
+  approved pattern); N12 Cuff rib width (Factory proposes at first pattern);
+  N13 Cuff relaxed opening (Finalized from approved fit sample); N14 Hem rib
+  dimensions (Derived from approved pattern); N15 Hem relaxed width
+  (Finalized from approved fit sample). No target values are assigned.
+
+Froni FRN-001 | Revision 10 | Factory development and quotation
+Froni | FRN-001 | Custom-development technical pack                                                                                                                                                     Revision  Date Page
+
+Bill of materials and sourcing evidence                                                                                                                                                                 10 20 Jul 2026 9 / 14
+
+Item                              Fixed specification                                                         Sourcing party                         Approval evidence required                         Approval stage
+Body French terry
+                                  100% combed ring-spun cotton, three-end unbrushed loopback, reactive black, Garment factory                        Mill sheet, swatch, composition and performance results Production-fabric approval
+Rib                               420-450 gsm
+Sewing thread
+                                  2x2, 95-98% cotton and 2-5% elastane, matched reactive black                Garment factory                        Composition, recovery swatch, shade match          Production-fabric approval
+                                                                                                                                                     Construction proposal and sewn sample
+                                  Factory proposes a thread suited to the specified cloth and clean exterior  Garment factory                        Matte A/B test and production-cloth strike-offs    First fit and pre-production
+                                                                                                                                                     Strike-off reverse and wash review                 sample
+Embroidery thread                 Madeira Frosted Matt 40 wt or approved Gunold equivalent; 60 wt for face and Garment factory under its embroidery  Strike-off record and production setup
+                                                                                                                                                     Named proposal, removal sample, washed strike-off  Embroidery strike-off
+                                  hands                                                                       contract                               Named proposal, drape review, washed strike-off    approval
+                                                                                                                                                     Material proposal and sewn sample, or written
+Embroidery bobbin                 60-70 wt polyester                                                          Garment factory under its embroidery   confirmation none is needed                        Embroidery strike-off
+                                                                                                              contract                               Artwork proof, print sample, content check         approval
+                                                                                                                                                     Material and dimensions submitted
+Embroidery needles                75/11 ballpoint                                                             Garment factory under its embroidery   Carton specification and packing count             Embroidery strike-off
+                                                                                                              contract                                                                                  approval
+
+Temporary embroidery stabilizers Front tearaway or washaway only; no permanent front cutaway                  Garment factory under its embroidery                                                      Embroidery strike-off
+                                                                                                              contract                                                                                  approval
+
+Permanent localized back stabilizer Localized upper-back cutaway tapered into the drape zone; no full-panel   Garment factory under its embroidery                                                      Embroidery strike-off
+                                                      cutaway                                                 contract                                                                                  approval
+
+Neckline stabilization            Factory proposes only if needed; must be concealed and compatible with wash Garment factory                                                                           First fit and pre-production
+                                  requirements                                                                                                                                                          sample
+
+Printed care, fibre, origin, and  Required content only; blank neck and no other applied label                Garment factory                                                                           Pre-production sample
+wordmark tape                                                                                                                                                                                           approval
+
+Factory shipment polybag          Clean individual protective bag for factory shipment only                   Garment factory                                                                           Pre-production sample
+                                                                                                                                                                                                        approval
+Factory shipment cartons          Export cartons suitable for factory shipment to Germany                     Garment factory
+                                                                                                                                                                                                        Pre-production sample
+                                                                                                                                                                                                        approval
+
+The polybag and cartons on this page are protective materials for factory shipment only. No other packaging is part of this bill of materials.
+
+Froni FRN-001 | Revision 10 | Factory development and quotation                                                                                                                                         All measurements in cm unless stated
+Froni | FRN-001 | Custom-development technical pack                                                                                                                                           Revision                 Date  Page
+
+Front and back artwork authority and placement                                                                                                                                                10 20 Jul 2026 10 / 14
+
+                                             Front visual authority                                                                                             Saint Catherine's scan
+
+                                                                                  Role: Front design reference photograph                                       Role: Back icon artwork authority
+                                                                                  Pixels: 500 x 603                                                             Pixels: 2023 x 3774
+                                                                                           Authority file: Froni_Edition_One_Front.png                          Authority file: pantocratorStCatherines_2023x3774.jpg
+
+                             Production artwork unavailable                                                                                                     Acceptance sheet unavailable
+                                                                                                                                                                The face mirror-composite sheet is not present. The physical mirror test remains
+                             The front ornament vector has not been supplied. Do not trace or reconstruct it                                                    required.
+                             from this raster.
+                                                                                                                                                                Approved map unavailable
+                                                                                                                                                                The final approved back-icon asymmetry map has not been supplied.
+
+Production vector pending                                                                                                               Artwork authority scan
+Cross centered in authority                                                                                                                    No back join
+
+Front placement and execution                                    One indexed frame advance and one horizontal                           Back placement and execution                          Automated photo-stitch with uniform parallel scan
+                                                                 routed join only                                                                                                             lines is rejected
+    The supplied front design reference photograph                                                                                          The Saint Catherine's scan controls the face.
+    controls the ornament. The cross is centered.                The file contains a routed join corridor with no                           Mirrored or regenerated images are not accepted   60 wt thread for face and hands; 40 wt elsewhere
+    Centered on the approved front-panel pattern.                stitch crossing the split                                                  as artwork authority.                             One field position with no joined embroidery on
+    Final embroidery geometry follows the production                                                                                                                                          the back panel
+    vector and the approved pattern.                             Registration jog maximum 1 mm                                              Centered on center back                           Usable field must allow artwork plus 2 cm
+    Black-on-black ornamental linework revealed by               Four-quadrant assembly is not accepted                                                                                       hooping margin on each side
+    texture in raking light                                                                                                                 Halo apex target 12 cm below collar seam;
+    Bean stitch, triple pass, 2.5 mm, flat                       Resizing the design to fit a smaller field is not                          accepted window 11-13 cm                          If usable field width is 45 cm, icon width caps at
+    Chain stitch is not accepted                                 accepted                                                                                                                     43 cm and height follows the artwork aspect
+    Planning range 35-60k stitches                               Temporary tearaway or washaway only. No                                    Icon height 46 cm on S and M
+    Four regenerated front files, one for each                   permanent front cutaway.                                                                                                     Two regenerated back files: S/M and L/XL, with
+    approved size pattern                                                                                                                   Regenerated L and XL file approximately 48-50     densities retuned rather than scaled
+                                                                                                                                            cm high, subject to usable field
+                                                                                                                                                                                              Localized upper-back cutaway tapered into the
+                                                                                                                                            Hood may cover the halo but must never cover      drape zone. No full-panel cutaway.
+                                                                                                                                            the brow; verify on the physical fit sample
+
+                                                                                                                                            Hand-directed needle painting with stitch angles
+                                                                                                                                            following form
+
+Froni FRN-001 | Revision 10 | Factory development and quotation                                                                                                                               All measurements in cm unless stated
+Froni | FRN-001 | Custom-development technical pack                                                                                                       Revision  Date  Page
+
+Hood artwork and embroidery acceptance                                                                                                                    10 20 Jul 2026 11 / 14
+
+Exterior hood locator and                                              Embroidery setup                                                                   Production-cloth acceptance checks
+reference
+                                                                                                                                                               Production-cloth face strike-off photographed straight on, split
+                                                                       Main embroidery thread   Madeira Frosted Matt 40 wt or approved Gunold equivalent       vertically, and mirrored into two composites. Reject if the two
+                                                                       Face and hand detail     60 wt                                                          composites read as the same face.
+                                                                       Bobbin                   60-70 wt polyester                                             Matte thread A/B comparison on the same production-cloth swatch
+                                                                       Needles                  75/11 ballpoint                                                under raking light.
+           Reference: Froni_Edition_One_IAM.jpg                        Colors                   Maximum 15 in one setup with no mid-run rethreading            Full-size front strike-off under raking light; inspect routed join corridor
+                                                                       Gold                     Marigold family from the approved palette                      and maximum 1 mm registration jog.
+Exterior center gusset, three glyphs stacked upright from top to                                                                                               Hood-lettering strike-off on production cloth; verify Greek locator
+bottom and centered                                                    All four decorations are embroidered on flat panels before garment                      placement and italic apertures at the specified minimum x-height.
+                                                                       assembly.                                                                               Wash trial: one swatch for 25-30 cycles at 40-60 C plus tumble,
+Marigold family from the approved palette                                                                                                                      reviewed for pucker, fade, and thread integrity.
+                                                                       Back stitch plan                                                                        One full sample for five industrial washes before production approval.
+The supplied hood photograph controls the intended embroidered                                                                                                 Back icon must use one field with no join; hood drape may cover
+appearance and confirms the upright vertical stack.                                                                                                            halo but never brow.
+
+Document glyphs are a locator only. Production letterform                                                                                                 Ownership and responsibility
+artwork is pending and a document font must not be used as
+embroidery artwork.                                                                                                                                           Editable native Wilcom .EMB masters and graded production outputs
+                                                                                                                                                              are delivered to and owned by Froni.
+Production artwork unavailable                                         Face and hands, layered  40-50k                                                        Digitizer supplies files and revisions, including one remote tuning
+                                                                       needle painting          12-16k                                                        round after the first production-cloth strike-off.
+Approved exterior hood letterform artwork has not                                               50-65k                                                        Physical strike-offs remain under the garment factory's contract and
+been supplied.                                                         Hair and beard,          26-34k                                                        responsibility, including subcontracted embroidery.
+                                                                       directional satin        6-10k                                                         The garment factory bears the cost of strike-offs repeated due to
+Interior hood locator                                                                           Approximately 145-185k                                        embroidery execution faults.
+                                                                       Robe, medium fill        180k S/M, 200k L/XL                                           Digitizing fee includes revisions until an approved production sew-out
+Fear not,                                                                                                                                                     on final fabric.
+                                                                       Halo and Gospel book,
+for I am                                                               radiating satin                                                                                                                                                   All measurements in cm unless stated
+
+with you                                                               Edge feathering and
+                                                                       details
+- Isaiah
+                                                                       Back total planning
+                                                                       range
+
+                                                                       Hard cap
+
+41:10      Reference: Froni_Edition_One_IAM_Verse.jpg                  The digitizer reconciles zone planning ranges to the hard cap in the
+                                                                       submitted stitch plan.
+Inner shell layer with stitch back hidden between hood layers. Exact
+position finalized from the approved fit sample.                       Digitizer file package
+
+      Italic lettering from approved production artwork                    Four regenerated front files, one per approved size pattern
+      X-height 7 mm minimum on every garment size                          Two regenerated back files, S/M and L/XL, with retuned densities
+                                                                           One hood exterior lettering file
+      Escalate to 8-9 mm if italic counters close on production cloth      One hood interior verse file
+      Repeat the full unit 2-3 times as clean fit permits                  Editable native Wilcom .EMB masters and all graded production outputs
+      Planning range 5-8k stitches
+      One file with fixed lettering size and variable repeat             Production files unavailable
+The photograph shows intended interior verse placement and               Final native masters and graded production outputs have not been
+proportion only.                                                         supplied.
+
+Document wording is a locator only. Production lettering
+artwork is pending.
+
+Production artwork unavailable
+
+Approved interior verse production artwork has not
+been supplied.
+
+Froni FRN-001 | Revision 10 | Factory development and quotation
+Froni | FRN-001 | Custom-development technical pack                                                                                                       Revision                                     Date      Page
+
+Development responsibility matrix                                                                                                                         10 20 Jul 2026 12 / 14
+
+Scope                                  Responsible party                       Required deliverable                                                       Approval or contract boundary
+                                       Froni                                   This pack and written clarifications                                       Froni confirms any revision
+Fixed garment and material
+requirements                           Garment factory                         First pattern, corrected pattern, graded pattern, measurement chart        Froni approves fit sample and final graded pattern
+Factory pattern development            Garment factory
+Factory construction proposal                                                  Area-by-area construction engineering without changing fixed requirements Froni approves proposal, first fit, and pre-production
+                                                                                                                                                                                       sample
+
+Fabric and trim sourcing               Garment factory                         Mill data, swatches, test evidence, trim proposals                         Froni approves production fabric and trims
+Digitizing files and revisions         External digitizer
+Embroidery subcontracting              Garment factory                         Native masters, graded files, stitch plan, color map, tuning revisions     Froni approves files through physical sew-outs
+
+                                                                               Subcontractor control, setup, physical strike-offs, production embroidery  Garment factory remains the sole contracting and
+                                                                                                                                                          responsible party to Froni
+
+Fit-dependent items                    Garment factory with Froni approval     Final balance, hood geometry, measurement points, placement                Finalized from the approved fit sample
+                                                                               adjustments
+
+Strike-off-dependent items             Garment factory with digitizer support  Thread, density, stabilizer, join, lettering, wash results                 Froni approves production-cloth strike-offs
+                                       Garment factory
+Pre-production-sample-dependent                                                Production construction, graded measurement chart, final tape, packing     Froni approves the pre-production sample
+items                                  Garment factory                         method
+
+Bulk manufacture and final inspection                                          Garments matching the approved pre-production sample and evidence          Release after final inspection and shipment documents
+
+Froni FRN-001 | Revision 10 | Factory development and quotation                                                                                           All measurements in cm unless stated
+Froni | FRN-001 | Custom-development technical pack                                                                                             Revision  Date                                                        Page
+
+Development sequence and approval outputs                                                                                                       10 20 Jul 2026 13 / 14
+
+1 Factory technical review and feasibility confirmation                2 Construction proposal                                                  3 First pattern
+       Approval output: Signed yes or no acceptance, deviations list,         Approval output: Complete area-by-area engineering proposal              Approval output: First custom pattern, pattern card, proposed
+       field data, development and quotation inputs                           approved in writing                                                      point-of-measurement values, and measurement method sheet
+
+4 First fit sample without final embroidery where                      5 Fit corrections                                                        6 Approved graded pattern and updated measurement
+      appropriate                                                                                                                                     chart
+                                                                              Approval output: Corrected physical fit sample, revised pattern,
+       Approval output: Physical fit sample with completed                    completed measurement report, and review record against fit              Approval output: Approved graded nest, pattern files, and final
+       measurement report and marked corrections                              comments                                                                 measurement chart
+
+7 Production-fabric approval                                           8 Embroidery strike-offs on production fabric                            9 Embroidered pre-production sample
+       Approval output: Approved swatch, mill data, performance               Approval output: Approved front, back, hood, mirror, matte,              Approval output: Complete embroidered garment reviewed for
+       evidence, shade and hand confirmation                                  stabilizer, and wash evidence                                            placement, drape, fit, and construction
+
+10 Pre-production sample approval                                      11 Bulk production                                                       12 Final inspection and shipment
+       Approval output: Signed pre-production-sample approval with            Approval output: In-line records against the sealed pre-                 Approval output: Final inspection report, packing list, shipment
+       sealed sample, chart, tape, bill of materials, and production          production sample and approved production controls                       evidence, and accepted release
+       method
+
+Froni FRN-001 | Revision 10 | Factory development and quotation                                                                                 All measurements in cm unless stated
+Froni | FRN-001 | Custom-development technical pack                                                                                                 Revision  Date  Page
+
+Factory acceptance and quotation response                                                                                                           10 20 Jul 2026 14 / 14
+
+Factory acceptance                                               Capacity, terms, and logistics response
+
+Yes or no on accepting the fully custom cut-and-sew development  Bulk lead time after the approved pre-production sample
+                                                                 Earliest committed ex-factory date after the approved pre-production sample
+Yes                    No                                        Maximum usable embroidery field in centimetres
+                                                                 Embroidery machine make and field configuration
+Factory legal name                                               Confirmation that embroidery remains under the garment factory's contract
+Authorized respondent                                            and responsibility
+                                                                 Payment terms
+Development and price response                                   Incoterm
+                                                                 Shipping estimate to Germany
+Pattern-development price
+First fit-sample price
+Corrected fit-sample price
+Pre-production sample price
+Embroidery setup and strike-off charges
+Provisional bulk unit price at 200 units
+Fabric minimum and fabric lead time
+Sample lead time
+
+                                                                 Order basis: 200 garments. Final size split is supplied at order placement. No delivery promise is
+                                                                 established by this form.
+
+                                                                 Authorized signature                                                         Date
+
+Froni FRN-001 | Revision 10 | Factory development and quotation                                                                                     All measurements in cm unless stated
+

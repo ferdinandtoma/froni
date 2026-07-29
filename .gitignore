@@ -1,0 +1,15 @@
+.design-loop/
+.tmp/
+tmp/
+_variant-*.html
+node_modules/
+.wrangler/
+.shopify/
+.cache/
+.react-router/
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-journal
+brand-questionnaire/answers/phone-access-key.txt

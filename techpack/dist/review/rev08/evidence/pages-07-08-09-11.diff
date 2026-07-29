@@ -1,0 +1,65 @@
+diff --git "a/C:\\cipher\\techpack\\dist\\review\\rev08\\evidence\\pages-07-08-09-11-rev07.json" "b/C:\\cipher\\techpack\\dist\\review\\rev08\\evidence\\pages-07-08-09-11-rev08.json"
+index 718c963..ec335f8 100644
+--- "a/C:\\cipher\\techpack\\dist\\review\\rev08\\evidence\\pages-07-08-09-11-rev07.json"
++++ "b/C:\\cipher\\techpack\\dist\\review\\rev08\\evidence\\pages-07-08-09-11-rev08.json"
+@@ -278,7 +278,7 @@
+       "fixedSpec": "Factory proposes a thread suited to the specified cloth and clean exterior",
+       "sourcingParty": "Garment factory",
+       "approvalEvidence": "Construction proposal and sewn sample",
+-      "approvalStage": "First fit and PPS"
++      "approvalStage": "First fit and pre-production sample"
+     },
+     {
+       "item": "Embroidery thread",
+@@ -320,28 +320,28 @@
+       "fixedSpec": "Factory proposes only if needed; must be concealed and compatible with wash requirements",
+       "sourcingParty": "Garment factory",
+       "approvalEvidence": "Material proposal and sewn sample, or written confirmation none is needed",
+-      "approvalStage": "First fit and PPS"
++      "approvalStage": "First fit and pre-production sample"
+     },
+     {
+       "item": "Printed care, fibre, origin, and wordmark tape",
+       "fixedSpec": "Required content only; blank neck and no other applied label",
+       "sourcingParty": "Garment factory",
+       "approvalEvidence": "Artwork proof, print sample, content check",
+-      "approvalStage": "PPS approval"
++      "approvalStage": "Pre-production sample approval"
+     },
+     {
+       "item": "Factory shipment polybag",
+       "fixedSpec": "Clean individual protective bag for factory shipment only",
+       "sourcingParty": "Garment factory",
+       "approvalEvidence": "Material and dimensions submitted",
+-      "approvalStage": "PPS approval"
++      "approvalStage": "Pre-production sample approval"
+     },
+     {
+       "item": "Factory shipment cartons",
+       "fixedSpec": "Export cartons suitable for factory shipment to Germany",
+       "sourcingParty": "Garment factory",
+       "approvalEvidence": "Carton specification and packing count",
+-      "approvalStage": "PPS approval"
++      "approvalStage": "Pre-production sample approval"
+     }
+   ],
+   "page_11": {
+@@ -363,6 +363,7 @@
+         "Planning range 5-8k stitches",
+         "One file with fixed lettering size and variable repeat"
+       ],
++      "reference": "The photograph shows intended interior verse placement and proportion only.",
+       "note": "Document wording is a locator only. Production lettering artwork is pending."
+     },
+     "embroidery": {
+@@ -435,7 +436,7 @@
+         "Editable native Wilcom .EMB masters and graded production outputs are delivered to and owned by Froni.",
+         "Digitizer supplies files and revisions, including one remote tuning round after the first production-cloth strike-off.",
+         "Physical strike-offs remain under the garment factory's contract and responsibility, including subcontracted embroidery.",
+-        "Strike-offs repeated because of embroidery execution faults are at the garment factory's cost.",
++        "The garment factory bears the cost of strike-offs repeated due to embroidery execution faults.",
+         "Digitizing fee includes revisions until an approved production sew-out on final fabric."
+       ],
+       "acceptance": [
+warning: in the working copy of 'C:\cipher\techpack\dist\review\rev08\evidence\pages-07-08-09-11-rev07.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'C:\cipher\techpack\dist\review\rev08\evidence\pages-07-08-09-11-rev08.json', LF will be replaced by CRLF the next time Git touches it

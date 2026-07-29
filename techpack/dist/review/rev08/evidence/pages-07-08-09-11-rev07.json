@@ -1,0 +1,452 @@
+{
+  "pages_7_8_pom": {
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "existing": [
+      {
+        "code": "A",
+        "name": "Body length",
+        "method": "High shoulder point to finished hem, straight",
+        "targets": [
+          68,
+          70,
+          72,
+          74
+        ],
+        "tolerance": "+/- 1 cm"
+      },
+      {
+        "code": "B",
+        "name": "Chest 1 cm below armhole",
+        "method": "Half chest, edge to edge, 1 cm below armhole",
+        "targets": [
+          57,
+          59,
+          61,
+          63
+        ],
+        "tolerance": "+/- 1 cm"
+      },
+      {
+        "code": "C",
+        "name": "Armhole",
+        "method": "Retained target; factory confirms the exact seam-line method",
+        "targets": [
+          24,
+          25,
+          26,
+          27
+        ],
+        "tolerance": "+/- 1 cm"
+      },
+      {
+        "code": "D",
+        "name": "Cuff opening",
+        "method": "Half opening at finished cuff edge, relaxed",
+        "targets": [
+          8,
+          8,
+          8.5,
+          9
+        ],
+        "tolerance": "+/- 1 cm"
+      },
+      {
+        "code": "E",
+        "name": "Sleeve length",
+        "method": "Shoulder seam to finished cuff along upper sleeve",
+        "targets": [
+          57,
+          58,
+          59,
+          60
+        ],
+        "tolerance": "+/- 1 cm"
+      },
+      {
+        "code": "F",
+        "name": "Shoulder",
+        "method": "Neck seam to armhole seam along shoulder",
+        "targets": [
+          18,
+          19,
+          20,
+          21
+        ],
+        "tolerance": "+/- 1 cm"
+      },
+      {
+        "code": "G",
+        "name": "Neck opening",
+        "method": "Straight across finished neckline",
+        "targets": [
+          26,
+          26,
+          26,
+          26
+        ],
+        "tolerance": "+/- 1 cm"
+      },
+      {
+        "code": "H",
+        "name": "Bottom width",
+        "method": "Half width at body-to-rib seam",
+        "targets": [
+          49,
+          51,
+          53,
+          55
+        ],
+        "tolerance": "+/- 1 cm"
+      },
+      {
+        "code": "I",
+        "name": "Bottom hem rib height",
+        "method": "Finished vertical rib height",
+        "targets": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "tolerance": "+/- 1 cm"
+      },
+      {
+        "code": "J",
+        "name": "Cuff rib length",
+        "method": "Finished cuff rib length along sleeve",
+        "targets": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "tolerance": "+/- 1 cm"
+      },
+      {
+        "code": "K",
+        "name": "Hood length",
+        "method": "Retained outer-shell target; factory confirms points",
+        "targets": [
+          38,
+          38,
+          38,
+          38
+        ],
+        "tolerance": "+/- 1 cm"
+      },
+      {
+        "code": "L",
+        "name": "Hood width",
+        "method": "Retained outer-shell target; factory confirms points",
+        "targets": [
+          26.5,
+          26.5,
+          26.5,
+          26.5
+        ],
+        "tolerance": "+/- 1 cm"
+      },
+      {
+        "code": "M",
+        "name": "Hood gusset width",
+        "method": "Finished center-gusset width at defined control line",
+        "targets": [
+          10,
+          10,
+          10,
+          10
+        ],
+        "tolerance": "+/- 1 cm"
+      }
+    ],
+    "new": [
+      {
+        "name": "Front neck drop",
+        "method": "High shoulder line to lowest front neckline point",
+        "targets": null,
+        "disposition": "Factory proposes at first pattern"
+      },
+      {
+        "name": "Back neck drop",
+        "method": "High shoulder line to center-back neckline",
+        "targets": null,
+        "disposition": "Factory proposes at first pattern"
+      },
+      {
+        "name": "Across shoulder",
+        "method": "Shoulder point to shoulder point across back",
+        "targets": null,
+        "disposition": "Factory proposes at first pattern"
+      },
+      {
+        "name": "Half bicep",
+        "method": "Half sleeve width at the factory-defined bicep line",
+        "targets": null,
+        "disposition": "Factory proposes at first pattern"
+      },
+      {
+        "name": "Sleeve width at defined points",
+        "method": "Half widths at factory-marked sleeve control lines",
+        "targets": null,
+        "disposition": "Derived from approved pattern"
+      },
+      {
+        "name": "Armhole measurement method",
+        "method": "Factory marks seam-line start, end, and path on pattern",
+        "targets": null,
+        "disposition": "Derived from approved pattern"
+      },
+      {
+        "name": "Hood face opening",
+        "method": "Finished opening measured along the seam line",
+        "targets": null,
+        "disposition": "Finalized from approved fit sample"
+      },
+      {
+        "name": "Hood depth",
+        "method": "Front opening to furthest back point on side panel",
+        "targets": null,
+        "disposition": "Finalized from approved fit sample"
+      },
+      {
+        "name": "Hood side-panel geometry",
+        "method": "Approved side-panel pattern perimeter and control points",
+        "targets": null,
+        "disposition": "Derived from approved pattern"
+      },
+      {
+        "name": "Center-gusset geometry",
+        "method": "Approved gusset length, width controls, and notches",
+        "targets": null,
+        "disposition": "Derived from approved pattern"
+      },
+      {
+        "name": "Hood neckline seam length",
+        "method": "Stitching-line length matched to the approved neckline",
+        "targets": null,
+        "disposition": "Derived from approved pattern"
+      },
+      {
+        "name": "Cuff rib width",
+        "method": "Cut and finished rib width stated separately",
+        "targets": null,
+        "disposition": "Factory proposes at first pattern"
+      },
+      {
+        "name": "Cuff relaxed opening",
+        "method": "Finished cuff opening measured relaxed",
+        "targets": null,
+        "disposition": "Finalized from approved fit sample"
+      },
+      {
+        "name": "Hem rib dimensions",
+        "method": "Cut length, cut height, and finished height",
+        "targets": null,
+        "disposition": "Derived from approved pattern"
+      },
+      {
+        "name": "Hem relaxed width",
+        "method": "Finished half width at lower rib edge, relaxed",
+        "targets": null,
+        "disposition": "Finalized from approved fit sample"
+      }
+    ],
+    "missingTolerance": "Factory proposes a production tolerance for approval where no tolerance is stated."
+  },
+  "page_9_bom": [
+    {
+      "item": "Body French terry",
+      "fixedSpec": "100% combed ring-spun cotton, three-end unbrushed loopback, reactive black, 420-450 gsm",
+      "sourcingParty": "Garment factory",
+      "approvalEvidence": "Mill sheet, swatch, composition and performance results",
+      "approvalStage": "Production-fabric approval"
+    },
+    {
+      "item": "Rib",
+      "fixedSpec": "2x2, 95-98% cotton and 2-5% elastane, matched reactive black",
+      "sourcingParty": "Garment factory",
+      "approvalEvidence": "Composition, recovery swatch, shade match",
+      "approvalStage": "Production-fabric approval"
+    },
+    {
+      "item": "Sewing thread",
+      "fixedSpec": "Factory proposes a thread suited to the specified cloth and clean exterior",
+      "sourcingParty": "Garment factory",
+      "approvalEvidence": "Construction proposal and sewn sample",
+      "approvalStage": "First fit and PPS"
+    },
+    {
+      "item": "Embroidery thread",
+      "fixedSpec": "Madeira Frosted Matt 40 wt or approved Gunold equivalent; 60 wt for face and hands",
+      "sourcingParty": "Garment factory under its embroidery contract",
+      "approvalEvidence": "Matte A/B test and production-cloth strike-offs",
+      "approvalStage": "Embroidery strike-off approval"
+    },
+    {
+      "item": "Embroidery bobbin",
+      "fixedSpec": "60-70 wt polyester",
+      "sourcingParty": "Garment factory under its embroidery contract",
+      "approvalEvidence": "Strike-off reverse and wash review",
+      "approvalStage": "Embroidery strike-off approval"
+    },
+    {
+      "item": "Embroidery needles",
+      "fixedSpec": "75/11 ballpoint",
+      "sourcingParty": "Garment factory under its embroidery contract",
+      "approvalEvidence": "Strike-off record and production setup",
+      "approvalStage": "Embroidery strike-off approval"
+    },
+    {
+      "item": "Temporary embroidery stabilizers",
+      "fixedSpec": "Front tearaway or washaway only; no permanent front cutaway",
+      "sourcingParty": "Garment factory under its embroidery contract",
+      "approvalEvidence": "Named proposal, removal sample, washed strike-off",
+      "approvalStage": "Embroidery strike-off approval"
+    },
+    {
+      "item": "Permanent localized back stabilizer",
+      "fixedSpec": "Localized upper-back cutaway tapered into the drape zone; no full-panel cutaway",
+      "sourcingParty": "Garment factory under its embroidery contract",
+      "approvalEvidence": "Named proposal, drape review, washed strike-off",
+      "approvalStage": "Embroidery strike-off approval"
+    },
+    {
+      "item": "Neckline stabilization",
+      "fixedSpec": "Factory proposes only if needed; must be concealed and compatible with wash requirements",
+      "sourcingParty": "Garment factory",
+      "approvalEvidence": "Material proposal and sewn sample, or written confirmation none is needed",
+      "approvalStage": "First fit and PPS"
+    },
+    {
+      "item": "Printed care, fibre, origin, and wordmark tape",
+      "fixedSpec": "Required content only; blank neck and no other applied label",
+      "sourcingParty": "Garment factory",
+      "approvalEvidence": "Artwork proof, print sample, content check",
+      "approvalStage": "PPS approval"
+    },
+    {
+      "item": "Factory shipment polybag",
+      "fixedSpec": "Clean individual protective bag for factory shipment only",
+      "sourcingParty": "Garment factory",
+      "approvalEvidence": "Material and dimensions submitted",
+      "approvalStage": "PPS approval"
+    },
+    {
+      "item": "Factory shipment cartons",
+      "fixedSpec": "Export cartons suitable for factory shipment to Germany",
+      "sourcingParty": "Garment factory",
+      "approvalEvidence": "Carton specification and packing count",
+      "approvalStage": "PPS approval"
+    }
+  ],
+  "page_11": {
+    "hoodExterior": {
+      "string": "Ο Ω Ν",
+      "placement": "Exterior center gusset, three glyphs stacked upright from top to bottom and centered",
+      "color": "Marigold family from the approved palette",
+      "reference": "The user-supplied hood photograph controls the intended embroidered appearance and confirms the upright vertical stack.",
+      "note": "Document glyphs are a locator only. Production letterform artwork is pending and a document font must not be used as embroidery artwork."
+    },
+    "hoodInterior": {
+      "unit": "Fear not, for I am with you - Isaiah 41:10",
+      "placement": "Inner shell layer with stitch back hidden between hood layers. Exact position finalized from the approved fit sample.",
+      "lettering": [
+        "Italic lettering from approved production artwork",
+        "X-height 7 mm minimum on every garment size",
+        "Escalate to 8-9 mm if italic counters close on production cloth",
+        "Repeat the full unit 2-3 times as clean fit permits",
+        "Planning range 5-8k stitches",
+        "One file with fixed lettering size and variable repeat"
+      ],
+      "note": "Document wording is a locator only. Production lettering artwork is pending."
+    },
+    "embroidery": {
+      "sequence": "All four decorations are embroidered on flat panels before garment assembly.",
+      "setup": [
+        [
+          "Main embroidery thread",
+          "Madeira Frosted Matt 40 wt or approved Gunold equivalent"
+        ],
+        [
+          "Face and hand detail",
+          "60 wt"
+        ],
+        [
+          "Bobbin",
+          "60-70 wt polyester"
+        ],
+        [
+          "Needles",
+          "75/11 ballpoint"
+        ],
+        [
+          "Colors",
+          "Maximum 15 in one setup with no mid-run rethreading"
+        ],
+        [
+          "Gold",
+          "Marigold family from the approved palette"
+        ]
+      ],
+      "backBudget": [
+        [
+          "Face and hands, layered needle painting",
+          "40-50k"
+        ],
+        [
+          "Hair and beard, directional satin",
+          "12-16k"
+        ],
+        [
+          "Robe, medium fill",
+          "50-65k"
+        ],
+        [
+          "Halo and Gospel book, radiating satin",
+          "26-34k"
+        ],
+        [
+          "Edge feathering and details",
+          "6-10k"
+        ],
+        [
+          "Back total planning range",
+          "Approximately 145-185k"
+        ],
+        [
+          "Hard cap",
+          "180k S/M, 200k L/XL"
+        ]
+      ],
+      "budgetNote": "The digitizer reconciles zone planning ranges to the hard cap in the submitted stitch plan.",
+      "filePackage": [
+        "Four regenerated front files, one per approved size pattern",
+        "Two regenerated back files, S/M and L/XL, with retuned densities",
+        "One hood exterior lettering file",
+        "One hood interior verse file",
+        "Editable native Wilcom .EMB masters and all graded production outputs"
+      ],
+      "ownership": [
+        "Editable native Wilcom .EMB masters and graded production outputs are delivered to and owned by Froni.",
+        "Digitizer supplies files and revisions, including one remote tuning round after the first production-cloth strike-off.",
+        "Physical strike-offs remain under the garment factory's contract and responsibility, including subcontracted embroidery.",
+        "Strike-offs repeated because of embroidery execution faults are at the garment factory's cost.",
+        "Digitizing fee includes revisions until an approved production sew-out on final fabric."
+      ],
+      "acceptance": [
+        "Production-cloth face strike-off photographed straight on, split vertically, and mirrored into two composites. Reject if the two composites read as the same face.",
+        "Matte thread A/B comparison on the same production-cloth swatch under raking light.",
+        "Full-size front strike-off under raking light; inspect routed join corridor and maximum 1 mm registration jog.",
+        "Hood-lettering strike-off on production cloth; verify Greek locator placement and italic apertures at the specified minimum x-height.",
+        "Wash trial: one swatch for 25-30 cycles at 40-60 C plus tumble, reviewed for pucker, fade, and thread integrity.",
+        "One full sample for five industrial washes before production approval.",
+        "Back icon must use one field with no join; hood drape may cover halo but never brow."
+      ]
+    }
+  }
+}

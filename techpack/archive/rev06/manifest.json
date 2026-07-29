@@ -1,0 +1,83 @@
+{
+  "revision": "06",
+  "files": [
+    {
+      "relative_path": "build.js",
+      "sha256": "a3c1d0a19ad835f006cd214c8f70324ba01f26ce299884dc3c48acd069f75a0b",
+      "size_bytes": 10710,
+      "original_absolute_path": "C:\\cipher\\techpack\\build.js"
+    },
+    {
+      "relative_path": "config.js",
+      "sha256": "711875d8dc1e2f1ac4639a80b76153e8f0fab3f5e8a6f64e0be7d7d235525dcb",
+      "size_bytes": 19394,
+      "original_absolute_path": "C:\\cipher\\techpack\\config.js"
+    },
+    {
+      "relative_path": "techpack.html",
+      "sha256": "2b90043498b455e5dcedad71e8daa5aa1c01d6a742302a5bb1441e29487eb56f",
+      "size_bytes": 55215,
+      "original_absolute_path": "C:\\cipher\\techpack\\techpack.html"
+    },
+    {
+      "relative_path": "server.js",
+      "sha256": "ebd5a6257701ba211e689db60e3e70f5df88f825413b9c0d77f93a32a424d5a8",
+      "size_bytes": 5241,
+      "original_absolute_path": "C:\\cipher\\techpack\\server.js"
+    },
+    {
+      "relative_path": "placement.json",
+      "sha256": "e2e3c1a38753524bb0929ed7a0196283eeea85f21058fbb792fa81a1686fc51e",
+      "size_bytes": 98,
+      "original_absolute_path": "C:\\cipher\\techpack\\placement.json"
+    },
+    {
+      "relative_path": "render-hood.js",
+      "sha256": "03770eb6f0c268b0d68a2ddaf7588060c9994a1ffbbdad9138531dbdee9ec43c",
+      "size_bytes": 752,
+      "original_absolute_path": "C:\\cipher\\techpack\\render-hood.js"
+    },
+    {
+      "relative_path": "hood-omega.html",
+      "sha256": "7a5f2bde98d7431dd7b6d6c4d7e901c7d45d778d7bd59e52cf1ceb50db9c69f2",
+      "size_bytes": 3612,
+      "original_absolute_path": "C:\\cipher\\techpack\\hood-omega.html"
+    },
+    {
+      "relative_path": "package.json",
+      "sha256": "cbb2973697a02ebc9e9ed9a7090a356c57c4a79cc76f33d1c65c97f0f7ea9ff9",
+      "size_bytes": 289,
+      "original_absolute_path": "C:\\cipher\\techpack\\package.json"
+    },
+    {
+      "relative_path": "package-lock.json",
+      "sha256": "a0deb633479192782dcca12a0abcd6438177fa7c288b284c3d1b979f4a19f630",
+      "size_bytes": 1694,
+      "original_absolute_path": "C:\\cipher\\techpack\\package-lock.json"
+    },
+    {
+      "relative_path": "reference/front-linework.png",
+      "sha256": "e807cc2d5b97fcb99f2d37c41f8be0bf912c1c07c1741860fc4049028968bd3d",
+      "size_bytes": 327344,
+      "original_absolute_path": "C:\\cipher\\techpack\\reference\\front-linework.png"
+    },
+    {
+      "relative_path": "reference/pantocrator-back.png",
+      "sha256": "c1a673199858a6bcd23a62258d701e319b7b82c5d4979461f82062f0f198b83a",
+      "size_bytes": 12630719,
+      "original_absolute_path": "C:\\cipher\\techpack\\reference\\pantocrator-back.png"
+    },
+    {
+      "relative_path": "reference/worn-mockup.png",
+      "sha256": "27ee2133e5ae2e3b2cc235d028703c358c67ab568e9be2e90e8a102ba46d6b6e",
+      "size_bytes": 501080,
+      "original_absolute_path": "C:\\cipher\\techpack\\reference\\worn-mockup.png"
+    },
+    {
+      "relative_path": "dist/Froni_FRN-001_Tech_Pack_Rev06.pdf",
+      "sha256": "9b396aaf92c4bacb6a6511a7e0cdad9b56a8c5858aa1e25653a68a1d658e8c2c",
+      "size_bytes": 5847547,
+      "original_absolute_path": "C:\\cipher\\techpack\\dist\\Froni_FRN-001_Tech_Pack_Rev06.pdf"
+    }
+  ]
+}

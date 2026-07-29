@@ -1,0 +1,44 @@
+Froni | FRN-001 | Custom-development technical pack                                                                                                                                           Revision                 Date  Page
+
+Front and back artwork authority and placement                                                                                                                                                10 20 Jul 2026 10 / 14
+
+                                             Front visual authority                                                                                             Saint Catherine's scan
+
+                                                                                  Role: Front design reference photograph                                       Role: Back icon artwork authority
+                                                                                  Pixels: 500 x 603                                                             Pixels: 2023 x 3774
+                                                                                           Authority file: Froni_Edition_One_Front.png                          Authority file: pantocratorStCatherines_2023x3774.jpg
+
+                             Production artwork unavailable                                                                                                     Acceptance sheet unavailable
+                                                                                                                                                                The face mirror-composite sheet is not present. The physical mirror test remains
+                             The front ornament vector has not been supplied. Do not trace or reconstruct it                                                    required.
+                             from this raster.
+                                                                                                                                                                Approved map unavailable
+                                                                                                                                                                The final approved back-icon asymmetry map has not been supplied.
+
+Production vector pending                                                                                                               Artwork authority scan
+Cross centered in authority                                                                                                                    No back join
+
+Front placement and execution                                    One indexed frame advance and one horizontal                           Back placement and execution                          Automated photo-stitch with uniform parallel scan
+                                                                 routed join only                                                                                                             lines is rejected
+    The supplied front design reference photograph                                                                                          The Saint Catherine's scan controls the face.
+    controls the ornament. The cross is centered.                The file contains a routed join corridor with no                           Mirrored or regenerated images are not accepted   60 wt thread for face and hands; 40 wt elsewhere
+    Centered on the approved front-panel pattern.                stitch crossing the split                                                  as artwork authority.                             One field position with no joined embroidery on
+    Final embroidery geometry follows the production                                                                                                                                          the back panel
+    vector and the approved pattern.                             Registration jog maximum 1 mm                                              Centered on center back                           Usable field must allow artwork plus 2 cm
+    Black-on-black ornamental linework revealed by               Four-quadrant assembly is not accepted                                                                                       hooping margin on each side
+    texture in raking light                                                                                                                 Halo apex target 12 cm below collar seam;
+    Bean stitch, triple pass, 2.5 mm, flat                       Resizing the design to fit a smaller field is not                          accepted window 11-13 cm                          If usable field width is 45 cm, icon width caps at
+    Chain stitch is not accepted                                 accepted                                                                                                                     43 cm and height follows the artwork aspect
+    Planning range 35-60k stitches                               Temporary tearaway or washaway only. No                                    Icon height 46 cm on S and M
+    Four regenerated front files, one for each                   permanent front cutaway.                                                                                                     Two regenerated back files: S/M and L/XL, with
+    approved size pattern                                                                                                                   Regenerated L and XL file approximately 48-50     densities retuned rather than scaled
+                                                                                                                                            cm high, subject to usable field
+                                                                                                                                                                                              Localized upper-back cutaway tapered into the
+                                                                                                                                            Hood may cover the halo but must never cover      drape zone. No full-panel cutaway.
+                                                                                                                                            the brow; verify on the physical fit sample
+
+                                                                                                                                            Hand-directed needle painting with stitch angles
+                                                                                                                                            following form
+
+Froni FRN-001 | Revision 10 | Factory development and quotation                                                                                                                               All measurements in cm unless stated
+

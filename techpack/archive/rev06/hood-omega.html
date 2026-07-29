@@ -1,0 +1,69 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>FRONI hood gusset — Ο Ω Ν</title>
+<style>html,body{margin:0;background:#000}</style>
+<div id="stage"></div>
+<script>
+"use strict";
+// Standalone, proportion-correct render of the hood center gusset with the
+// theonym Ο Ω Ν (omicron, omega, nu) in marigold gold. Even cap heights,
+// centered on the gusset, clear margin to both side seams, embroidered look.
+const W = 1200, H = 1500, cx = 600;
+const gx1 = 442, gx2 = 758;                 // gusset side seams (panel width 316)
+const FS = 236, FAM = "Georgia, 'Times New Roman', serif";
+const GOLD = "#C9A227";
+// three letters, same font-size (so same cap height), evenly spaced, centered
+const letters = [
+  { c: "Ο", y: 548 },   // Ο  omicron
+  { c: "Ω", y: 832 },   // Ω  omega
+  { c: "Ν", y: 1116 },  // Ν  nu
+];
+const txt = (c, y, attrs) =>
+  `<text x="${cx}" y="${y}" font-family="${FAM}" font-size="${FS}" font-weight="600" text-anchor="middle" ${attrs}>${c}</text>`;
+const layer = (dy, attrs) => letters.map(l => txt(l.c, l.y + dy, attrs)).join("");
+const clip = letters.map(l => txt(l.c, l.y, "")).join("");
+
+document.getElementById("stage").innerHTML = `
+<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="vig" cx="0.5" cy="0.4" r="0.8">
+      <stop offset="0" stop-color="#191a1d"/><stop offset="0.7" stop-color="#0c0c0e"/><stop offset="1" stop-color="#050506"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0.15" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#F4DC86"/>
+      <stop offset="0.42" stop-color="${GOLD}"/>
+      <stop offset="0.8" stop-color="#AC871B"/>
+      <stop offset="1" stop-color="#8C6E12"/>
+    </linearGradient>
+    <pattern id="satin" width="7" height="7" patternTransform="rotate(56)" patternUnits="userSpaceOnUse">
+      <rect width="7" height="7" fill="none"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#F2DA84" stroke-width="1.5" opacity="0.55"/>
+    </pattern>
+    <pattern id="knit" width="5" height="9" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#000" stroke-width="2.4"/>
+      <line x1="2.5" y1="0" x2="2.5" y2="9" stroke="#1c1c1f" stroke-width="0.6"/>
+    </pattern>
+    <clipPath id="lc">${clip}</clipPath>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="4.5"/></filter>
+  </defs>
+
+  <!-- black French-terry ground -->
+  <rect width="${W}" height="${H}" fill="url(#vig)"/>
+  <rect width="${W}" height="${H}" fill="url(#knit)" opacity="0.4"/>
+
+  <!-- three-panel construction: side panels flank the center gusset -->
+  <rect x="${gx1}" y="0" width="${gx2 - gx1}" height="${H}" fill="#101013" opacity="0.6"/>
+  <line x1="${gx1}" y1="0" x2="${gx1}" y2="${H}" stroke="#0a0a0b" stroke-width="6"/>
+  <line x1="${gx2}" y1="0" x2="${gx2}" y2="${H}" stroke="#0a0a0b" stroke-width="6"/>
+  <line x1="${gx1 + 7}" y1="0" x2="${gx1 + 7}" y2="${H}" stroke="#33342f" stroke-width="1.3" stroke-dasharray="4 5"/>
+  <line x1="${gx2 - 7}" y1="0" x2="${gx2 - 7}" y2="${H}" stroke="#33342f" stroke-width="1.3" stroke-dasharray="4 5"/>
+
+  <!-- embroidered Ο Ω Ν: raised shadow, top-light bevel, gold fill, satin sheen -->
+  <g filter="url(#soft)">${layer(5, `fill="#2a1f00" opacity="0.6"`)}</g>
+  ${layer(-3, `fill="#F7E7A2" opacity="0.5"`)}
+  ${layer(0, `fill="url(#gold)"`)}
+  <g clip-path="url(#lc)">${`<rect width="${W}" height="${H}" fill="url(#satin)"/>`}</g>
+  ${layer(0, `fill="none" stroke="#7c5f10" stroke-width="1" opacity="0.5"`)}
+</svg>`;
+window.__ready = true;
+</script>

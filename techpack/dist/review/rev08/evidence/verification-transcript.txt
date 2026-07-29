@@ -1,0 +1,165 @@
+FRONI FRN-001 REVISION 08 - RAW VERIFICATION TRANSCRIPT
+
+Recorded 2026-07-16 Europe/Berlin
+
+
+
+===== FINAL SUCCESSFUL BUILD =====
+COMMAND: npm run build
+> froni-frn-001-techpack@2.0.0 build
+> node build.js
+
+Revision 08 source checks: 8 files
+Exact authority assets embedded: 4
+DOM audit: 14 pages, 1361 boxes, no failures
+Semantic views: back, back-artwork-locator, body-pom, front, front-artwork-locator, hood-cross-section, hood-down, hood-exploded, hood-rib-pom, hood-up, side
+Construction locations: armhole, cuff, hem, hood-attachment, neckline, rib-boundary, shoulder, side-seam, sleeve
+Temporary PDF inspection: 14 pages via unavailable
+Output: C:\cipher\techpack\dist\Froni_FRN-001_Tech_Pack_Rev08.pdf
+Size: 26155728 bytes
+
+===== CURRENT TEST RUN =====
+COMMAND: npm test
+
+> froni-frn-001-techpack@2.0.0 test
+> node --test tests/*.test.js
+
+✔ declares the complete Revision 07 source set (2.3416ms)
+✔ uses consistent Revision 07 document control (2.3735ms)
+✔ contains only current order, contact, neck, and decoration decisions (1.0444ms)
+✔ retains every approved A to M target and separates new POM dispositions (0.9829ms)
+✔ covers construction, materials, responsibilities, stages, and factory response (1.0761ms)
+✔ records exact authority roles and explicit missing production assets (1.2562ms)
+✔ draws and keys every new POM method without invented hood notches (0.5652ms)
+✔ prints a vertical Greek locator and visible construction-location legend (0.3537ms)
+✔ active Revision 07 sources contain no stale canon or prohibited copy (2.3685ms)
+✔ page and section headings use sentence or title case (1.0128ms)
+✔ selects a complete Revision 08 source set (2.4921ms)
+✔ runs both retained Revision 07 and active Revision 08 tests (0.3018ms)
+✔ uses Revision 08 document control without changing page order (3.626ms)
+✔ embeds the supplied interior hood reference under the required filename (13.2585ms)
+✔ adds the interior reference block without altering its specification bullets (1.4215ms)
+✔ redraws front, back, and side flats as full-length set-in sleeve views (0.4297ms)
+✔ uses coded or outside labels on every affected flat and schematic (2.532ms)
+✔ enforces the plain register on every rendered page (6.8772ms)
+✔ preserves all numeric specification data (1.9611ms)
+✔ preserves factory-cost causation for embroidery execution faults (0.7293ms)
+✔ states the no-new-target requirement once without doubled emphasis (0.2718ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 118.4128
+
+===== JAVASCRIPT SYNTAX CHECKS =====
+COMMAND: node --check <active files>
+build.js: exit 0
+src/rev08/config.js: exit 0
+src/rev08/flats.js: exit 0
+src/rev08/diagrams.js: exit 0
+src/rev08/render.js: exit 0
+tests/rev08.test.js: exit 0
+
+===== BANNED REGISTER SWEEP =====
+COMMAND: rg -n -i --fixed-strings -- <term> build.js src/rev08
+em dash character: zero matches
+canonical: zero matches
+please: zero matches
+kindly: zero matches
+thank you: zero matches
+we would appreciate: zero matches
+it is important: zero matches
+please note: zero matches
+note that: zero matches
+in order to: zero matches
+ensure: zero matches
+comprehensive: zero matches
+robust: zero matches
+seamless: zero matches
+leverage: zero matches
+utilize: zero matches
+keep in mind: zero matches
+additionally: zero matches
+furthermore: zero matches
+
+===== RENDERED QUESTION-MARK SCAN =====
+COMMAND: Playwright DOM scan of all .page elements
+Page 01: 0 question mark(s)
+Page 02: 0 question mark(s)
+Page 03: 0 question mark(s)
+Page 04: 0 question mark(s)
+Page 05: 0 question mark(s)
+Page 06: 0 question mark(s)
+Page 07: 0 question mark(s)
+Page 08: 0 question mark(s)
+Page 09: 0 question mark(s)
+Page 10: 0 question mark(s)
+Page 11: 0 question mark(s)
+Page 12: 0 question mark(s)
+Page 13: 0 question mark(s)
+Page 14: 0 question mark(s)
+Outside page 14: 0 question mark(s)
+
+===== INTERIOR ASSET IDENTITY =====
+COMMAND: SHA-256 supplied file vs embedded asset
+Supplied: C:\Users\tomaf\Downloads\comp_hood.jpeg
+Embedded: C:\cipher\techpack\src\rev08\assets\Froni_Edition_One_IAM_Verse.jpg
+Supplied SHA-256: E5686F731F85D03FD98116AA3FF4F3506F60DFDB52EFB05F6F66E056B0E04A94
+Embedded SHA-256: E5686F731F85D03FD98116AA3FF4F3506F60DFDB52EFB05F6F66E056B0E04A94
+Byte-identical: true
+Manifest dimensions: 4096x4096
+Manifest filename: assets/Froni_Edition_One_IAM_Verse.jpg
+
+===== GIT DIFF STAT =====
+COMMAND: git diff --stat -- techpack
+(no tracked diff output; techpack is untracked)
+
+===== GIT STATUS =====
+COMMAND: git status --short -- techpack
+?? techpack/
+
+===== REV07 TO REV08 NO-INDEX STAT =====
+COMMAND: git diff --no-index --stat -- techpack/src/rev07 techpack/src/rev08
+ .../rev08/assets/Froni_Edition_One_IAM_Verse.jpg   | Bin 0 -> 8712169 bytes
+ techpack/src/{rev07 => rev08}/assets.json          |  16 +++-
+ techpack/src/{rev07 => rev08}/config.js            |  82 +++++++++++----------
+ techpack/src/{rev07 => rev08}/diagrams.js          |  32 ++++----
+ techpack/src/{rev07 => rev08}/flats.js             |  76 +++++++++----------
+ techpack/src/{rev07 => rev08}/render.js            |  75 ++++++++++++++-----
+ techpack/src/{rev07 => rev08}/styles.css           |  21 ++++++
+ techpack/src/{rev07 => rev08}/template.html        |   2 +-
+ 8 files changed, 191 insertions(+), 113 deletions(-)
+warning: in the working copy of 'techpack/src/rev07/assets.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/assets.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev07/config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev07/diagrams.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/diagrams.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev07/flats.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/flats.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev07/render.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/render.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev07/styles.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/styles.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev07/template.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/template.html', LF will be replaced by CRLF the next time Git touches it
+
+===== SELECTED DATA NUMERIC CHECK =====
+COMMAND: numeric token sequence comparison for pages 7, 8, 9, and 11
+Revision 07 numeric token count: 117
+Revision 08 numeric token count: 117
+Numeric token sequences identical: true
+
+===== DELIVERABLE FRESHNESS AND PNG PATHS =====
+COMMAND: filesystem stat
+PDF: C:\cipher\techpack\dist\Froni_FRN-001_Tech_Pack_Rev08.pdf
+PDF bytes: 26155728
+PDF modified: 2026-07-16T18:55:51.837Z
+Latest active source modified: 2026-07-16T18:55:21.849Z
+PDF newer than active source: true
+PNG page 3: C:\cipher\techpack\dist\review\rev08\Froni_FRN-001_Rev08_page-03.png
+PNG page 4: C:\cipher\techpack\dist\review\rev08\Froni_FRN-001_Rev08_page-04.png
+PNG page 11: C:\cipher\techpack\dist\review\rev08\Froni_FRN-001_Rev08_page-11.png

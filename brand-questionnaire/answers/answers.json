@@ -1,0 +1,4435 @@
+{
+  "schemaVersion": 1,
+  "questionnaireVersion": "2026-07-29.1",
+  "startedAt": "2026-07-29T11:17:44.3455178Z",
+  "updatedAt": "2026-07-29T13:43:43.681Z",
+  "responses": {
+    "ferdinand-reason": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "Part of my responsibility in faith",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:33:41.399Z"
+    },
+    "ferdinand-motives": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [
+        "option_1",
+        "option_5",
+        "option_2",
+        "option_3",
+        "option_6",
+        "option_4",
+        "option_7"
+      ],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:34:01.497Z"
+    },
+    "ferdinand-obligation": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_5",
+        "option_6",
+        "option_7"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:34:33.403Z"
+    },
+    "ferdinand-success-private": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:34:47.915Z"
+    },
+    "ferdinand-success-financial": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:35:06.109Z"
+    },
+    "ferdinand-pride": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_3",
+        "option_4",
+        "option_5"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:35:26.278Z"
+    },
+    "ferdinand-fear": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_5"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:35:48.347Z"
+    },
+    "ferdinand-risk": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "Depends on what you mean, we will make a Jerusalem cross even if people say crusades bad, or audience we will listen too",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:37:12.254Z"
+    },
+    "ferdinand-patience": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:37:29.626Z"
+    },
+    "ferdinand-decision-mode": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "Not only this option though",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:38:12.174Z"
+    },
+    "ferdinand-taste-sources": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:38:23.517Z"
+    },
+    "ferdinand-repulsion": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_2",
+        "option_3",
+        "option_4",
+        "option_7",
+        "option_8",
+        "option_9"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:38:50.073Z"
+    },
+    "ferdinand-visibility": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:39:03.027Z"
+    },
+    "ferdinand-visible-where": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:39:15.332Z"
+    },
+    "ferdinand-separation": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:39:32.042Z"
+    },
+    "ferdinand-private": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_4",
+        "option_5",
+        "option_6",
+        "option_1",
+        "option_2"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:39:44.202Z"
+    },
+    "ferdinand-role": {
+      "status": "undecided",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:40:12.874Z"
+    },
+    "ferdinand-nonnegotiable-life": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_7",
+        "option_5"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:40:48.080Z"
+    },
+    "faith-role": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:40:59.728Z"
+    },
+    "faith-authorities": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_7",
+        "option_8"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:41:18.004Z"
+    },
+    "faith-review": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:41:28.803Z"
+    },
+    "faith-boundaries": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_5",
+        "option_6"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:41:46.315Z"
+    },
+    "faith-commerce": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:43:03.988Z"
+    },
+    "faith-commercial-red-lines": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_3",
+        "option_2",
+        "option_4",
+        "option_6"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:43:23.366Z"
+    },
+    "faith-devotional-status": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:43:49.539Z"
+    },
+    "faith-blessing": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:44:11.365Z"
+    },
+    "faith-making-meaning": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:44:23.092Z"
+    },
+    "faith-explanation-depth": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:44:34.968Z"
+    },
+    "faith-interpretation": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_2",
+        "option_4"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:44:49.942Z"
+    },
+    "faith-communion": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:44:57.783Z"
+    },
+    "faith-nonchristian": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:45:16.979Z"
+    },
+    "faith-subjects": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4",
+        "option_5",
+        "option_6",
+        "option_7",
+        "option_8"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:45:38.395Z"
+    },
+    "faith-symbol-rule": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:46:04.324Z"
+    },
+    "faith-symbol-exceptions": {
+      "status": "unanswered",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": null
+    },
+    "faith-scripture": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:46:14.400Z"
+    },
+    "faith-sacred-damage": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:46:34.851Z"
+    },
+    "faith-feasts": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:46:51.001Z"
+    },
+    "faith-date-feast": {
+      "status": "undecided",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:47:22.101Z"
+    },
+    "faith-prayer": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:47:38.641Z"
+    },
+    "faith-harm-response": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_7",
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:47:56.874Z"
+    },
+    "origin-start": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:48:23.941Z"
+    },
+    "origin-before": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_3"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:48:39.321Z"
+    },
+    "origin-name": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:48:56.749Z"
+    },
+    "origin-name-public": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:49:10.092Z"
+    },
+    "origin-edition-one-forces": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_6",
+        "option_7"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:49:27.469Z"
+    },
+    "origin-edition-one-status": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:49:41.301Z"
+    },
+    "origin-corrections": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_7"
+      ],
+      "ranking": [],
+      "notes": "This needs to be non combative though",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:50:23.981Z"
+    },
+    "origin-against": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:50:51.787Z"
+    },
+    "origin-places": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_5",
+        "option_2"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:51:13.740Z"
+    },
+    "origin-biography": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:51:29.497Z"
+    },
+    "origin-tone": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:51:46.022Z"
+    },
+    "origin-evidence": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_4",
+        "option_6",
+        "option_1",
+        "option_2"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:52:00.702Z"
+    },
+    "origin-myth": {
+      "status": "undecided",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:52:33.582Z"
+    },
+    "origin-unanswered": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_6"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:52:51.603Z"
+    },
+    "house-category": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "Also fashion",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:53:24.398Z"
+    },
+    "house-neighbor-categories": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_8",
+        "option_10"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:53:43.542Z"
+    },
+    "house-center": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:53:51.955Z"
+    },
+    "house-object-institution": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:54:04.211Z"
+    },
+    "house-values": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_6",
+        "option_5",
+        "option_4",
+        "option_7",
+        "option_8"
+      ],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:54:24.846Z"
+    },
+    "house-tradition-new": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "Wdym?",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:54:56.721Z"
+    },
+    "house-austere-warm": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:55:04.149Z"
+    },
+    "house-quiet-expressive": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:55:12.872Z"
+    },
+    "house-seriousness": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:55:22.894Z"
+    },
+    "house-grave-not-loud": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:55:29.874Z"
+    },
+    "house-one-work": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:55:40.452Z"
+    },
+    "house-numbered-editions": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:56:01.217Z"
+    },
+    "house-wearer-receives": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "In the sense of not screaming logos",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:56:27.071Z"
+    },
+    "house-nouns-numbers": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:56:39.128Z"
+    },
+    "house-absence": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:56:50.251Z"
+    },
+    "house-recognition": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:57:39.031Z"
+    },
+    "house-consistency": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_7"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:57:52.832Z"
+    },
+    "house-change": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:58:06.196Z"
+    },
+    "house-scale-character": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:58:19.143Z"
+    },
+    "house-never-become": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4",
+        "option_5",
+        "option_6",
+        "option_7",
+        "option_8"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:58:35.987Z"
+    },
+    "future-horizon": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:58:44.598Z"
+    },
+    "future-five-years": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_8",
+        "option_10",
+        "option_5"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:59:12.295Z"
+    },
+    "future-cadence": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:59:28.328Z"
+    },
+    "future-one-at-time": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:59:42.547Z"
+    },
+    "future-forms": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_4",
+        "option_5"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T11:59:53.422Z"
+    },
+    "future-clothing-center": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:00:04.281Z"
+    },
+    "future-clothing-range": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4",
+        "option_5",
+        "option_6",
+        "option_7",
+        "option_8"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:01:00.750Z"
+    },
+    "future-permanent-products": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:01:19.366Z"
+    },
+    "future-archive": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:01:39.734Z"
+    },
+    "future-physical": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_2",
+        "option_8"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:01:57.580Z"
+    },
+    "future-retail": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:02:07.710Z"
+    },
+    "future-institutions": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_6",
+        "option_5",
+        "option_2",
+        "option_1"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:02:20.987Z"
+    },
+    "future-school": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:02:31.206Z"
+    },
+    "future-subbrands": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:02:56.336Z"
+    },
+    "future-successor": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:03:05.200Z"
+    },
+    "future-threats": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_7",
+        "option_6",
+        "option_3"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:03:30.135Z"
+    },
+    "future-ending": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:03:42.258Z"
+    },
+    "future-research-needs": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [
+        "option_2",
+        "option_1",
+        "option_3",
+        "option_5",
+        "option_4",
+        "option_6",
+        "option_7"
+      ],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:04:15.212Z"
+    },
+    "people-persona": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:04:32.783Z"
+    },
+    "people-relevance": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_4",
+        "option_5",
+        "option_6"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:04:48.157Z"
+    },
+    "people-gender": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:05:06.964Z"
+    },
+    "people-age": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:05:20.691Z"
+    },
+    "people-faith-level": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:05:37.752Z"
+    },
+    "people-cultures": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_4"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:06:02.036Z"
+    },
+    "people-income": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:06:20.287Z"
+    },
+    "people-access-forms": {
+      "status": "undecided",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:06:45.100Z"
+    },
+    "people-belonging": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:06:59.857Z"
+    },
+    "people-community-forms": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_2",
+        "option_3",
+        "option_6"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:07:16.647Z"
+    },
+    "people-no-community-claim": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:07:32.201Z"
+    },
+    "people-status": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:07:47.723Z"
+    },
+    "people-celebrity": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:08:04.799Z"
+    },
+    "people-desired-response": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_3",
+        "option_5"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:08:18.405Z"
+    },
+    "people-misreadings": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4",
+        "option_5",
+        "option_6",
+        "option_7",
+        "option_8"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:08:41.894Z"
+    },
+    "people-criticism": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:08:54.243Z"
+    },
+    "people-offense": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:09:24.806Z"
+    },
+    "people-press": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:09:35.687Z"
+    },
+    "people-data": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:09:55.221Z"
+    },
+    "people-real-evidence": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_2",
+        "option_3",
+        "option_4",
+        "option_7",
+        "option_8"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:10:12.291Z"
+    },
+    "commerce-purpose-profit": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:10:23.374Z"
+    },
+    "commerce-priorities": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [
+        "option_1",
+        "option_2",
+        "option_5",
+        "option_6",
+        "option_4",
+        "option_3",
+        "option_7"
+      ],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:10:46.296Z"
+    },
+    "commerce-growth": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:10:58.619Z"
+    },
+    "commerce-investment": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:11:08.467Z"
+    },
+    "commerce-price-basis": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:11:28.494Z"
+    },
+    "commerce-never-quality": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:11:42.373Z"
+    },
+    "commerce-no-price-justify": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:11:51.070Z"
+    },
+    "commerce-transparency": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:11:58.181Z"
+    },
+    "commerce-discounts": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:12:04.781Z"
+    },
+    "commerce-access-without-discount": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_2"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:12:16.091Z"
+    },
+    "commerce-delivered": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:12:27.475Z"
+    },
+    "commerce-editions": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:12:37.202Z"
+    },
+    "commerce-cap": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:12:57.448Z"
+    },
+    "commerce-sellout": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:13:06.628Z"
+    },
+    "commerce-provenance-scarcity": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:13:18.694Z"
+    },
+    "commerce-never-remade": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:13:30.098Z"
+    },
+    "commerce-numbering": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:13:37.943Z"
+    },
+    "commerce-made-to-order": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:13:46.774Z"
+    },
+    "commerce-inventory": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_4"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:13:54.819Z"
+    },
+    "commerce-distribution": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:14:07.107Z"
+    },
+    "commerce-markets": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:14:24.715Z"
+    },
+    "commerce-resale": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:14:46.047Z"
+    },
+    "commerce-performance": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:14:57.185Z"
+    },
+    "commitments-role": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:17:33.911Z"
+    },
+    "commitments-publicity": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:17:45.770Z"
+    },
+    "commitments-proof": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:17:58.176Z"
+    },
+    "commitments-limit": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:18:04.795Z"
+    },
+    "commitment-profit-ten-percent": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {
+        "form": [
+          "option_2"
+        ],
+        "horizon": "option_3"
+      },
+      "updatedAt": "2026-07-29T12:18:41.842Z"
+    },
+    "commitment-revenue-percent": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:19:23.116Z"
+    },
+    "commitment-minimum-giving": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {
+        "form": [
+          "option_5"
+        ],
+        "horizon": "option_4"
+      },
+      "updatedAt": "2026-07-29T12:19:52.113Z"
+    },
+    "commitment-customer-charity": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {
+        "horizon": "option_2"
+      },
+      "updatedAt": "2026-07-29T12:20:17.703Z"
+    },
+    "commitment-house-charity": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:20:33.904Z"
+    },
+    "commitment-work-linked-giving": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:20:50.137Z"
+    },
+    "commitment-anonymous-giving": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {
+        "form": [
+          "option_5"
+        ],
+        "horizon": "option_4"
+      },
+      "updatedAt": "2026-07-29T12:21:04.405Z"
+    },
+    "commitment-impact-record": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:21:12.896Z"
+    },
+    "commitment-reserved-gifts": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {
+        "horizon": "option_1",
+        "form": [
+          "option_1"
+        ]
+      },
+      "updatedAt": "2026-07-29T12:21:26.013Z"
+    },
+    "commitment-conservation": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {
+        "horizon": "option_3",
+        "form": [
+          "option_5"
+        ]
+      },
+      "updatedAt": "2026-07-29T12:21:42.091Z"
+    },
+    "commitment-apprenticeship": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:21:52.064Z"
+    },
+    "commitment-gift-every-order": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {
+        "horizon": "option_2",
+        "form": [
+          "option_1"
+        ]
+      },
+      "updatedAt": "2026-07-29T12:22:06.446Z"
+    },
+    "commitment-gift-edition-one": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:22:50.343Z"
+    },
+    "commitment-hand-note": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:23:00.912Z"
+    },
+    "commitment-making-date": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:23:17.123Z"
+    },
+    "commitment-maker-credit": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:23:26.891Z"
+    },
+    "commitment-spare-material": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:23:34.570Z"
+    },
+    "commitment-human-reply": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:23:49.647Z"
+    },
+    "commitment-no-unpaid-work": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:24:08.754Z"
+    },
+    "commitment-fair-deposits": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:24:30.443Z"
+    },
+    "commitment-living-wage": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:24:39.694Z"
+    },
+    "commitment-supplier-continuity": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:24:48.469Z"
+    },
+    "commitment-artist-rights": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:24:58.093Z"
+    },
+    "commitment-theological-counsel": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:25:06.944Z"
+    },
+    "commitment-repair": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:25:17.872Z"
+    },
+    "commitment-lifetime-repair": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:25:25.750Z"
+    },
+    "commitment-defect-remedy": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:25:34.901Z"
+    },
+    "commitment-care-support": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:25:46.709Z"
+    },
+    "commitment-authentication": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:25:56.877Z"
+    },
+    "commitment-take-back": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:26:02.978Z"
+    },
+    "commitment-no-destruction": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:26:09.291Z"
+    },
+    "commitment-archive": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:26:22.448Z"
+    },
+    "commitment-provenance": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:26:41.527Z"
+    },
+    "commitment-corrections": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:26:51.210Z"
+    },
+    "commitment-no-false-cap": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:27:08.653Z"
+    },
+    "commitment-data-minimum": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:27:16.770Z"
+    },
+    "commitment-accessibility": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:27:30.160Z"
+    },
+    "commitment-packaging-waste": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:27:38.093Z"
+    },
+    "commitment-plastic": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:27:55.661Z"
+    },
+    "commitment-carbon": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:28:03.011Z"
+    },
+    "commitment-local-best": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:28:14.356Z"
+    },
+    "commitments-missing": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_9"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:28:21.247Z"
+    },
+    "commitments-investigate": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [
+        "option_1",
+        "option_5",
+        "option_3",
+        "option_4",
+        "option_2",
+        "option_7",
+        "option_6"
+      ],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:28:43.128Z"
+    },
+    "commitments-failure": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:28:53.510Z"
+    },
+    "commitments-constitution": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:29:01.073Z"
+    },
+    "work-difference": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:29:10.917Z"
+    },
+    "work-universal": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4",
+        "option_8"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:29:32.906Z"
+    },
+    "work-detail": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:29:40.094Z"
+    },
+    "work-standard-growth": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:29:54.813Z"
+    },
+    "work-detail-domains": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_6",
+        "option_10",
+        "option_9"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:30:09.808Z"
+    },
+    "work-invisible": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:30:21.877Z"
+    },
+    "work-signature": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:30:35.023Z"
+    },
+    "work-judgment": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_7",
+        "option_8"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:30:48.759Z"
+    },
+    "work-sacred-required": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:30:55.067Z"
+    },
+    "work-source": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:31:00.067Z"
+    },
+    "work-transformation": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:31:09.989Z"
+    },
+    "work-function-expression": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:31:19.558Z"
+    },
+    "work-comfort": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:31:29.207Z"
+    },
+    "work-durability": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:31:42.411Z"
+    },
+    "work-ageing": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:31:52.337Z"
+    },
+    "work-imperfection": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:32:06.817Z"
+    },
+    "work-prototype": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:32:13.836Z"
+    },
+    "work-maker": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:32:25.116Z"
+    },
+    "work-cost-compromise": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:32:43.025Z"
+    },
+    "work-edition-one-inheritance": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_5",
+        "option_7"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:33:01.667Z"
+    },
+    "makers-founder-authority": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:35:59.544Z"
+    },
+    "makers-needed-voices": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_4",
+        "option_5",
+        "option_3",
+        "option_9"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:36:15.672Z"
+    },
+    "makers-collaboration-model": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:36:28.039Z"
+    },
+    "makers-credit": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:36:39.462Z"
+    },
+    "makers-factory-credit": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T12:36:46.270Z"
+    },
+    "makers-ownership": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:06:47.941Z"
+    },
+    "makers-creator-rights": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_6"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:06:57.971Z"
+    },
+    "makers-compensation": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:07:05.709Z"
+    },
+    "makers-samples": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:07:21.521Z"
+    },
+    "makers-relationship-length": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:07:29.047Z"
+    },
+    "makers-geography": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "Only european, western",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:07:47.988Z"
+    },
+    "makers-small-large": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:07:56.407Z"
+    },
+    "makers-due-diligence": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_6",
+        "option_8",
+        "option_7"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:08:12.275Z"
+    },
+    "makers-disagreement": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:08:19.468Z"
+    },
+    "makers-veto": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:08:29.048Z"
+    },
+    "makers-institution-endorsement": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:08:39.754Z"
+    },
+    "makers-famous-collab": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:08:46.779Z"
+    },
+    "makers-record": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_2",
+        "option_4",
+        "option_6",
+        "option_3"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:09:07.182Z"
+    },
+    "experience-priorities": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [
+        "option_2",
+        "option_1",
+        "option_4",
+        "option_5",
+        "option_6",
+        "option_7",
+        "option_3",
+        "option_8"
+      ],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:09:22.188Z"
+    },
+    "experience-feeling": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:09:40.563Z"
+    },
+    "experience-ceremony": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:09:46.588Z"
+    },
+    "experience-surprise": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:09:51.180Z"
+    },
+    "experience-first-contact": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:10:19.921Z"
+    },
+    "experience-email": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:10:27.265Z"
+    },
+    "experience-cadence": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:10:37.759Z"
+    },
+    "experience-access": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:10:42.599Z"
+    },
+    "experience-product-page": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:10:56.825Z"
+    },
+    "experience-proof": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_3",
+        "option_2",
+        "option_4",
+        "option_9"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:11:12.531Z"
+    },
+    "experience-checkout": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:11:19.685Z"
+    },
+    "experience-checkout-choices": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_4",
+        "option_3",
+        "option_6",
+        "option_5"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:11:30.667Z"
+    },
+    "experience-wait": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "depends on what you mean, we state how long it will take, why, give a short overview of the progress, and if you mean order tracking, yes, fully, accurately, and save it so they can close the site and come back with the order there",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:12:33.370Z"
+    },
+    "experience-delay": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:12:44.722Z"
+    },
+    "experience-package": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:12:58.542Z"
+    },
+    "experience-unboxing": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:13:05.675Z"
+    },
+    "experience-in-box": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_4"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:13:12.379Z"
+    },
+    "experience-ownership": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "not too much though",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:13:44.278Z"
+    },
+    "experience-service-tone": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:13:49.727Z"
+    },
+    "experience-returns": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:13:56.823Z"
+    },
+    "experience-authenticity": {
+      "status": "undecided",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:14:25.288Z"
+    },
+    "experience-international": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_4",
+        "option_2",
+        "option_1",
+        "option_5",
+        "option_6",
+        "option_7"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:14:40.973Z"
+    },
+    "language-doc-status": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:14:51.121Z"
+    },
+    "language-doc-keep": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_4",
+        "option_6",
+        "option_8",
+        "option_5"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:15:12.969Z"
+    },
+    "language-speaker": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:15:21.808Z"
+    },
+    "language-person": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:15:34.590Z"
+    },
+    "language-human-institutional": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:15:46.744Z"
+    },
+    "language-plain-poetic": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:16:08.044Z"
+    },
+    "language-terse-expansive": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:16:16.230Z"
+    },
+    "language-cold-warm": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:16:29.030Z"
+    },
+    "language-formal-colloquial": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:16:34.802Z"
+    },
+    "language-effects": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_6",
+        "option_8",
+        "option_7"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:16:45.339Z"
+    },
+    "language-avoid-effects": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_2",
+        "option_4",
+        "option_6",
+        "option_8",
+        "option_3",
+        "option_1",
+        "option_7"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:16:59.589Z"
+    },
+    "language-signage": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:17:13.147Z"
+    },
+    "language-never-describes": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:17:18.292Z"
+    },
+    "language-one-idea": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "i dont know what the fuck that even means",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:17:39.251Z"
+    },
+    "language-adjectives": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:17:48.231Z"
+    },
+    "language-numbers": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:17:53.467Z"
+    },
+    "language-quality-word": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:18:00.780Z"
+    },
+    "language-luxury-premium": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:18:18.455Z"
+    },
+    "language-edition-drop": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:18:32.413Z"
+    },
+    "language-religious-terms": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:18:40.872Z"
+    },
+    "language-greek": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:18:46.297Z"
+    },
+    "language-albanian": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:18:53.368Z"
+    },
+    "language-german": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:19:04.384Z"
+    },
+    "language-english": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:19:12.405Z"
+    },
+    "language-translation": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:19:18.440Z"
+    },
+    "language-humor": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:19:28.829Z"
+    },
+    "language-emotion": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:19:33.908Z"
+    },
+    "language-persuasion": {
+      "status": "undecided",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:20:00.501Z"
+    },
+    "language-banned-buckets": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_4",
+        "option_6",
+        "option_3",
+        "option_5",
+        "option_7",
+        "option_8"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:20:21.508Z"
+    },
+    "language-support": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:20:32.390Z"
+    },
+    "language-long-form": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "this, and the top ones too",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:20:57.825Z"
+    },
+    "visual-current-reset": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:21:08.338Z"
+    },
+    "visual-logo-fixed": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:21:24.523Z"
+    },
+    "visual-symbol-core": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:21:44.426Z"
+    },
+    "visual-first-impression": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [
+        "option_7",
+        "option_4",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_5",
+        "option_6",
+        "option_8"
+      ],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:22:04.576Z"
+    },
+    "visual-not-feel": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_4",
+        "option_6",
+        "option_8",
+        "option_3",
+        "option_5",
+        "option_7"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:22:24.851Z"
+    },
+    "visual-empty-dense": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:22:32.648Z"
+    },
+    "visual-monumental-intimate": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:22:38.277Z"
+    },
+    "visual-polished-material": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:22:43.576Z"
+    },
+    "visual-space-use": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:22:54.719Z"
+    },
+    "visual-layout-family": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:25:48.465Z"
+    },
+    "visual-symmetry": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:23:16.802Z"
+    },
+    "visual-grid": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:23:25.194Z"
+    },
+    "visual-graphic-tools": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_6",
+        "option_5",
+        "option_7",
+        "option_3"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:23:38.526Z"
+    },
+    "visual-ornament": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:23:47.526Z"
+    },
+    "visual-color-reset": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:24:02.028Z"
+    },
+    "visual-color-volume": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:24:11.600Z"
+    },
+    "visual-color-relationship": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:25:18.627Z"
+    },
+    "visual-color-regions": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_7",
+        "option_2"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:25:27.744Z"
+    },
+    "visual-black": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:25:55.387Z"
+    },
+    "visual-metallic-color": {
+      "status": "undecided",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:26:05.878Z"
+    },
+    "visual-color-symbolism": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:26:13.229Z"
+    },
+    "visual-type-current": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:26:28.350Z"
+    },
+    "visual-type-primary": {
+      "status": "answered",
+      "choice": "option_6",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:26:48.224Z"
+    },
+    "visual-type-contrast": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:27:01.911Z"
+    },
+    "visual-type-classic-current": {
+      "status": "not_applicable",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:27:11.590Z"
+    },
+    "visual-type-density": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:27:26.229Z"
+    },
+    "visual-type-case": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:27:35.095Z"
+    },
+    "visual-type-numerals": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:27:43.930Z"
+    },
+    "visual-type-greek": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:27:49.891Z"
+    },
+    "visual-type-tests": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_4",
+        "option_3",
+        "option_1",
+        "option_5",
+        "option_8",
+        "option_9"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:28:01.985Z"
+    },
+    "visual-photography-role": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:28:13.813Z"
+    },
+    "visual-photography-world": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:28:23.132Z"
+    },
+    "visual-photo-human": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:28:34.365Z"
+    },
+    "visual-sacred-image": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:28:45.085Z"
+    },
+    "visual-cropping": {
+      "status": "undecided",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:29:01.988Z"
+    },
+    "visual-film": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "All of these could be it",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:29:23.778Z"
+    },
+    "visual-motion": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:29:38.584Z"
+    },
+    "visual-sound": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:29:45.689Z"
+    },
+    "visual-material-feelings": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_8",
+        "option_9"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:29:59.997Z"
+    },
+    "visual-paper": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "I like smooth and work specific too",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:30:27.081Z"
+    },
+    "visual-print": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:30:39.208Z"
+    },
+    "visual-age": {
+      "status": "undecided",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:30:48.646Z"
+    },
+    "visual-reference-upload": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_7",
+        "option_2"
+      ],
+      "ranking": [],
+      "notes": "this will be most of the research, like 70%",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:31:21.638Z"
+    },
+    "applications-priority": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [
+        "option_1",
+        "option_7",
+        "option_3",
+        "option_4",
+        "option_2",
+        "option_5",
+        "option_6",
+        "option_8"
+      ],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:31:41.221Z"
+    },
+    "applications-site-role": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:31:51.551Z"
+    },
+    "applications-site-states": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:32:02.247Z"
+    },
+    "applications-site-content": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_4",
+        "option_6",
+        "option_8",
+        "option_7"
+      ],
+      "ranking": [],
+      "notes": "not all of these can be there on day one though",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:32:24.580Z"
+    },
+    "applications-email-visual": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:32:33.262Z"
+    },
+    "applications-social": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:32:45.833Z"
+    },
+    "applications-platform": {
+      "status": "undecided",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:33:00.136Z"
+    },
+    "applications-product-mark": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:33:31.362Z"
+    },
+    "applications-labels": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:33:37.669Z"
+    },
+    "applications-package-system": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:33:47.409Z"
+    },
+    "applications-certificate": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:33:54.875Z"
+    },
+    "applications-record-tools": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_2",
+        "option_8",
+        "option_7",
+        "option_5",
+        "option_1"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:34:12.615Z"
+    },
+    "applications-legal": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:34:19.194Z"
+    },
+    "applications-service": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:34:26.897Z"
+    },
+    "applications-physical-future": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_7",
+        "option_5",
+        "option_3",
+        "option_1",
+        "option_2",
+        "option_4",
+        "option_8",
+        "option_6"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:34:43.801Z"
+    },
+    "applications-co-brand": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:34:53.890Z"
+    },
+    "applications-prototypes": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "I mean, all of these, but the brand in terms of the website can be done way faster and easier than the packaging",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:35:39.338Z"
+    },
+    "applications-exceptions": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:35:49.038Z"
+    },
+    "pressure-sacred-commerce": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:35:55.586Z"
+    },
+    "pressure-quiet-discovery": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:36:05.474Z"
+    },
+    "pressure-standard-access": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:36:26.427Z"
+    },
+    "pressure-small-impact": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:36:39.018Z"
+    },
+    "pressure-founder-house": {
+      "status": "answered",
+      "choice": "option_2",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:36:47.766Z"
+    },
+    "pressure-catholic-broad": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:36:54.660Z"
+    },
+    "pressure-charity-marketing": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:37:05.528Z"
+    },
+    "pressure-customer-charity": {
+      "status": "answered",
+      "choice": "option_3",
+      "choices": [],
+      "ranking": [],
+      "notes": "they only change it if they want to, the default option would be \"Froni's choice\"",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:38:00.121Z"
+    },
+    "pressure-gift-expectation": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:38:11.154Z"
+    },
+    "pressure-coherence-freedom": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:38:29.593Z"
+    },
+    "pressure-best-maker-place": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:38:44.182Z"
+    },
+    "pressure-sustainability-durability": {
+      "status": "skipped",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:39:04.950Z"
+    },
+    "pressure-privacy-service": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:39:18.948Z"
+    },
+    "pressure-speed-exactness": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:39:31.608Z"
+    },
+    "pressure-public-failure": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_1",
+        "option_2",
+        "option_8",
+        "option_5",
+        "option_4",
+        "option_3",
+        "option_6",
+        "option_7"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:40:02.622Z"
+    },
+    "pressure-product-failure": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:40:10.807Z"
+    },
+    "pressure-unsold": {
+      "status": "answered",
+      "choice": "option_5",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:40:26.733Z"
+    },
+    "pressure-viral": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:40:39.799Z"
+    },
+    "pressure-copying": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:40:47.986Z"
+    },
+    "pressure-demand": {
+      "status": "answered",
+      "choice": "option_4",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:41:01.305Z"
+    },
+    "pressure-unknowns": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_4",
+        "option_10"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:41:50.215Z"
+    },
+    "pressure-followup": {
+      "status": "answered",
+      "choice": null,
+      "choices": [],
+      "ranking": [
+        "option_9",
+        "option_3",
+        "option_4",
+        "option_2",
+        "option_7",
+        "option_1",
+        "option_5",
+        "option_6",
+        "option_8"
+      ],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:42:24.183Z"
+    },
+    "pressure-research-gate": {
+      "status": "answered",
+      "choice": "option_1",
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:42:42.177Z"
+    },
+    "pressure-research-domains": {
+      "status": "answered",
+      "choice": null,
+      "choices": [
+        "option_3",
+        "option_7",
+        "option_2"
+      ],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:43:16.086Z"
+    },
+    "pressure-final-instinct": {
+      "status": "undecided",
+      "choice": null,
+      "choices": [],
+      "ranking": [],
+      "notes": "",
+      "links": [],
+      "attachments": [],
+      "supplemental": {},
+      "updatedAt": "2026-07-29T13:43:43.028Z"
+    }
+  }
+}

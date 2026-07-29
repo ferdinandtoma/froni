@@ -1,0 +1,107 @@
+{
+  "frontAuthority": {
+    "role": "Front design reference photograph",
+    "sourcePath": "C:\\froni\\reference\\Froni_Edition_One_Front.png",
+    "embeddedPath": "assets/Froni_Edition_One_Front.png",
+    "mimeType": "image/png",
+    "width": 500,
+    "height": 603,
+    "sha256": "68AD1490D3502161214FE31EA9041F8C675671DD470AE1B7A581DC6AE81154BB",
+    "available": true
+  },
+  "backArtworkAuthority": {
+    "role": "Saint Catherine's scan",
+    "sourcePath": "C:\\froni\\reference\\pantocratorStCatherines_2023x3774.jpg",
+    "embeddedPath": "assets/pantocratorStCatherines_2023x3774.jpg",
+    "mimeType": "image/jpeg",
+    "width": 2023,
+    "height": 3774,
+    "sha256": [
+      "FBD62B3D2115",
+      "0E672F00701B39DF304A3D5B9EFA648F7BBC95D73FD55AFB427B"
+    ],
+    "available": true
+  },
+  "hoodExteriorReference": {
+    "role": "Exterior hood embroidery reference photograph",
+    "sourcePath": "C:\\froni\\reference\\Froni_Edition_One_IAM.jpg",
+    "embeddedPath": "assets/Froni_Edition_One_IAM.jpg",
+    "mimeType": "image/jpeg",
+    "width": 4096,
+    "height": 4096,
+    "sha256": "5D09ADA81A689A51C88149AA5477A1FE5DD51A5B94CF22B7B3D19D838D65C600",
+    "available": true
+  },
+  "hoodInteriorReference": {
+    "role": "Interior hood verse placement reference photograph",
+    "sourcePath": "C:\\Users\\tomaf\\Downloads\\comp_hood.jpeg",
+    "embeddedPath": "assets/Froni_Edition_One_IAM_Verse.jpg",
+    "mimeType": "image/jpeg",
+    "width": 4096,
+    "height": 4096,
+    "sha256": "E5686F731F85D03FD98116AA3FF4F3506F60DFDB52EFB05F6F66E056B0E04A94",
+    "available": true
+  },
+  "frontProductionVector": {
+    "role": "Front ornament production vector",
+    "sourcePath": null,
+    "expectedLocation": "No approved source path supplied",
+    "width": null,
+    "height": null,
+    "sha256": null,
+    "available": false
+  },
+  "mirrorComposite": {
+    "role": "Face mirror-composite acceptance sheet",
+    "sourcePath": "C:\\froni\\reference\\Froni_Icon_Mirror_Composites.png",
+    "width": null,
+    "height": null,
+    "sha256": null,
+    "available": false
+  },
+  "hoodExteriorLettering": {
+    "role": "Exterior hood gusset production letterform artwork",
+    "sourcePath": null,
+    "expectedLocation": "No approved source path supplied",
+    "width": null,
+    "height": null,
+    "sha256": null,
+    "available": false
+  },
+  "hoodInteriorLettering": {
+    "role": "Interior hood verse production lettering artwork",
+    "sourcePath": null,
+    "expectedLocation": "No approved source path supplied",
+    "width": null,
+    "height": null,
+    "sha256": null,
+    "available": false
+  },
+  "approvedAsymmetryMap": {
+    "role": "Final approved back-icon asymmetry map",
+    "sourcePath": null,
+    "expectedLocation": "No approved source path supplied; the known overlay is a draft",
+    "width": null,
+    "height": null,
+    "sha256": null,
+    "available": false
+  },
+  "careTapeArtwork": {
+    "role": "Final printed care, fibre, origin, and wordmark tape artwork",
+    "sourcePath": null,
+    "expectedLocation": "No approved source path supplied",
+    "width": null,
+    "height": null,
+    "sha256": null,
+    "available": false
+  },
+  "digitizedMasters": {
+    "role": "Final native embroidery masters and graded production outputs",
+    "sourcePath": null,
+    "expectedLocation": "Digitizer has not supplied production files",
+    "width": null,
+    "height": null,
+    "sha256": null,
+    "available": false
+  }
+}

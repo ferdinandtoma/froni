@@ -1,0 +1,960 @@
+<meta charset="utf-8">
+<title>Froni FRN-001 Tech Pack Rev 02</title>
+<style>
+  /* ------------------------------------------------ document geometry -- */
+  @page { size: A4 landscape; margin: 0; }
+  html, body { margin: 0; padding: 0; background: #888; }
+  * { box-sizing: border-box; }
+  body {
+    /* Verified stack: Segoe UI and Arial both carry full Greek capitals. */
+    font-family: "Segoe UI", Arial, "Noto Sans", sans-serif;
+    color: #1a1a1a;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 297mm; height: 210mm;
+    padding: 5mm 7mm 4mm 7mm;
+    background: #fff;
+    display: flex; flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .page:not(:last-child) { break-after: page; page-break-after: always; }
+  @media screen { .page { margin: 8px auto; box-shadow: 0 2px 8px rgba(0,0,0,.4); } }
+
+  /* NOTE: no text-transform rules exist anywhere in this stylesheet.
+     All uppercase strings are authored uppercase in config.js; content
+     strings (the verse above all) render exactly as written. */
+
+  /* ------------------------------------------------------------ header -- */
+  .hdr { display: flex; align-items: stretch; height: 17.5mm; flex: none; }
+  .hdr-brand {
+    width: 34mm; flex: none; background: #000; color: #fff;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 0.5mm;
+  }
+  .hdr-brand .b1 { font-size: 15px; font-weight: 700; letter-spacing: 4px; }
+  .hdr-brand .b2 { font-size: 6.5px; letter-spacing: 3px; color: #cfcfcf; }
+  table.hdr-grid { flex: 1; border-collapse: collapse; table-layout: fixed; margin-left: 1.6mm; }
+  table.hdr-grid td {
+    border: 0.6px solid #444; vertical-align: middle;
+    padding: 0.6mm 1.4mm; font-size: 6.9px; line-height: 1.25;
+    overflow-wrap: break-word; word-break: normal; hyphens: none;
+  }
+  table.hdr-grid td .hl { font-weight: 400; color: #333; }
+  table.hdr-grid td .hv { font-weight: 700; color: #000; }
+  col.hc-1 { width: 24%; } col.hc-2 { width: 21%; } col.hc-3 { width: 34%; } col.hc-4 { width: 21%; }
+
+  .page-title {
+    text-align: right; color: #9a9a9a; font-weight: 700;
+    font-size: 12.5px; letter-spacing: 2.5px;
+    margin: 1.6mm 1mm 1.2mm 0; flex: none;
+  }
+
+  /* --------------------------------------------------- frame and footer -- */
+  .frame {
+    flex: 1; border: 0.9px solid #333; position: relative;
+    padding: 3.5mm 4mm; display: flex; min-height: 0;
+  }
+  .ftr {
+    flex: none; display: flex; justify-content: space-between;
+    font-size: 6.5px; color: #666; padding: 1.2mm 1mm 0 1mm; letter-spacing: 0.4px;
+  }
+
+  /* ---------------------------------------------------- shared elements -- */
+  .col { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+  .sec-title { font-size: 8.5px; font-weight: 700; letter-spacing: 1.4px; color: #444;
+               border-bottom: 0.8px solid #999; padding-bottom: 0.8mm; margin-bottom: 1.6mm; }
+  .caption { text-align: center; font-size: 8px; font-weight: 700; letter-spacing: 1.5px; color: #555; margin-top: 1mm; }
+
+  ul.speclist { margin: 0 0 3mm 0; padding-left: 3.5mm; font-size: 7.6px; line-height: 1.42; }
+  ul.speclist li { margin-bottom: 0.7mm; }
+
+  table.spec { border-collapse: collapse; width: 100%; font-size: 7.6px; }
+  table.spec td { border: 0.6px solid #555; padding: 1mm 1.6mm; line-height: 1.3; vertical-align: top;
+                  overflow-wrap: break-word; }
+  table.spec td.k { width: 30%; font-weight: 700; background: #f2f2f2; }
+
+  .notebox { border: 0.9px solid #555; background: #f7f7f7; padding: 1.8mm 2.2mm; font-size: 7.4px; line-height: 1.4; }
+  .notebox .nb-t { font-weight: 700; letter-spacing: 1px; font-size: 7px; color: #444; margin-bottom: 0.8mm; }
+  .notebox p { margin: 0 0 0.8mm 0; } .notebox p:last-child { margin-bottom: 0; }
+
+  .block { margin-bottom: 2.6mm; }
+  .block .bt { font-size: 7.6px; font-weight: 700; letter-spacing: 1px; color: #333; margin-bottom: 0.7mm; }
+  .block p { margin: 0 0 0.7mm 0; font-size: 7.4px; line-height: 1.38; }
+
+  .flatbox { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 0; min-height: 0; }
+  .flatbox svg { width: 100%; height: 100%; min-height: 0; }
+
+  .chip { display: inline-block; border: 0.9px solid #333; padding: 1.2mm 3mm; font-size: 12px; background: #fff; }
+  .chip.greek { color: #b8860b; font-weight: 700; font-size: 14px; }
+
+  .costbox { border: 1.2px solid #000; padding: 1.8mm 2.5mm; margin-top: 2mm; flex: none; }
+  .costbox .bt { font-size: 7.6px; font-weight: 700; letter-spacing: 1.2px; margin-bottom: 1mm; }
+  .costbox p { margin: 0 0 0.8mm 0; font-size: 7.8px; white-space: nowrap; font-weight: 600; }
+  .costbox p:last-child { margin-bottom: 0; }
+
+  ol.qc { margin: 0; padding-left: 4mm; font-size: 7.3px; line-height: 1.4; }
+  ol.qc li { margin-bottom: 1.4mm; }
+
+  .swatchrow { display: flex; align-items: center; gap: 2mm; margin-top: 1.5mm; }
+  .swatch { width: 9mm; height: 6mm; background: #0b0b0b; border: 0.6px solid #555; flex: none; }
+  .swatchlbl { font-size: 6.8px; color: #444; letter-spacing: 0.6px; }
+</style>
+
+<script src="config.js"></script>
+<div id="doc"></div>
+
+<script>
+"use strict";
+const C = window.TECHPACK_CONFIG;
+// The build measures the back artwork aspect from ./reference/ and injects it
+// before load; config.iconAspect keeps its fallback when opened directly.
+if (typeof window.__ICON_ASPECT === "number" && window.__ICON_ASPECT > 0) {
+  C.iconAspect = window.__ICON_ASPECT;
+}
+
+/* ======================================================================= *
+ *  SVG FLAT GENERATOR                                                     *
+ *  Every proportion below is DERIVED from the size-M column of the POM    *
+ *  table in config.js. Units are centimeters; strokes are locked to px    *
+ *  via vector-effect so the flats read like factory CAD line work.       *
+ * ======================================================================= */
+const G = (() => {
+  const mi = C.pom.sizes.indexOf(C.pom.baseSize);
+  const v = l => C.pom.rows.find(r => r.letter === l).values[mi];
+  const vOpt = l => { const r = C.pom.rows.find(r => r.letter === l); return r ? r.values[mi] : null; };
+  const rad = d => d * Math.PI / 180;
+  const bodyLen = v("A"), chest = v("B"), armhole = v("C"), cuffOpen = v("D"),
+        sleeve = v("E"), shoulder = v("F"), neck = v("G"), bottom = v("H"),
+        hemRib = v("I"), cuffRib = v("J"), hoodLen = v("K"), hoodWid = v("L");
+  const slope = rad(C.flat.shoulderSlopeDeg), ang = rad(C.flat.sleeveAngleDeg);
+  const neckHalf = neck / 2, chestHalf = chest / 2, hemHalf = bottom / 2;
+  const hpsY = 0.6;
+  const S = { x: neckHalf + shoulder * Math.cos(slope), y: hpsY + shoulder * Math.sin(slope) };
+  const a = { x: Math.cos(ang), y: Math.sin(ang) };          // sleeve axis
+  const p = { x: -Math.sin(ang), y: Math.cos(ang) };         // perpendicular, toward underside
+  const pt = (o, d, k) => ({ x: o.x + d.x * k, y: o.y + d.y * k });
+  const T1 = pt(S, a, sleeve - cuffRib);                     // cuff seam, top edge
+  const T2 = pt(S, a, sleeve);                               // cuff end, top edge
+  const T1b = pt(T1, p, cuffOpen);
+  const T2b = pt(T2, p, cuffOpen);
+  const U = { x: chestHalf, y: S.y + Math.sqrt(Math.max(armhole * armhole - (S.x - chestHalf) ** 2, 1)) };
+  const ribTopY = bodyLen - hemRib;
+  const ribTopHalf = hemHalf + 0.5;
+  const hoodH = hoodLen * 0.84;                              // foreshortened visual height
+  const hoodTopHalf = hoodWid * 0.5;
+  const hoodMidHalf = hoodWid * 0.585;
+  const gussetHalf = (vOpt("M") ?? C.flat.gussetWidthCm) / 2; // three-panel hood center gusset
+  return { bodyLen, chest, armhole, cuffOpen, sleeve, shoulder, neck, bottom, hemRib, cuffRib,
+           hoodLen, hoodWid, neckHalf, chestHalf, hemHalf, hpsY, S, a, p, T1, T2, T1b, T2b, U,
+           ribTopY, ribTopHalf, hoodH, hoodTopHalf, hoodMidHalf, gussetHalf, backCollarDipY: 4.6 };
+})();
+
+const f = n => (Math.round(n * 100) / 100).toString();
+const INK = "#1c1c1c", HATCH = "#5a5a5a", RED = "#c62828", BLUE = "#2b6fd4";
+const GOLD = (C.palette && C.palette.marigold) || "#C9A227";
+const STROKE = `fill="none" stroke="${INK}" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"`;
+const WHITE = `fill="#ffffff" stroke="${INK}" stroke-width="1.5" vector-effect="non-scaling-stroke" stroke-linejoin="round"`;
+
+// Flat themes. The technical CAD flats (pages 3,4,5,7) render white with dark
+// strokes. Page 1 is a true colorway mockup: black garment fill #131114 with
+// light-gray strokes kept light enough that construction lines stay visible
+// over black, and rib hatching in an even lighter gray.
+const THEME_WHITE = { fill: "#ffffff", stroke: INK, hatch: HATCH };
+const THEME_BLACK = { fill: "#131114", stroke: "#8f8f8f", hatch: "#a2a2a2" };
+const wA = (th, sw = 1.5) => `fill="${th.fill}" stroke="${th.stroke}" stroke-width="${sw}" vector-effect="non-scaling-stroke" stroke-linejoin="round"`;
+const sA = (th, sw = 1.5) => `fill="none" stroke="${th.stroke}" stroke-width="${sw}" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"`;
+
+// Embedded artwork injected by build.js (base64, downscaled). Null when the
+// HTML is opened standalone without a build (composites are then skipped).
+const ART = (typeof window !== "undefined" && window.__ARTWORK) ? window.__ARTWORK : null;
+
+// The Ο Ω Ν marigold column on the hood center gusset, shared by the page-1
+// mockup and the page-5 lettering diagram so both stay identical.
+function gussetLetterCol() {
+  const letters = [...C.texts.hood_exterior_theonym.string.replace(/\s+/g, "")];
+  return letters.map((ch, i) =>
+    `<text x="0" y="${f(1.5 + i * 5.7)}" fill="${GOLD}" font-size="4.8" font-weight="700" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">${esc(ch)}</text>`).join("");
+}
+
+// An <image> clipped to a path (silhouette or field), in user-space cm coords.
+// Returns { defs, img } to slot into garmentFlat. par: "meet" (contain) and
+// "slice" (cover) preserve aspect; "none" fills the box exactly (stretch,
+// off-aspect) for the editor's free-stretch placements.
+let __clipSeq = 0;
+function clipImage(clipD, href, x, y, w, h, { par = "xMidYMid meet", data = "" } = {}) {
+  const id = "clip" + (++__clipSeq);
+  return {
+    defs: `<clipPath id="${id}" clipPathUnits="userSpaceOnUse"><path d="${clipD}"/></clipPath>`,
+    img: `<image href="${href}" x="${f(x)}" y="${f(y)}" width="${f(w)}" height="${f(h)}" preserveAspectRatio="${par}" clip-path="url(#${id})" ${data}/>`,
+  };
+}
+
+function bodyPath() {
+  const g = G;
+  return `M ${f(-g.S.x)} ${f(g.S.y)}
+    L ${f(-g.neckHalf)} ${f(g.hpsY)}
+    C -6 3.9, 6 3.9, ${f(g.neckHalf)} ${f(g.hpsY)}
+    L ${f(g.S.x)} ${f(g.S.y)}
+    C ${f(g.S.x - 0.2)} ${f(g.S.y + 8)}, ${f(g.chestHalf + 0.4)} ${f(g.U.y - 8)}, ${f(g.chestHalf)} ${f(g.U.y)}
+    C ${f(g.chestHalf - 1.3)} ${f(g.U.y + 14)}, ${f(g.ribTopHalf + 0.7)} ${f(g.ribTopY - 7)}, ${f(g.ribTopHalf)} ${f(g.ribTopY)}
+    L ${f(g.hemHalf)} ${f(g.bodyLen)}
+    L ${f(-g.hemHalf)} ${f(g.bodyLen)}
+    L ${f(-g.ribTopHalf)} ${f(g.ribTopY)}
+    C ${f(-g.ribTopHalf - 0.7)} ${f(g.ribTopY - 7)}, ${f(-g.chestHalf + 1.3)} ${f(g.U.y + 14)}, ${f(-g.chestHalf)} ${f(g.U.y)}
+    C ${f(-g.chestHalf - 0.4)} ${f(g.U.y - 8)}, ${f(-g.S.x + 0.2)} ${f(g.S.y + 8)}, ${f(-g.S.x)} ${f(g.S.y)} Z`;
+}
+
+function sleevePath(sgn) {
+  const g = G, m = (q) => ({ x: sgn * q.x, y: q.y });
+  const S = m(g.S), T1 = m(g.T1), T2 = m(g.T2), T1b = m(g.T1b), T2b = m(g.T2b), U = m(g.U);
+  const capUp = { x: -sgn * g.p.x * 1.1, y: -g.p.y * 1.1 };
+  const mid = { x: (S.x + T1.x) / 2 + capUp.x, y: (S.y + T1.y) / 2 + capUp.y };
+  return `M ${f(S.x)} ${f(S.y)}
+    Q ${f(mid.x)} ${f(mid.y)}, ${f(T1.x)} ${f(T1.y)}
+    L ${f(T2.x)} ${f(T2.y)}
+    L ${f(T2b.x)} ${f(T2b.y)}
+    L ${f(T1b.x)} ${f(T1b.y)}
+    C ${f(T1b.x + (T1b.x - T2b.x) * 0.45)} ${f(T1b.y + (T1b.y - T2b.y) * 0.45)}, ${f(U.x + sgn * 8)} ${f(U.y + 5.5)}, ${f(U.x)} ${f(U.y)}
+    C ${f(U.x - sgn * 1.2)} ${f(U.y - 8)}, ${f(S.x + sgn * 1.4)} ${f(S.y + 8)}, ${f(S.x)} ${f(S.y)} Z`;
+}
+
+function cuffDetail(sgn, th = THEME_WHITE) {
+  const g = G, m = q => ({ x: sgn * q.x, y: q.y });
+  const T1 = m(g.T1), T1b = m(g.T1b);
+  let s = `<line x1="${f(T1.x)}" y1="${f(T1.y)}" x2="${f(T1b.x)}" y2="${f(T1b.y)}" ${sA(th)}/>`;
+  for (let t = 0.9; t < g.cuffOpen - 0.45; t += 0.9) {
+    const q1 = { x: sgn * (g.T1.x + g.p.x * t) + sgn * g.a.x * 0.5, y: g.T1.y + g.p.y * t + g.a.y * 0.5 };
+    const q2 = { x: sgn * (g.T2.x + g.p.x * t) - sgn * g.a.x * 0.4, y: g.T2.y + g.p.y * t - g.a.y * 0.4 };
+    s += `<line x1="${f(q1.x)}" y1="${f(q1.y)}" x2="${f(q2.x)}" y2="${f(q2.y)}" stroke="${th.hatch}" stroke-width="0.6" vector-effect="non-scaling-stroke"/>`;
+  }
+  return s;
+}
+
+function hemDetail(th = THEME_WHITE) {
+  const g = G;
+  let s = `<line x1="${f(-g.ribTopHalf)}" y1="${f(g.ribTopY)}" x2="${f(g.ribTopHalf)}" y2="${f(g.ribTopY)}" ${sA(th)}/>`;
+  for (let x = -g.hemHalf + 0.8; x < g.hemHalf - 0.4; x += 1.1) {
+    s += `<line x1="${f(x)}" y1="${f(g.ribTopY + 0.45)}" x2="${f(x)}" y2="${f(g.bodyLen - 0.45)}" stroke="${th.hatch}" stroke-width="0.6" vector-effect="non-scaling-stroke"/>`;
+  }
+  return s;
+}
+
+function hoodFront(th = THEME_WHITE) {
+  const g = G, h = g.hoodH, w1 = g.hoodMidHalf, w0 = g.hoodTopHalf;
+  const outline = `M ${f(-g.neckHalf)} ${f(g.hpsY)}
+    C ${f(-w1 - 0.2)} ${f(-h * 0.16)}, ${f(-w1 - 0.6)} ${f(-h * 0.47)}, ${f(-w0 + 0.4)} ${f(-h * 0.73)}
+    C ${f(-w0 * 0.78)} ${f(-h * 0.93)}, ${f(-w0 * 0.36)} ${f(-h)}, 0 ${f(-h)}
+    C ${f(w0 * 0.36)} ${f(-h)}, ${f(w0 * 0.78)} ${f(-h * 0.93)}, ${f(w0 - 0.4)} ${f(-h * 0.73)}
+    C ${f(w1 + 0.6)} ${f(-h * 0.47)}, ${f(w1 + 0.2)} ${f(-h * 0.16)}, ${f(g.neckHalf)} ${f(g.hpsY)}
+    C 6 4.4, -6 4.4, ${f(-g.neckHalf)} ${f(g.hpsY)} Z`;
+  // Facing: full inner offset of the silhouette, neck point to neck point.
+  // This is the visible facing line of the double-layer hood opening.
+  const iw1 = w1 - 2.4, iw0 = w0 - 2.4, ih = h * 0.925;
+  const facing = `M ${f(-g.neckHalf + 2.3)} ${f(g.hpsY + 0.4)}
+    C ${f(-iw1 - 0.2)} ${f(-h * 0.16)}, ${f(-iw1 - 0.6)} ${f(-h * 0.45)}, ${f(-iw0 + 0.4)} ${f(-h * 0.70)}
+    C ${f(-iw0 * 0.76)} ${f(-h * 0.875)}, ${f(-iw0 * 0.36)} ${f(-ih)}, 0 ${f(-ih)}
+    C ${f(iw0 * 0.36)} ${f(-ih)}, ${f(iw0 * 0.76)} ${f(-h * 0.875)}, ${f(iw0 - 0.4)} ${f(-h * 0.70)}
+    C ${f(iw1 + 0.6)} ${f(-h * 0.45)}, ${f(iw1 + 0.2)} ${f(-h * 0.16)}, ${f(g.neckHalf - 2.3)} ${f(g.hpsY + 0.4)}`;
+  // Three-panel hood: two gusset seams arc from the face opening over the
+  // crown, roughly parallel, center gusset between them. NO center seam.
+  const gh = g.gussetHalf;
+  const gusset = sgn => `M ${f(sgn * gh)} ${f(-ih + 0.6)}
+    C ${f(sgn * (gh + 0.6))} ${f(-ih - 0.3)}, ${f(sgn * (gh + 1.1))} ${f(-h + 1.9)}, ${f(sgn * (gh + 1.6))} ${f(-h + 1.5)}`;
+  return `<path d="${outline}" ${wA(th)}/>
+    <path d="${facing}" ${sA(th)} stroke-width="1.1"/>
+    <path d="${gusset(1)}" ${sA(th)} stroke-width="1.1"/>
+    <path d="${gusset(-1)}" ${sA(th)} stroke-width="1.1"/>`;
+}
+
+function hoodBack(th = THEME_WHITE) {
+  // Back view: the hood hangs naturally OVER the upper back. The fold bunches
+  // a few cm above the collar, the fabric drapes down the back panel to a
+  // rounded peak. The white fill interrupts the body outline behind it. Two
+  // gusset seams flank the center panel from fold to peak. NO center seam.
+  const g = G, gh = g.gussetHalf;
+  const half = g.hoodWid * 0.547;   // spread across the shoulders (~14.5)
+  const foldY = -g.hoodH * 0.235;   // bunched fold rise above the collar
+  // Peak lifted so the hood hangs ABOVE the icon (apex 12 cm below collar), as
+  // on the worn reference: the full halo stays visible, no clip.
+  const peakY = g.bodyLen * 0.22;
+  const outline = `M ${f(-half)} -2
+    C ${f(-half * 0.55)} ${f(foldY)}, ${f(half * 0.55)} ${f(foldY)}, ${f(half)} -2
+    C ${f(half + 0.9)} 2.6, ${f(half - 1.6)} 7.5, ${f(half * 0.52)} 11.9
+    C ${f(half * 0.31)} 14.2, 2 ${f(peakY - 0.3)}, 0 ${f(peakY)}
+    C -2 ${f(peakY - 0.3)}, ${f(-half * 0.31)} 14.2, ${f(-half * 0.52)} 11.9
+    C ${f(-half + 1.6)} 7.5, ${f(-half - 0.9)} 2.6, ${f(-half)} -2 Z`;
+  const gusset = sgn => `M ${f(sgn * gh)} -5.8
+    C ${f(sgn * (gh + 0.7))} 2.5, ${f(sgn * (gh - 0.5))} 8.6, ${f(sgn * (gh - 2.6))} 13.6`;
+  return `<path d="${outline}" ${wA(th)}/>
+    <path d="${gusset(1)}" ${sA(th)} stroke-width="1.1"/>
+    <path d="${gusset(-1)}" ${sA(th)} stroke-width="1.1"/>`;
+}
+
+function garmentFlat(view, { viewBox = "-84 -35 168 110", overlays = "", midLayer = "", defs = "", theme = THEME_WHITE } = {}) {
+  const th = theme;
+  const parts = [
+    defs ? `<defs>${defs}</defs>` : "",
+    `<path d="${bodyPath()}" ${wA(th)}/>`,
+    hemDetail(th),
+    `<path d="${sleevePath(1)}" ${wA(th)}/>`,
+    `<path d="${sleevePath(-1)}" ${wA(th)}/>`,
+    cuffDetail(1, th), cuffDetail(-1, th),
+    midLayer,                                    // artwork under the hood drape
+    view === "front" ? hoodFront(th) : hoodBack(th),
+    overlays,                                    // dims/labels/artwork over the flat
+  ];
+  return `<svg viewBox="${viewBox}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">${parts.join("\n")}</svg>`;
+}
+
+// Shared back-icon placement geometry (cm), used by the page-1 mockup and the
+// page-3 placement diagram so both agree with the 46/70 geometry assertion.
+// Saved placement overrides (from placement.json via the editor), or null.
+const PLACE = (typeof window !== "undefined" && window.__PLACEMENTS) ? window.__PLACEMENTS : null;
+
+function backIconPlacement() {
+  const g = G, P = C.placements.backIcon;
+  const ov = PLACE && PLACE.back;
+  const collarY = g.backCollarDipY;
+  const boxH = ov ? ov.heightCm : P.iconHeightSmCm;
+  const topY = ov ? ov.topCm : (collarY + P.haloApexBelowCollarCm);
+  // Width is independent when the editor has stretched it off-aspect, else
+  // derived from the measured icon aspect.
+  const boxW = (ov && ov.widthCm != null) ? ov.widthCm : boxH * C.iconAspect;
+  const cx = (ov && ov.centerXCm != null) ? ov.centerXCm : 0;
+  return { collarY, topY, boxH, boxW, x: cx - boxW / 2, cx };
+}
+
+// Front linework placement (cm): a CENTERED portrait panel matching the worn
+// reference (the design sits in a defined rectangle with side margins, not
+// garment edge to edge). Height ~ upper chest to lower chest, width per aspect.
+function frontPanelPlacement() {
+  const g = G;
+  const ov = PLACE && PLACE.front;
+  const h = ov ? ov.heightCm : 53;
+  // Width independent when stretched off-aspect, else derived from aspect.
+  const w = (ov && ov.widthCm != null) ? ov.widthCm : h * ((ART && ART.front) ? ART.front.aspect : 0.71);
+  const cx = (ov && ov.centerXCm != null) ? ov.centerXCm : 0;
+  const y = ov ? ov.topCm : (g.S.y + 3);
+  return { x: cx - w / 2, y, w, h, cx };
+}
+
+/* ------------------------------------------------ dimension callout kit -- */
+function arrowHead(x, y, dx, dy, color) {
+  const L = 1.9, W = 0.75, n = Math.hypot(dx, dy); dx /= n; dy /= n;
+  const bx = x - dx * L, by = y - dy * L;
+  return `<polygon points="${f(x)},${f(y)} ${f(bx - dy * W)},${f(by + dx * W)} ${f(bx + dy * W)},${f(by - dx * W)}" fill="${color}"/>`;
+}
+function dimLine(x1, y1, x2, y2, label, { color = RED, lx = 0, ly = 0, fs = 3.6, caps = true } = {}) {
+  const dx = x2 - x1, dy = y2 - y1, n = Math.hypot(dx, dy);
+  const ux = dx / n, uy = dy / n, px = -uy, py = ux;
+  let s = `<line x1="${f(x1)}" y1="${f(y1)}" x2="${f(x2)}" y2="${f(y2)}" stroke="${color}" stroke-width="1" vector-effect="non-scaling-stroke"/>`;
+  s += arrowHead(x1, y1, -ux, -uy, color) + arrowHead(x2, y2, ux, uy, color);
+  if (caps) {
+    s += `<line x1="${f(x1 - px * 1.5)}" y1="${f(y1 - py * 1.5)}" x2="${f(x1 + px * 1.5)}" y2="${f(y1 + py * 1.5)}" stroke="${color}" stroke-width="1" vector-effect="non-scaling-stroke"/>`;
+    s += `<line x1="${f(x2 - px * 1.5)}" y1="${f(y2 - py * 1.5)}" x2="${f(x2 + px * 1.5)}" y2="${f(y2 + py * 1.5)}" stroke="${color}" stroke-width="1" vector-effect="non-scaling-stroke"/>`;
+  }
+  const mx = (x1 + x2) / 2 + lx, my = (y1 + y2) / 2 + ly;
+  s += `<text x="${f(mx)}" y="${f(my)}" fill="${color}" font-size="${fs}" font-weight="700" text-anchor="middle"
+    stroke="#ffffff" stroke-width="${f(fs * 0.28)}" paint-order="stroke" font-family="Segoe UI, Arial, sans-serif">${label}</text>`;
+  return s;
+}
+function dashedRect(x, y, w, h, color = BLUE) {
+  return `<rect x="${f(x)}" y="${f(y)}" width="${f(w)}" height="${f(h)}" fill="none" stroke="${color}" stroke-width="1.2" stroke-dasharray="5 3.4" vector-effect="non-scaling-stroke"/>`;
+}
+
+// Factory-sample style isolated artwork panel: the render shown large in its own
+// frame with red dimension arrows (height + width). Aspect preserved (meet).
+function isolatedArtworkPanel(src, aspect, heightLabel, widthLabel) {
+  const ih = 100, iw = 100 * aspect, ox = 6, oy = 5;
+  const rightX = ox + iw + 6.5, botY = oy + ih + 6.5;
+  const vbW = rightX + 20, vbH = botY + 12;
+  const image = src
+    ? `<image href="${src}" x="${f(ox)}" y="${f(oy)}" width="${f(iw)}" height="${f(ih)}" preserveAspectRatio="xMidYMid meet"/>`
+    : "";
+  return `<svg viewBox="0 0 ${f(vbW)} ${f(vbH)}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+    <rect x="${f(ox)}" y="${f(oy)}" width="${f(iw)}" height="${f(ih)}" fill="#f4f4f4" stroke="#888" stroke-width="0.5" vector-effect="non-scaling-stroke"/>
+    ${image}
+    ${dimLine(rightX, oy, rightX, oy + ih, heightLabel, { lx: 7.5, ly: 0.8, fs: 4 })}
+    ${dimLine(ox, botY, ox + iw, botY, widthLabel, { ly: 6.5, fs: 4 })}
+  </svg>`;
+}
+
+/* ======================================================================= *
+ *  PAGE SHELL                                                             *
+ * ======================================================================= */
+const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+function headerHTML(pageNo, total) {
+  const pg = `${String(pageNo).padStart(2, "0")}/${String(total).padStart(2, "0")}`;
+  const cell = c => {
+    const val = c.value === "{PAGE}" ? pg : c.value;
+    return `<td><span class="hl">${esc(c.label)}:</span> <span class="hv">${esc(val)}</span></td>`;
+  };
+  let rows = "";
+  for (let r = 0; r < 3; r++) {
+    rows += `<tr>${C.header.grid.map(col => cell(col[r])).join("")}</tr>`;
+  }
+  return `<div class="hdr">
+    <div class="hdr-brand"><div class="b1">${esc(C.header.brand)}</div><div class="b2">${esc(C.header.brandSub)}</div></div>
+    <table class="hdr-grid"><colgroup><col class="hc-1"><col class="hc-2"><col class="hc-3"><col class="hc-4"></colgroup>${rows}</table>
+  </div>`;
+}
+
+function pageShell(page, idx, total, bodyHTML) {
+  return `<section class="page">
+    ${headerHTML(idx + 1, total)}
+    <div class="page-title">${esc(page.title)}</div>
+    <div class="frame">${bodyHTML}</div>
+    <div class="ftr"><span>${esc(C.footer.left)}</span><span>${esc(C.footer.right)}</span></div>
+  </section>`;
+}
+
+function specTableHTML(t) {
+  return `<div class="sec-title">${esc(t.title)}</div>
+    <table class="spec">${t.rows.map(r => `<tr><td class="k">${esc(r.label)}</td><td>${esc(r.value)}</td></tr>`).join("")}</table>`;
+}
+function noteBoxHTML(lines, title = "NOTE") {
+  return `<div class="notebox"><div class="nb-t">${esc(title)}</div>${lines.map(l => `<p>${esc(l)}</p>`).join("")}</div>`;
+}
+
+/* ======================================================================= *
+ *  PAGE RENDERERS                                                         *
+ * ======================================================================= */
+const R = {};
+
+R.colorway = (page) => {
+  const g = G;
+  const colorVal = C.header.grid[1][1].value;
+
+  // lists, with the contact line appended to ORDER CONTEXT from config.contact
+  const lists = page.lists.map(l => {
+    const items = l.items.slice();
+    if (l.contactLine) {
+      const ct = C.contact || {};
+      items.push(`${ct.name || "Ferdinand Toma"}, ${ct.email || "[email]"}, ${ct.phone || "[phone]"}`);
+    }
+    return `<div class="sec-title">${esc(l.title)}</div>
+      <ul class="speclist">${items.map(i => `<li>${esc(i)}</li>`).join("")}</ul>`;
+  }).join("");
+
+  // BACK: icon composited at true placement, under the hood drape (the drape
+  // may clip the halo). Gusset marigold lettering as on page 5.
+  const bp = backIconPlacement();
+  const backComp = ART ? clipImage(bodyPath(), ART.back.src, bp.x, bp.topY, bp.boxW, bp.boxH,
+    { par: "none", data: 'data-p1-back-img="1"' }) : null;
+  const backOverlays = gussetLetterCol() +
+    `<line x1="-70" y1="${f(g.hpsY)}" x2="-70" y2="${f(g.bodyLen)}" data-p1-body="1" stroke="#000" stroke-opacity="0" stroke-width="0.1"/>`;
+  const backFlat = garmentFlat("back", {
+    theme: THEME_BLACK, defs: backComp ? backComp.defs : "",
+    midLayer: backComp ? backComp.img : "", overlays: backOverlays,
+  });
+
+  // FRONT: linework as a CENTERED contained panel (matches the worn reference:
+  // the design in its rectangle, centered, with side margins), clipped to body.
+  const fp = frontPanelPlacement();
+  const frontComp = ART ? clipImage(bodyPath(), ART.front.src, fp.x, fp.y, fp.w, fp.h,
+    { par: "none" }) : null;
+  const frontFlat = garmentFlat("front", {
+    theme: THEME_BLACK, defs: frontComp ? frontComp.defs : "", midLayer: frontComp ? frontComp.img : "",
+  });
+
+  const wornThumb = (ART && ART.worn)
+    ? `<div style="width:23mm; flex:none; text-align:center;">
+         <img src="${ART.worn.src}" style="width:100%; border:0.6px solid #999; display:block;"/>
+         <div style="font-size:6px; color:#666; margin-top:0.4mm; letter-spacing:0.5px;">reference visual</div>
+       </div>` : "";
+
+  return `
+    <div class="col" style="flex:2.05; gap:1mm;">
+      <div style="flex:1; display:flex; gap:3mm; min-height:0;">
+        <div class="flatbox" style="flex:1;">${frontFlat}<div class="caption">${esc(page.captions.front)}</div></div>
+        <div class="flatbox" style="flex:1;">${backFlat}<div class="caption">${esc(page.captions.back)}</div></div>
+      </div>
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:3mm; margin-top:1.2mm; flex:none;">
+        <div class="swatchrow" style="margin-top:0;"><div class="swatch"></div><div class="swatchlbl">COLORWAY 01: ${esc(colorVal)}</div></div>
+        ${wornThumb}
+      </div>
+    </div>
+    <div class="col" style="flex:1; border-left:0.7px solid #bbb; padding-left:4mm; margin-left:4mm; overflow:hidden;">${lists}</div>`;
+};
+
+R.fabric = (page) => `
+  <div class="col" style="flex:1.55;">${specTableHTML(page.specTable)}</div>
+  <div class="col" style="flex:1; margin-left:5mm; gap:4mm;">
+    <div>${specTableHTML(page.ribTable)}</div>
+    ${noteBoxHTML(page.noteBox)}
+  </div>`;
+
+R.artworkBack = (page) => {
+  const g = G, P = C.placements.backIcon;
+  const bp = backIconPlacement();
+  const collarY = bp.collarY, apexY = bp.topY, boxH = bp.boxH, boxW = bp.boxW;
+  const widthLabel = `approx. ${Math.round(boxW)} cm`;
+  // the icon composited into the placement box, fully visible (placement diagram)
+  const boxImg = ART
+    ? `<image href="${ART.back.src}" x="${f(bp.x)}" y="${f(apexY)}" width="${f(boxW)}" height="${f(boxH)}" preserveAspectRatio="none"/>`
+    : "";
+  const overlays = [
+    // hidden collar seam reference, drawn dashed across the hood drape
+    `<line x1="-10" y1="${f(collarY)}" x2="10" y2="${f(collarY)}" stroke="${RED}" stroke-width="0.7" stroke-dasharray="2 2" vector-effect="non-scaling-stroke"/>`,
+    `<line x1="-10" y1="${f(collarY)}" x2="${f(-boxW / 2 - 5.5)}" y2="${f(collarY)}" stroke="${RED}" stroke-width="0.5" stroke-dasharray="2 2" vector-effect="non-scaling-stroke"/>`,
+    `<line x1="${f(-boxW / 2)}" y1="${f(apexY)}" x2="${f(-boxW / 2 - 5.5)}" y2="${f(apexY)}" stroke="${RED}" stroke-width="0.5" stroke-dasharray="2 2" vector-effect="non-scaling-stroke"/>`,
+    dimLine(-boxW / 2 - 4.5, collarY, -boxW / 2 - 4.5, apexY, `${Math.round(apexY - collarY)} cm`, { lx: -8, ly: 0.8, fs: 3.2 }),
+    dimLine(boxW / 2 + 4.5, apexY, boxW / 2 + 4.5, apexY + boxH, `${Math.round(boxH)} cm`, { lx: 9.5, ly: 0.8, fs: 3.2 }),
+    boxImg,                                          // icon under the thin outline
+    // thin blue outline kept around the placement box
+    `<rect x="${f(-boxW / 2)}" y="${f(apexY)}" width="${f(boxW)}" height="${f(boxH)}" data-icon-box="1"
+       fill="none" stroke="${BLUE}" stroke-width="1" vector-effect="non-scaling-stroke"/>`,
+    // invisible body-length marker for the build-time 46/70 geometry assertion
+    `<line x1="-55" y1="${f(g.hpsY)}" x2="-55" y2="${f(g.bodyLen)}" data-body-length="1"
+       stroke="#000" stroke-opacity="0" stroke-width="0.1"/>`,
+  ].join("");
+  const blocks = page.blocks.map(b => {
+    if (b.budgetRef) {
+      const bud = C.embroidery[b.budgetRef];
+      return `<div class="block"><div class="bt">${esc(b.title)}</div>
+        <table class="spec">${bud.rows.map(r => `<tr><td class="k" style="width:52%">${esc(r.zone)}</td><td>${esc(r.value)}</td></tr>`).join("")}</table></div>`;
+    }
+    return `<div class="block"><div class="bt">${esc(b.title)}</div>${b.lines.map(l => `<p>${esc(l)}</p>`).join("")}</div>`;
+  }).join("");
+  const panel = isolatedArtworkPanel(ART ? ART.back.src : "", C.iconAspect, `${Math.round(boxH)} cm`, widthLabel);
+  return `
+    <div class="col" style="flex:1.12;">
+      <div class="flatbox" style="flex:1.15; min-height:0;">
+        ${garmentFlat("back", { viewBox: "-64 -12 128 88", overlays })}
+      </div>
+      <div class="caption">${esc(page.caption)}</div>
+      <div class="flatbox" style="flex:1; min-height:0; margin-top:1.5mm;">${panel}</div>
+      <div class="caption">ICON ARTWORK, S/M AT 46 CM</div>
+    </div>
+    <div class="col" style="flex:1.18; border-left:0.7px solid #bbb; padding-left:4mm; margin-left:3mm;">
+      ${blocks}
+      <div style="flex:1"></div>
+      ${noteBoxHTML(page.noteBox, "ARTWORK NOTES")}
+    </div>`;
+};
+
+R.artworkFront = (page) => {
+  const g = G, P = C.placements.frontField;
+  // linework as a centered contained panel (matches the worn reference), with
+  // the panel rectangle outlined in blue
+  const fp = frontPanelPlacement();
+  const rectD = `M ${f(fp.x)} ${f(fp.y)} h ${f(fp.w)} v ${f(fp.h)} h ${f(-fp.w)} Z`;
+  const fc = ART ? clipImage(rectD, ART.front.src, fp.x, fp.y, fp.w, fp.h, { par: "none" }) : null;
+  const overlays = [
+    fc ? fc.img : "",
+    `<rect x="${f(fp.x)}" y="${f(fp.y)}" width="${f(fp.w)}" height="${f(fp.h)}" fill="none" stroke="${BLUE}" stroke-width="1" stroke-dasharray="5 3.4" vector-effect="non-scaling-stroke"/>`,
+  ].join("");
+  const frontFlat = garmentFlat("front", { viewBox: "-62 -36 124 114", overlays, defs: fc ? fc.defs : "" });
+  const blocks = page.blocks.map(b =>
+    `<div class="block"><div class="bt">${esc(b.title)}</div>${b.lines.map(l => `<p>${esc(l)}</p>`).join("")}</div>`).join("");
+  const frontAspect = ART ? ART.front.aspect : 0.85;
+  const panel = isolatedArtworkPanel(ART ? ART.front.src : "", frontAspect, P.panelHeightLabel, P.panelWidthLabel);
+  return `
+    <div class="col" style="flex:1.12;">
+      <div class="flatbox" style="flex:1.2; min-height:0;">${frontFlat}</div>
+      <div class="caption">${esc(page.caption)}</div>
+      <div class="flatbox" style="flex:0.95; min-height:0; margin-top:1.5mm;">${panel}</div>
+      <div class="caption">LINEWORK ARTWORK, L PANEL</div>
+    </div>
+    <div class="col" style="flex:1.12; border-left:0.7px solid #bbb; padding-left:4mm; margin-left:3mm;">${blocks}</div>`;
+};
+
+R.hoodLettering = (page) => {
+  const T = C.texts, g = G, gold = GOLD;
+  const ext = T.hood_exterior_theonym, intr = T.hood_interior_verse;
+  // Exterior lettering: three UPRIGHT letters stacked in a vertical column,
+  // centered on the center gusset panel, reading top to bottom. No rotation
+  // transform anywhere in this lettering group. Letter sizes stay clear of
+  // both gusset seams (max approx. 70% of the gusset field width).
+  const letters = [...ext.string.replace(/\s+/g, "")]; // Ο, Ω, Ν
+  const letterCol = letters.map((ch, i) =>
+    `<text x="0" y="${f(1.5 + i * 5.7)}" fill="${gold}" font-size="4.8" font-weight="700" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">${esc(ch)}</text>`).join("");
+  const extOverlays = [
+    letterCol,
+    `<line x1="18" y1="-8.4" x2="3" y2="-1.6" stroke="${INK}" stroke-width="0.7" vector-effect="non-scaling-stroke"/>`,
+    arrowHead(3, -1.6, -0.9, 0.42, INK),
+    `<text x="18.5" y="-9.6" fill="${INK}" font-size="2.8" font-weight="700" font-family="Segoe UI, Arial, sans-serif">${esc(page.exteriorCallout)}</text>`,
+  ].join("");
+  const backFlat = garmentFlat("back", { viewBox: "-81 -14 162 88", overlays: extOverlays });
+  // Interior lettering, two-part convention.
+  // 1) Locator: front-view hood crop, dashed arc just inside the opening edge.
+  const locator = `<svg viewBox="-30 -35 60 45" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+    ${hoodFront()}
+    <path d="M -10 -0.5 C -12.6 -5, -12.9 -14, -10.5 -21.5 C -8.5 -25.8, -4 -27.4, 0 -27.4
+             C 4 -27.4, 8.5 -25.8, 10.5 -21.5 C 12.9 -14, 12.6 -5, 10 -0.5"
+          fill="none" stroke="${BLUE}" stroke-width="1" stroke-dasharray="3 2" vector-effect="non-scaling-stroke"/>
+    <line x1="11" y1="4.6" x2="10.4" y2="-1.4" stroke="${BLUE}" stroke-width="0.6" vector-effect="non-scaling-stroke"/>
+    <text x="0" y="7.6" fill="${BLUE}" font-size="2.4" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">${esc(page.locatorLabel)}</text>
+  </svg>`;
+  // 2) Detail: the band unrolled to a straight horizontal strip. The full
+  // repeating unit (verse and citation together) shown twice, in true italic
+  // (font-style on a face with a real italic, no skew transforms). X-height
+  // dimension called out on the first unit.
+  const strip = `<svg viewBox="0 0 150 21" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+    <line x1="3" y1="5.6" x2="147" y2="5.6" stroke="${INK}" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+    <line x1="3" y1="15.6" x2="147" y2="15.6" stroke="${INK}" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+    <line x1="3" y1="5.6" x2="3" y2="15.6" stroke="${INK}" stroke-width="0.7" stroke-dasharray="1.6 1.2" vector-effect="non-scaling-stroke"/>
+    <line x1="147" y1="5.6" x2="147" y2="15.6" stroke="${INK}" stroke-width="0.7" stroke-dasharray="1.6 1.2" vector-effect="non-scaling-stroke"/>
+    <text x="12" y="12.6" font-size="3" font-style="italic" fill="${INK}" font-family="Segoe UI, Arial, sans-serif">${esc(intr.unit)}</text>
+    <text x="80" y="12.6" font-size="3" font-style="italic" fill="${INK}" font-family="Segoe UI, Arial, sans-serif">${esc(intr.unit)}</text>
+    <line x1="8.4" y1="11.1" x2="8.4" y2="12.6" stroke="${RED}" stroke-width="0.8" vector-effect="non-scaling-stroke"/>
+    <line x1="7.2" y1="11.1" x2="9.6" y2="11.1" stroke="${RED}" stroke-width="0.8" vector-effect="non-scaling-stroke"/>
+    <line x1="7.2" y1="12.6" x2="9.6" y2="12.6" stroke="${RED}" stroke-width="0.8" vector-effect="non-scaling-stroke"/>
+    <line x1="8.4" y1="11.1" x2="13.4" y2="11.1" stroke="${RED}" stroke-width="0.4" stroke-dasharray="1.4 1" vector-effect="non-scaling-stroke"/>
+    <line x1="8.4" y1="12.6" x2="13.4" y2="12.6" stroke="${RED}" stroke-width="0.4" stroke-dasharray="1.4 1" vector-effect="non-scaling-stroke"/>
+    <text x="8.4" y="19.4" fill="${RED}" font-size="2.2" font-weight="700" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">7 mm min.</text>
+  </svg>`;
+  const extCard = `<div style="border:0.8px solid #777; padding:2mm 2.4mm; margin-top:2mm;">
+    <div class="bt" style="font-size:8px; font-weight:700; letter-spacing:1.2px; margin-bottom:1.2mm;">${esc(ext.title)}</div>
+    <div style="display:flex; gap:3mm; align-items:center;">
+      <span class="chip greek">${esc(ext.string)}</span>
+      <span style="font-size:7px; color:#666;">${esc(ext.drawingNote)}</span>
+    </div>
+    <table class="spec" style="margin-top:1.6mm;">
+      <tr><td class="k">Placement</td><td>${esc(ext.placement)}</td></tr>
+      <tr><td class="k">Language</td><td>${esc(ext.language)}</td></tr>
+      <tr><td class="k">Files</td><td>${esc(ext.files)}</td></tr>
+    </table>
+  </div>`;
+  const intCard = `<div style="border:0.8px solid #777; padding:2mm 2.4mm; margin-top:2.4mm;">
+    <div class="bt" style="font-size:8px; font-weight:700; letter-spacing:1.2px; margin-bottom:1.2mm;">${esc(intr.title)}</div>
+    <table class="spec">${intr.specLines.map(l => `<tr><td>${esc(l)}</td></tr>`).join("")}</table>
+  </div>`;
+  return `
+    <div class="col" style="flex:1; min-width:0;">
+      <div class="flatbox" style="height:62mm; flex:none;">${backFlat}</div>
+      <div class="caption">${esc(page.backCaption)}</div>
+      ${extCard}
+    </div>
+    <div class="col" style="flex:1; border-left:0.7px solid #bbb; padding-left:4mm; margin-left:4mm;">
+      <div class="flatbox" style="height:42mm; flex:none;">${locator}</div>
+      <div class="caption">${esc(page.locatorCaption)}</div>
+      <div class="flatbox" style="height:20mm; flex:none; margin-top:2.5mm;">${strip}</div>
+      <div class="caption">${esc(page.stripLabel)}</div>
+      ${intCard}
+    </div>`;
+};
+
+R.labelsCare = (page) => `
+  <div class="col" style="flex:1.4;">${specTableHTML(page.labelsTable)}</div>
+  <div class="col" style="flex:1; margin-left:5mm; gap:4mm;">
+    <div>
+      <div class="sec-title">${esc(page.careBox.title)}</div>
+      <table class="spec">${page.careBox.lines.map(l => `<tr><td>${esc(l)}</td></tr>`).join("")}</table>
+    </div>
+  </div>`;
+
+R.measurements = (page) => {
+  const g = G;
+  const L = [];
+  // A body length, outside right with extension lines
+  L.push(`<line x1="16" y1="${f(g.hpsY)}" x2="81" y2="${f(g.hpsY)}" stroke="${RED}" stroke-width="0.5" stroke-dasharray="2 2" vector-effect="non-scaling-stroke"/>`);
+  L.push(`<line x1="${f(g.hemHalf + 1)}" y1="${f(g.bodyLen)}" x2="81" y2="${f(g.bodyLen)}" stroke="${RED}" stroke-width="0.5" stroke-dasharray="2 2" vector-effect="non-scaling-stroke"/>`);
+  L.push(dimLine(81, g.hpsY, 81, g.bodyLen, "A", { lx: 3.4, ly: 1.4 }));
+  L.push(dimLine(-g.chestHalf, g.U.y + 1, g.chestHalf, g.U.y + 1, "B", { ly: -1.6 }));
+  L.push(dimLine(g.S.x - 3.4, g.S.y + 2.2, g.U.x - 2.4, g.U.y - 0.6, "C", { lx: -3, ly: 0.6 }));
+  const dD1 = { x: g.T2.x + g.a.x * 2, y: g.T2.y + g.a.y * 2 }, dD2 = { x: g.T2b.x + g.a.x * 2, y: g.T2b.y + g.a.y * 2 };
+  L.push(dimLine(dD1.x, dD1.y, dD2.x, dD2.y, "D", { lx: 3.6, ly: 1 }));
+  const eo = 3.2;
+  L.push(dimLine(g.S.x - g.p.x * eo, g.S.y - g.p.y * eo, g.T2.x - g.p.x * eo, g.T2.y - g.p.y * eo, "E", { lx: 1.6, ly: -1.6 }));
+  L.push(dimLine(g.neckHalf + 2.6, g.hpsY - 2.6, g.S.x + 1, g.S.y - 2.4, "F", { ly: -1.4 }));
+  L.push(dimLine(-g.neckHalf, -3.2, g.neckHalf, -3.2, "G", { ly: -1.6 }));
+  L.push(dimLine(-g.hemHalf, g.bodyLen + 3.2, g.hemHalf, g.bodyLen + 3.2, "H", { ly: 4 }));
+  L.push(dimLine(-g.ribTopHalf - 2.6, g.ribTopY, -g.ribTopHalf - 2.6, g.bodyLen, "I", { lx: -3.4, ly: 1.4 }));
+  const jo = 2.2;
+  L.push(dimLine(g.T1b.x + g.p.x * jo, g.T1b.y + g.p.y * jo, g.T2b.x + g.p.x * jo, g.T2b.y + g.p.y * jo, "J", { lx: 1.6, ly: 4 }));
+  L.push(dimLine(-19.5, -g.hoodH, -19.5, g.hpsY, "K", { lx: -3.4, ly: 1.4 }));
+  L.push(dimLine(-g.hoodTopHalf * 0.94, -g.hoodH * 0.56, g.hoodTopHalf * 0.94, -g.hoodH * 0.56, "L", { ly: -1.8 }));
+  L.push(dimLine(-g.gussetHalf, -g.hoodH - 3, g.gussetHalf, -g.hoodH - 3, "M", { ly: -1.8 }));
+  const flat = garmentFlat("front", { viewBox: "-86 -42 176 121", overlays: L.join("") });
+  const pom = C.pom;
+  const head = `<tr>
+      <td class="k" style="width:5%; text-align:center;"></td>
+      <td class="k" style="width:33%;">Sizes:</td>
+      ${pom.sizes.map(s => `<td style="text-align:center; font-weight:700; width:8.5%;">${esc(s)}</td>`).join("")}
+      ${pom.extraCols.map(cn => `<td style="text-align:center; font-size:6.6px; width:14%;">${esc(cn)}</td>`).join("")}
+    </tr>`;
+  const rows = pom.rows.map(r => `<tr>
+      <td style="text-align:center; font-weight:700;">${esc(r.letter)}</td>
+      <td style="font-weight:600;">${esc(r.name)}</td>
+      ${r.values.map(vv => `<td style="text-align:center;">${vv}</td>`).join("")}
+      ${pom.extraCols.map(() => `<td></td>`).join("")}
+    </tr>`).join("");
+  return `
+    <div class="col flatbox" style="flex:1.15;">${flat}</div>
+    <div class="col" style="flex:1.2; margin-left:4mm; gap:3mm;">
+      <table class="spec" style="font-size:7.3px;">${head}${rows}</table>
+      ${noteBoxHTML(pom.note, "MEASUREMENT NOTES")}
+    </div>`;
+};
+
+R.process = (page) => {
+  const E = C.embroidery;
+  const total = E.filePackage.reduce((s, r) => s + r.count, 0);
+  const pkgLines = E.filePackage.map(r => `<tr><td style="text-align:center; width:12%; font-weight:700;">${r.count}</td><td>${esc(r.item)}</td></tr>`).join("");
+  const pb = page.pendingBox;
+  const pendingHTML = pb ? `
+      <div style="border:0.9px solid #555; background:#f7f7f7; padding:1.4mm 2.2mm; margin-top:2mm; flex:none;">
+        <div style="display:flex; align-items:baseline; gap:3mm; margin-bottom:0.9mm;">
+          <span style="font-size:7.6px; font-weight:700; letter-spacing:0; color:#444;">${esc(pb.title)}</span>
+          <span style="font-size:7px; color:#555;">${esc(pb.header)}</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:0.5mm 5mm; font-size:7px; line-height:1.32;">
+          ${pb.lines.map(l => `<div style="width:47%;">${esc(l)}</div>`).join("")}
+        </div>
+      </div>` : "";
+  return `
+    <div style="display:flex; flex-direction:column; flex:1; min-height:0;">
+      <div style="display:flex; flex:1; min-height:0;">
+        <div class="col" style="flex:1.15;">${specTableHTML(page.materialsTable)}</div>
+        <div class="col" style="flex:1; margin-left:4mm;">
+          <div class="sec-title">FILE PACKAGE</div>
+          <table class="spec">${pkgLines}
+            <tr><td style="text-align:center; font-weight:700; background:#f2f2f2;">${total}</td><td style="font-weight:700; background:#f2f2f2;">files total</td></tr>
+          </table>
+          <div style="margin-top:2mm; font-size:7.3px; line-height:1.4;">
+            ${E.filePackageTerms.map(t => `<p style="margin:0 0 1mm 0;">${esc(t)}</p>`).join("")}
+          </div>
+        </div>
+        <div class="col" style="flex:1.25; margin-left:4mm;">
+          <div class="sec-title">${esc(page.strikeOffs.title)}</div>
+          <ol class="qc">${page.strikeOffs.items.map(i => `<li>${esc(i)}</li>`).join("")}</ol>
+        </div>
+      </div>
+      ${pendingHTML}
+      <div class="costbox">
+        <div class="bt">COST CLAUSES</div>
+        ${E.costClauses.map(cl => `<p>&quot;${esc(cl)}&quot;</p>`).join("")}
+      </div>
+    </div>`;
+};
+
+/* ======================================================================= *
+ *  PLACEMENT EDITOR  (npm run edit)                                       *
+ *  Opened by server.js with window.__EDIT set. Renders the front + back   *
+ *  black flats with the artwork as draggable / corner-resizable <image>   *
+ *  elements (aspect locked, never distorted). Save POSTs placement.json,  *
+ *  which build.js then bakes into pages 1, 3 and 4. All units are cm      *
+ *  (SVG user space); screen px map to cm through the SVG screen CTM.      *
+ * ======================================================================= */
+function imgAspect(src) {
+  return new Promise(resolve => {
+    const im = new Image();
+    im.onload = () => resolve(Math.round((im.naturalWidth / im.naturalHeight) * 100) / 100);
+    im.onerror = () => resolve(0);
+    im.src = src;
+  });
+}
+
+// The editable artwork for one view: the <image> (filling its box, so stretch
+// shows) plus a dashed selection rect and three handles — a corner (scale,
+// aspect kept), a right edge (stretch width), a bottom edge (stretch height).
+const ED_HS = 2.6;
+function edHandle(hx, hy, name, axis, cursor) {
+  return `<rect x="${f(hx - ED_HS / 2)}" y="${f(hy - ED_HS / 2)}" width="${ED_HS}" height="${ED_HS}" fill="#39a0ff" stroke="#fff" stroke-width="0.5" vector-effect="non-scaling-stroke" data-handle="${name}" data-axis="${axis}" style="cursor:${cursor}"/>`;
+}
+function editImageMarkup(name) {
+  const p = name === "back" ? backIconPlacement() : frontPanelPlacement();
+  const x = p.x, y = name === "back" ? p.topY : p.y;
+  const w = name === "back" ? p.boxW : p.w, h = name === "back" ? p.boxH : p.h;
+  const src = name === "back" ? ART.back.src : ART.front.src;
+  return `<image href="${src}" x="${f(x)}" y="${f(y)}" width="${f(w)}" height="${f(h)}" preserveAspectRatio="none" data-art="${name}" style="cursor:move"/>
+    <rect x="${f(x)}" y="${f(y)}" width="${f(w)}" height="${f(h)}" fill="none" stroke="#39a0ff" stroke-width="1.4" stroke-dasharray="3 2" vector-effect="non-scaling-stroke" data-sel="${name}" pointer-events="none"/>
+    ${edHandle(x + w, y + h, name, "corner", "nwse-resize")}
+    ${edHandle(x + w, y + h / 2, name, "w", "ew-resize")}
+    ${edHandle(x + w / 2, y + h, name, "h", "ns-resize")}`;
+}
+
+function editableFlat(name) {
+  if (!ART) return "";
+  const art = editImageMarkup(name);
+  return name === "back"
+    ? garmentFlat("back", { theme: THEME_BLACK, overlays: gussetLetterCol() + art })
+    : garmentFlat("front", { theme: THEME_BLACK, overlays: art });
+}
+
+// Attach move (drag the image) + resize (drag the corner, aspect locked).
+function wireEditing(name) {
+  const wrap = document.getElementById("ed-" + name);
+  const svg = wrap && wrap.querySelector("svg");
+  const img = svg && svg.querySelector(`[data-art="${name}"]`);
+  if (!img) return;
+  const sel = svg.querySelector(`[data-sel="${name}"]`);
+  const handles = [...svg.querySelectorAll(`[data-handle="${name}"]`)];
+  const aspect = name === "back" ? C.iconAspect : ((ART && ART.front) ? ART.front.aspect : 0.71);
+  let mode = null, start = null, o = null;
+  const toCm = ev => { const pt = svg.createSVGPoint(); pt.x = ev.clientX; pt.y = ev.clientY; return pt.matrixTransform(svg.getScreenCTM().inverse()); };
+  const placeHandle = (axis, hx, hy) => {
+    const el = handles.find(h => h.getAttribute("data-axis") === axis);
+    if (el) { el.setAttribute("x", f(hx - ED_HS / 2)); el.setAttribute("y", f(hy - ED_HS / 2)); }
+  };
+  function sync() {
+    const x = +img.getAttribute("x"), y = +img.getAttribute("y"), w = +img.getAttribute("width"), h = +img.getAttribute("height");
+    sel.setAttribute("x", f(x)); sel.setAttribute("y", f(y)); sel.setAttribute("width", f(w)); sel.setAttribute("height", f(h));
+    placeHandle("corner", x + w, y + h); placeHandle("w", x + w, y + h / 2); placeHandle("h", x + w / 2, y + h);
+    updateReadout();
+  }
+  function move(ev) {
+    if (!mode) return;
+    const p = toCm(ev), dx = p.x - start.x, dy = p.y - start.y;
+    if (mode === "move") { img.setAttribute("x", f(o.x + dx)); img.setAttribute("y", f(o.y + dy)); }
+    else if (mode === "corner") { const nw = Math.max(4, o.w + dx); img.setAttribute("width", f(nw)); img.setAttribute("height", f(nw / aspect)); }
+    else if (mode === "w") { img.setAttribute("width", f(Math.max(4, o.w + dx))); }
+    else if (mode === "h") { img.setAttribute("height", f(Math.max(4, o.h + dy))); }
+    sync();
+  }
+  function up() { mode = null; window.removeEventListener("pointermove", move); window.removeEventListener("pointerup", up); }
+  function down(m) {
+    return function (ev) {
+      ev.preventDefault(); ev.stopPropagation();
+      mode = m; start = toCm(ev);
+      o = { x: +img.getAttribute("x"), y: +img.getAttribute("y"), w: +img.getAttribute("width"), h: +img.getAttribute("height") };
+      window.addEventListener("pointermove", move); window.addEventListener("pointerup", up);
+    };
+  }
+  img.addEventListener("pointerdown", down("move"));
+  handles.forEach(hd => hd.addEventListener("pointerdown", down(hd.getAttribute("data-axis"))));
+}
+
+function updateReadout() {
+  const parts = [];
+  for (const name of ["front", "back"]) {
+    const img = document.querySelector(`[data-art="${name}"]`);
+    if (!img) continue;
+    const x = +img.getAttribute("x"), y = +img.getAttribute("y"), w = +img.getAttribute("width"), h = +img.getAttribute("height");
+    const asp = name === "back" ? C.iconAspect : ((ART && ART.front) ? ART.front.aspect : 0.71);
+    const stretched = asp && Math.abs((w / h) - asp) / asp > 0.02 ? "  ⬌ stretched" : "";
+    parts.push(`${name.toUpperCase()}  top ${y.toFixed(1)}  w ${w.toFixed(1)}  h ${h.toFixed(1)}  cx ${(x + w / 2).toFixed(1)}${stretched}`);
+  }
+  const el = document.getElementById("ed-readout");
+  if (el) el.textContent = parts.join("      ");
+}
+
+function edToast(msg, err) {
+  let t = document.getElementById("ed-toast");
+  if (!t) {
+    t = document.createElement("div");
+    t.id = "ed-toast";
+    t.style.cssText = "position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#131114;color:#EDE6D6;border:1px solid #C9A227;padding:10px 18px;font:13px 'Segoe UI',Arial;z-index:40;border-radius:2px;transition:opacity .4s";
+    document.body.appendChild(t);
+  }
+  t.style.borderColor = err ? "#c62828" : "#C9A227";
+  t.textContent = msg; t.style.opacity = "1";
+  clearTimeout(t.__h); t.__h = setTimeout(() => { t.style.opacity = "0"; }, 3400);
+}
+
+const edRound = n => Math.round(n * 10) / 10;
+
+async function savePlacement() {
+  const out = {};
+  for (const name of ["back", "front"]) {
+    const img = document.querySelector(`[data-art="${name}"]`);
+    if (!img) continue;
+    const x = +img.getAttribute("x"), y = +img.getAttribute("y"), w = +img.getAttribute("width"), h = +img.getAttribute("height");
+    out[name] = { topCm: edRound(y), heightCm: edRound(h), widthCm: edRound(w), centerXCm: edRound(x + w / 2) };
+  }
+  try {
+    const res = await fetch("/api/placement", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(out) });
+    if (!res.ok) throw new Error(await res.text());
+    edToast("Saved to placement.json.  Run  npm run build  to bake the PDF.");
+  } catch (e) { edToast("Save failed: " + (e.message || e), true); }
+}
+
+async function resetPlacement() {
+  try {
+    await fetch("/api/placement", { method: "DELETE" });
+    edToast("Reset to spec placement. Reloading...");
+    setTimeout(() => location.reload(), 500);
+  } catch (e) { edToast("Reset failed: " + (e.message || e), true); }
+}
+
+async function renderEditor() {
+  document.body.style.background = "#2b2b2b";
+  // Real image aspects (from the originals) so the boxes match the artwork and
+  // "meet" fills them with no letterbox; the selection rect equals the image.
+  if (ART) {
+    const [ba, fa] = await Promise.all([imgAspect(ART.back.src), imgAspect(ART.front.src)]);
+    if (ba) { C.iconAspect = ba; ART.back.aspect = ba; }
+    if (fa) ART.front.aspect = fa;
+  }
+  const BTN = "background:#C9A227;color:#131114;border:0;padding:7px 18px;font:700 12px 'Segoe UI',Arial;letter-spacing:1px;cursor:pointer;border-radius:2px";
+  const BTN2 = "background:transparent;color:#EDE6D6;border:1px solid #555;padding:7px 14px;font:600 12px 'Segoe UI',Arial;letter-spacing:1px;cursor:pointer;border-radius:2px";
+  document.getElementById("doc").innerHTML = `
+    <style>#ed-front svg,#ed-back svg{width:100%;height:100%;display:block}</style>
+    <div style="position:fixed;top:0;left:0;right:0;height:46px;background:#131114;color:#EDE6D6;display:flex;align-items:center;gap:14px;padding:0 16px;z-index:20;font:13px 'Segoe UI',Arial;box-shadow:0 1px 0 #000">
+      <b style="letter-spacing:1px">FRONI &middot; artwork placement</b>
+      <span style="color:#8a8a8a">drag to move &middot; corner scales &middot; right / bottom edges stretch</span>
+      <span id="ed-readout" style="margin-left:auto;color:#C9A227;font:12px ui-monospace,Consolas,monospace"></span>
+      <button id="ed-reset" style="${BTN2}">Reset to spec</button>
+      <button id="ed-save" style="${BTN}">Save</button>
+    </div>
+    <div style="display:flex;gap:18px;padding:62px 18px 18px;min-height:100vh;box-sizing:border-box;background:#2b2b2b">
+      <div style="flex:1;display:flex;flex-direction:column">
+        <div style="text-align:center;color:#bbb;font:11px 'Segoe UI',Arial;letter-spacing:2px;margin-bottom:6px">FRONT</div>
+        <div id="ed-front" style="flex:1;background:#131114;border:1px solid #000;min-height:0"></div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column">
+        <div style="text-align:center;color:#bbb;font:11px 'Segoe UI',Arial;letter-spacing:2px;margin-bottom:6px">BACK</div>
+        <div id="ed-back" style="flex:1;background:#131114;border:1px solid #000;min-height:0"></div>
+      </div>
+    </div>`;
+  document.getElementById("ed-front").innerHTML = editableFlat("front");
+  document.getElementById("ed-back").innerHTML = editableFlat("back");
+  wireEditing("front"); wireEditing("back");
+  updateReadout();
+  document.getElementById("ed-save").onclick = savePlacement;
+  document.getElementById("ed-reset").onclick = resetPlacement;
+}
+
+/* ======================================================================= *
+ *  RENDER + OVERFLOW CHECK                                                *
+ * ======================================================================= */
+(function render() {
+  if (typeof window !== "undefined" && window.__EDIT) { renderEditor(); return; }
+  const total = C.pages.length;
+  document.getElementById("doc").innerHTML =
+    C.pages.map((pg, i) => pageShell(pg, i, total, R[pg.type](pg))).join("");
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => { window.__renderDone = true; });
+  } else {
+    window.__renderDone = true;
+  }
+})();
+
+window.__checkOverflow = function () {
+  const failures = [];
+  let scanned = 0;
+  const describe = el => {
+    let s = el.tagName.toLowerCase();
+    if (el.className && typeof el.className === "string") s += "." + el.className.split(/\s+/).join(".");
+    const page = el.closest ? el.closest(".page") : null;
+    if (page) s = `page ${[...document.querySelectorAll(".page")].indexOf(page) + 1} > ` + s;
+    return s;
+  };
+  document.querySelectorAll(".page, .page *").forEach(el => {
+    if (!(el instanceof HTMLElement)) return;
+    if (el.clientWidth === 0 && el.clientHeight === 0) return;
+    scanned++;
+    if (el.scrollHeight - el.clientHeight > 1 || el.scrollWidth - el.clientWidth > 1) {
+      failures.push(`${describe(el)}: scroll ${el.scrollWidth}x${el.scrollHeight} exceeds client ${el.clientWidth}x${el.clientHeight}`);
+    }
+  });
+  document.querySelectorAll(".page").forEach((pg, i) => {
+    const pr = pg.getBoundingClientRect();
+    pg.querySelectorAll("*").forEach(el => {
+      if (el.ownerSVGElement) return; // svg children are clipped by their svg viewport
+      const r = el.getBoundingClientRect();
+      if (r.width === 0 && r.height === 0) return;
+      if (r.left < pr.left - 0.5 || r.right > pr.right + 0.5 || r.top < pr.top - 0.5 || r.bottom > pr.bottom + 0.5) {
+        failures.push(`page ${i + 1}: ${describe(el)} escapes page bounds`);
+      }
+    });
+  });
+  return { scanned, failures };
+};
+</script>

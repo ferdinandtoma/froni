@@ -1,0 +1,1820 @@
+===== TASK BRIEF =====
+
+<task>
+Produce Revision 08 of the FRN-001 tech pack in this repo. Four changes, nothing else.
+
+1. Redraw the construction flats on pages 3 and 4.
+The current flats show raglan sleeves: diagonal seams running from neckline to underarm. This contradicts the fixed spec on page 2 (straight, clean set-in sleeve seam; no raglan construction). Redraw front, back, and side views so that:
+- The shoulder seam runs from the neck outward past the natural shoulder point (moderate drop shoulder).
+- The sleeve attaches on a set-in seam falling vertically from the shoulder point around the armhole. No seam touches the neckline except the neckline itself.
+- Sleeves are full length, ending in cuff ribs at the wrist. The current flats show short sleeves.
+- Proportion the drawing against the M column of the page 7 POM table (body length 70, half chest 59, sleeve 58, shoulder 19, hem rib 6, cuff rib 6). Schematic, not pattern-accurate, but visibly a heavyweight long-sleeve hoodie.
+- Hood shape, three-panel construction, and the dashed attachment line carry over unchanged.
+
+2. Label discipline on every flat and schematic (pages 3, 4, 5, 7, 8).
+No words inside a garment panel or drawn shape. Every label either moves outside the outline with a thin leader line, or converts to the letter and N-code system already used on pages 7 and 8, with a short legend under the drawing. Affected labels include Cuff rib, Hem rib, Center gusset, Three panels, Attachment line, and any others found.
+
+3. Page 11, interior hood locator.
+Add the image asset Froni_Edition_One_IAM_Verse.jpg (placed in the same assets directory as Froni_Edition_One_IAM.jpg) as the reference image for the interior verse block, mirroring exactly how the exterior block presents its reference: image, filename line, and the same two caption sentences adapted for the verse: the photograph shows intended placement and proportion only; production lettering artwork is pending and document wording is a locator only. Keep the existing spec bullets unchanged.
+
+4. Register sweep, all 14 pages of prose.
+Every sentence in the pack states a requirement, a fact, or a response field. Delete or rewrite anything else. Specifically:
+- Delete sentences that explain why a requirement exists. The requirement stays, the justification goes.
+- Delete every question outside the page 14 response form.
+- Delete polite filler: please, kindly, thank you, we would appreciate.
+- Delete meta phrases wherever they appear: it is important to note, please note, note that, in order to, ensure that, comprehensive, robust, seamless, leverage, utilize, keep in mind, additionally or furthermore as sentence openers.
+- Replace the word canonical wherever it appears: the image is the Saint Catherine's scan or the artwork authority.
+- Replace every em dash with a comma, colon, or period.
+- No all-caps words or headings anywhere except FRONI as the wordmark in the tape content.
+- Requirements keep their force as flat statements (is not accepted, is rejected stay). Remove doubled emphasis, warnings, and scolding around them.
+Rewrites must not change the meaning, value, or scope of any requirement.
+
+Revision control: bump document control and every page footer to Revision 08 with the build date, and add one revision record entry: Set-in sleeve flats corrected; flat labels converted to coded callouts; interior verse locator image added; full plain-register language pass.
+</task>
+
+<constraints>
+- No spec value changes anywhere: no number, tolerance, size, stitch count, threshold, material, or requirement is added, removed, or altered. This revision changes drawings, label mechanics, one added image block, and prose register only.
+- Page count and section order stay as Rev 07.
+- Do not touch the artwork authority images or their pixel declarations except the one added verse image block.
+- The pink unavailable-status flags are content, not register: keep them, sweep their wording only if it violates the rules above.
+- If Froni_Edition_One_IAM_Verse.jpg is absent from assets, stop and report before building. Do not substitute or generate an image.
+</constraints>
+
+<verify>
+Run each check and paste real output, not summaries.
+1. Build the pack exactly as AGENTS.md specifies. Paste the command and its full output. Iterate until the build is green, max 3 iterations; if not green after 3, stop and report the residue.
+2. Grep the pack source for each banned item and paste the results: em dash character, canonical, please, kindly, it is important, note that, in order to, ensure, comprehensive, robust, seamless, leverage, utilize. Expected: zero matches in pack prose.
+3. Grep for question marks in pack prose and paste every hit with its page. Expected: none outside the page 14 response form.
+4. Paste git diff --stat, plus the full diff of the POM, BOM, and embroidery setup sources (pages 7, 8, 9, 11 data), confirming zero numeric changes.
+5. Export or screenshot pages 3, 4, and 11 of the built PDF as PNG and report their paths for review. One pass, operator judged: do not iterate on the drawings without review.
+</verify>
+
+===== CURRENT EVIDENCE PATHS =====
+
+PDF: C:\cipher\techpack\dist\Froni_FRN-001_Tech_Pack_Rev08.pdf
+PDF bytes: 26155728
+PDF modified: 2026-07-16T18:55:51.837Z
+Latest active source modified: 2026-07-16T18:55:21.849Z
+PDF newer than active source: true
+PNG page 3: C:\cipher\techpack\dist\review\rev08\Froni_FRN-001_Rev08_page-03.png
+PNG page 4: C:\cipher\techpack\dist\review\rev08\Froni_FRN-001_Rev08_page-04.png
+PNG page 11: C:\cipher\techpack\dist\review\rev08\Froni_FRN-001_Rev08_page-11.png
+
+===== INTERIOR ASSET PROVENANCE =====
+
+Supplied: C:\Users\tomaf\Downloads\comp_hood.jpeg
+Embedded: C:\cipher\techpack\src\rev08\assets\Froni_Edition_One_IAM_Verse.jpg
+Supplied SHA-256: E5686F731F85D03FD98116AA3FF4F3506F60DFDB52EFB05F6F66E056B0E04A94
+Embedded SHA-256: E5686F731F85D03FD98116AA3FF4F3506F60DFDB52EFB05F6F66E056B0E04A94
+Byte-identical: true
+Manifest dimensions: 4096x4096
+Manifest filename: assets/Froni_Edition_One_IAM_Verse.jpg
+
+===== SRC REV07 TO REV08 DIFF =====
+
+diff --git a/src/rev08/assets/Froni_Edition_One_IAM_Verse.jpg b/src/rev08/assets/Froni_Edition_One_IAM_Verse.jpg
+new file mode 100644
+index 0000000..2463bd4
+Binary files /dev/null and b/src/rev08/assets/Froni_Edition_One_IAM_Verse.jpg differ
+diff --git a/src/rev07/assets.json b/src/rev08/assets.json
+index 72eaffb..932831e 100644
+--- a/src/rev07/assets.json
++++ b/src/rev08/assets.json
+@@ -9,8 +9,8 @@
+     "sha256": "68AD1490D3502161214FE31EA9041F8C675671DD470AE1B7A581DC6AE81154BB",
+     "available": true
+   },
+-  "canonicalBack": {
+-    "role": "Canonical back icon scan",
++  "backArtworkAuthority": {
++    "role": "Saint Catherine's scan",
+     "sourcePath": "C:\\froni\\reference\\pantocratorStCatherines_2023x3774.jpg",
+     "embeddedPath": "assets/pantocratorStCatherines_2023x3774.jpg",
+     "mimeType": "image/jpeg",
+@@ -32,6 +32,16 @@
+     "sha256": "5D09ADA81A689A51C88149AA5477A1FE5DD51A5B94CF22B7B3D19D838D65C600",
+     "available": true
+   },
++  "hoodInteriorReference": {
++    "role": "Interior hood verse placement reference photograph",
++    "sourcePath": "C:\\Users\\tomaf\\Downloads\\comp_hood.jpeg",
++    "embeddedPath": "assets/Froni_Edition_One_IAM_Verse.jpg",
++    "mimeType": "image/jpeg",
++    "width": 4096,
++    "height": 4096,
++    "sha256": "E5686F731F85D03FD98116AA3FF4F3506F60DFDB52EFB05F6F66E056B0E04A94",
++    "available": true
++  },
+   "frontProductionVector": {
+     "role": "Front ornament production vector",
+     "sourcePath": null,
+@@ -42,7 +52,7 @@
+     "available": false
+   },
+   "mirrorComposite": {
+-    "role": "Canonical face mirror-composite acceptance sheet",
++    "role": "Face mirror-composite acceptance sheet",
+     "sourcePath": "C:\\froni\\reference\\Froni_Icon_Mirror_Composites.png",
+     "width": null,
+     "height": null,
+diff --git a/src/rev07/config.js b/src/rev08/config.js
+index 5ffd29e..b547aca 100644
+--- a/src/rev07/config.js
++++ b/src/rev08/config.js
+@@ -1,11 +1,11 @@
+ "use strict";
+ 
+-const REV07_CONFIG = {
++const REV08_CONFIG = {
+   meta: {
+     documentId: "FRN-001",
+-    revision: "07",
++    revision: "08",
+     buildDate: "16 Jul 2026",
+-    outputFilename: "Froni_FRN-001_Tech_Pack_Rev07.pdf",
++    outputFilename: "Froni_FRN-001_Tech_Pack_Rev08.pdf",
+     classification: "Custom-development technical pack",
+     confidentiality: "Factory development and quotation",
+   },
+@@ -20,7 +20,7 @@ const REV07_CONFIG = {
+     sizes: ["S", "M", "L", "XL"],
+     sizeSplit: "Final size split is supplied at order placement.",
+     colorway: "Reactive-dyed black",
+-    factoryDateRequest: "Factory states its earliest committed ex-factory date after approved PPS.",
++    factoryDateRequest: "Factory states its earliest committed ex-factory date after the approved pre-production sample.",
+   },
+ 
+   garment: {
+@@ -46,16 +46,17 @@ const REV07_CONFIG = {
+     "Final graded pattern approval",
+     "Production fabric approval",
+     "Embroidery strike-off approval",
+-    "PPS approval",
++    "Pre-production sample approval",
+   ],
+ 
+   developmentStatus: "This custom-development pack is not ready for bulk cutting. Bulk cutting may begin only after all six listed approvals are recorded.",
+ 
+   revisionRecord: [
++    "Set-in sleeve flats corrected; flat labels converted to coded callouts; interior verse locator image added; full plain-register language pass.",
+     "Quotation basis set to 200 garments with final size split supplied at order placement.",
+     "Current blank-neck and four-decoration requirements applied.",
+     "Construction-only vector flats and hood assembly schematics added.",
+-    "Construction, POM, BOM, responsibility, development, and factory-response schedules added.",
++    "Construction, measurement, bill-of-materials, responsibility, development, and factory-response schedules added.",
+     "Current artwork authorities and unavailable production deliverables identified.",
+   ],
+ 
+@@ -66,8 +67,8 @@ const REV07_CONFIG = {
+     { number: 4, type: "flatsViews", title: "Construction flats: side and hood views" },
+     { number: 5, type: "hoodAssembly", title: "Three-panel hood and double-layer assembly" },
+     { number: 6, type: "construction", title: "Construction matrix" },
+-    { number: 7, type: "pomBody", title: "Body and sleeve POM methods" },
+-    { number: 8, type: "pomHood", title: "Hood and rib POM methods" },
++    { number: 7, type: "pomBody", title: "Body and sleeve measurement methods" },
++    { number: 8, type: "pomHood", title: "Hood and rib measurement methods" },
+     { number: 9, type: "bom", title: "Bill of materials and sourcing evidence" },
+     { number: 10, type: "artwork", title: "Front and back artwork authority and placement" },
+     { number: 11, type: "hoodArtwork", title: "Hood artwork and embroidery acceptance" },
+@@ -147,7 +148,7 @@ const REV07_CONFIG = {
+       id: "back_icon",
+       name: "Back Christ Pantocrator embroidery",
+       placement: "Centered on the back panel",
+-      authority: "Canonical Saint Catherine's scan",
++      authority: "Saint Catherine's scan",
+     },
+     {
+       id: "hood_exterior",
+@@ -200,76 +201,76 @@ const REV07_CONFIG = {
+     missingTolerance: "Factory proposes a production tolerance for approval where no tolerance is stated.",
+   },
+ 
+-  constructionEngineeringBaseline: "For every seam and attachment area, the garment factory must propose stitch class, SPI, seam allowance, seam finish, thread ticket, needle system, reinforcement, and stabilization as applicable, together with the row-specific requirements below.",
++  constructionEngineeringBaseline: "For every seam and attachment area, the garment factory must propose stitch class, stitches per inch, seam allowance, seam finish, thread ticket, needle system, reinforcement, and stabilization as applicable, together with the row-specific requirements below.",
+ 
+   construction: [
+     {
+       area: "Shoulder seam",
+       fixed: "Clean exterior; preserve the relaxed drop-shoulder silhouette.",
+-      factoryProposal: "Propose stitch class, SPI, seam allowance, seam finish, thread ticket, needle system, and reinforcement for the specified cloth.",
++      factoryProposal: "Propose stitch class, stitches per inch, seam allowance, seam finish, thread ticket, needle system, and reinforcement for the specified cloth.",
+       firstFit: "Approve shoulder position, balance, comfort, and exterior appearance.",
+       pps: "Confirm approved production construction and repeatability.",
+     },
+     {
+       area: "Armhole seam",
+       fixed: "Straight, clean set-in sleeve seam; no raglan construction.",
+-      factoryProposal: "Propose stitch class, SPI, allowance, finish, needle system, thread, and clean bulk control.",
++      factoryProposal: "Propose stitch class, stitches per inch, allowance, finish, needle system, thread, and clean bulk control.",
+       firstFit: "Approve armhole shape, mobility, sleeve pitch, and exterior line.",
+       pps: "Confirm seam shape and production method against the approved pattern.",
+     },
+     {
+       area: "Sleeve underarm seam",
+       fixed: "Continuous clean sleeve line without exterior decoration.",
+-      factoryProposal: "Propose stitch class, SPI, allowance, finish, needle system, thread, and reinforcement at joins.",
++      factoryProposal: "Propose stitch class, stitches per inch, allowance, finish, needle system, thread, and reinforcement at joins.",
+       firstFit: "Approve sleeve rotation, comfort, and seam appearance.",
+       pps: "Confirm production seam and junction alignment.",
+     },
+     {
+       area: "Body side seam",
+       fixed: "Standard side seams; no body gusset.",
+-      factoryProposal: "Propose stitch class, SPI, allowance, finish, needle system, thread, and hem-junction control.",
++      factoryProposal: "Propose stitch class, stitches per inch, allowance, finish, needle system, thread, and hem-junction control.",
+       firstFit: "Approve balance, hang, and clean exterior.",
+       pps: "Confirm production seam, alignment, and bulk control.",
+     },
+     {
+       area: "Cuff rib attachment",
+       fixed: "2x2 matched-black rib with the fixed fibre range.",
+-      factoryProposal: "Propose ratio, stitch class, SPI, allowance, finish, needle system, thread, and join placement.",
++      factoryProposal: "Propose ratio, stitch class, stitches per inch, allowance, finish, needle system, thread, and join placement.",
+       firstFit: "Approve opening, recovery, comfort, and sleeve transition.",
+       pps: "Confirm approved dimensions and production recovery.",
+     },
+     {
+       area: "Hem rib attachment",
+       fixed: "2x2 matched-black rib; clean exterior with no waviness.",
+-      factoryProposal: "Propose ratio, stitch class, SPI, allowance, finish, needle system, thread, and side-join treatment.",
++      factoryProposal: "Propose ratio, stitch class, stitches per inch, allowance, finish, needle system, thread, and side-join treatment.",
+       firstFit: "Approve relaxed width, recovery, body hang, and junctions.",
+       pps: "Confirm approved dimensions and production method.",
+     },
+     {
+       area: "Hood side-panel assembly",
+       fixed: "Two outer side panels and two inner side panels in self fabric.",
+-      factoryProposal: "Propose stitch class, SPI, allowance, finish, notches, needle system, thread, and bulk control.",
++      factoryProposal: "Propose stitch class, stitches per inch, allowance, finish, notches, needle system, thread, and bulk control.",
+       firstFit: "Approve side-panel shape, face opening, volume, and drape.",
+       pps: "Confirm approved pattern matching and clean exterior.",
+     },
+     {
+       area: "Hood center-gusset assembly",
+       fixed: "One center gusset per hood layer; exterior gusset carries the locator for Ο Ω Ν.",
+-      factoryProposal: "Propose stitch class, SPI, allowance, finish, notches, needle system, thread, and alignment control.",
++      factoryProposal: "Propose stitch class, stitches per inch, allowance, finish, notches, needle system, thread, and alignment control.",
+       firstFit: "Approve gusset geometry, centering, volume, and hood fall.",
+       pps: "Confirm panel matching and centered placement.",
+     },
+     {
+       area: "Inner and outer hood joining",
+       fixed: "Double-layer self-fabric hood; embroidery backs hidden between layers.",
+-      factoryProposal: "Propose joining and turning sequence, stitch class, SPI, allowance, finish, needle system, and bulk control.",
++      factoryProposal: "Propose joining and turning sequence, stitch class, stitches per inch, allowance, finish, needle system, and bulk control.",
+       firstFit: "Approve face-edge roll, weight, comfort, and clean finish.",
+       pps: "Confirm no exposed embroidery back or unintended turn-out.",
+     },
+     {
+       area: "Hood-to-neckline attachment",
+       fixed: "Blank neck with no applied label; hood centered to the neckline.",
+-      factoryProposal: "Propose stitch class, SPI, allowance, finish, needle system, thread, notches, and seam-bulk control.",
++      factoryProposal: "Propose stitch class, stitches per inch, allowance, finish, needle system, thread, notches, and seam-bulk control.",
+       firstFit: "Approve neckline shape, hood balance, comfort, and back-icon drape rule.",
+       pps: "Confirm approved pattern match and clean attachment.",
+     },
+@@ -299,16 +300,16 @@ const REV07_CONFIG = {
+   bom: [
+     { item: "Body French terry", fixedSpec: "100% combed ring-spun cotton, three-end unbrushed loopback, reactive black, 420-450 gsm", sourcingParty: "Garment factory", approvalEvidence: "Mill sheet, swatch, composition and performance results", approvalStage: "Production-fabric approval" },
+     { item: "Rib", fixedSpec: "2x2, 95-98% cotton and 2-5% elastane, matched reactive black", sourcingParty: "Garment factory", approvalEvidence: "Composition, recovery swatch, shade match", approvalStage: "Production-fabric approval" },
+-    { item: "Sewing thread", fixedSpec: "Factory proposes a thread suited to the specified cloth and clean exterior", sourcingParty: "Garment factory", approvalEvidence: "Construction proposal and sewn sample", approvalStage: "First fit and PPS" },
++    { item: "Sewing thread", fixedSpec: "Factory proposes a thread suited to the specified cloth and clean exterior", sourcingParty: "Garment factory", approvalEvidence: "Construction proposal and sewn sample", approvalStage: "First fit and pre-production sample" },
+     { item: "Embroidery thread", fixedSpec: "Madeira Frosted Matt 40 wt or approved Gunold equivalent; 60 wt for face and hands", sourcingParty: "Garment factory under its embroidery contract", approvalEvidence: "Matte A/B test and production-cloth strike-offs", approvalStage: "Embroidery strike-off approval" },
+     { item: "Embroidery bobbin", fixedSpec: "60-70 wt polyester", sourcingParty: "Garment factory under its embroidery contract", approvalEvidence: "Strike-off reverse and wash review", approvalStage: "Embroidery strike-off approval" },
+     { item: "Embroidery needles", fixedSpec: "75/11 ballpoint", sourcingParty: "Garment factory under its embroidery contract", approvalEvidence: "Strike-off record and production setup", approvalStage: "Embroidery strike-off approval" },
+     { item: "Temporary embroidery stabilizers", fixedSpec: "Front tearaway or washaway only; no permanent front cutaway", sourcingParty: "Garment factory under its embroidery contract", approvalEvidence: "Named proposal, removal sample, washed strike-off", approvalStage: "Embroidery strike-off approval" },
+     { item: "Permanent localized back stabilizer", fixedSpec: "Localized upper-back cutaway tapered into the drape zone; no full-panel cutaway", sourcingParty: "Garment factory under its embroidery contract", approvalEvidence: "Named proposal, drape review, washed strike-off", approvalStage: "Embroidery strike-off approval" },
+-    { item: "Neckline stabilization", fixedSpec: "Factory proposes only if needed; must be concealed and compatible with wash requirements", sourcingParty: "Garment factory", approvalEvidence: "Material proposal and sewn sample, or written confirmation none is needed", approvalStage: "First fit and PPS" },
+-    { item: "Printed care, fibre, origin, and wordmark tape", fixedSpec: "Required content only; blank neck and no other applied label", sourcingParty: "Garment factory", approvalEvidence: "Artwork proof, print sample, content check", approvalStage: "PPS approval" },
+-    { item: "Factory shipment polybag", fixedSpec: "Clean individual protective bag for factory shipment only", sourcingParty: "Garment factory", approvalEvidence: "Material and dimensions submitted", approvalStage: "PPS approval" },
+-    { item: "Factory shipment cartons", fixedSpec: "Export cartons suitable for factory shipment to Germany", sourcingParty: "Garment factory", approvalEvidence: "Carton specification and packing count", approvalStage: "PPS approval" },
++    { item: "Neckline stabilization", fixedSpec: "Factory proposes only if needed; must be concealed and compatible with wash requirements", sourcingParty: "Garment factory", approvalEvidence: "Material proposal and sewn sample, or written confirmation none is needed", approvalStage: "First fit and pre-production sample" },
++    { item: "Printed care, fibre, origin, and wordmark tape", fixedSpec: "Required content only; blank neck and no other applied label", sourcingParty: "Garment factory", approvalEvidence: "Artwork proof, print sample, content check", approvalStage: "Pre-production sample approval" },
++    { item: "Factory shipment polybag", fixedSpec: "Clean individual protective bag for factory shipment only", sourcingParty: "Garment factory", approvalEvidence: "Material and dimensions submitted", approvalStage: "Pre-production sample approval" },
++    { item: "Factory shipment cartons", fixedSpec: "Export cartons suitable for factory shipment to Germany", sourcingParty: "Garment factory", approvalEvidence: "Carton specification and packing count", approvalStage: "Pre-production sample approval" },
+   ],
+ 
+   artwork: {
+@@ -334,7 +335,7 @@ const REV07_CONFIG = {
+     },
+     back: {
+       title: "Back Christ Pantocrator embroidery",
+-      authority: "The canonical Saint Catherine's scan controls the face. Generated or mirrored renders do not replace it.",
++      authority: "The Saint Catherine's scan controls the face. Generated or mirrored renders do not replace the artwork authority.",
+       placement: [
+         "Centered on center back",
+         "Halo apex target 12 cm below collar seam; accepted window 11-13 cm",
+@@ -371,6 +372,7 @@ const REV07_CONFIG = {
+         "Planning range 5-8k stitches",
+         "One file with fixed lettering size and variable repeat",
+       ],
++      reference: "The photograph shows intended interior verse placement and proportion only.",
+       note: "Document wording is a locator only. Production lettering artwork is pending.",
+     },
+   },
+@@ -406,7 +408,7 @@ const REV07_CONFIG = {
+       "Editable native Wilcom .EMB masters and graded production outputs are delivered to and owned by Froni.",
+       "Digitizer supplies files and revisions, including one remote tuning round after the first production-cloth strike-off.",
+       "Physical strike-offs remain under the garment factory's contract and responsibility, including subcontracted embroidery.",
+-      "Strike-offs repeated because of embroidery execution faults are at the garment factory's cost.",
++      "The garment factory bears the cost of strike-offs repeated due to embroidery execution faults.",
+       "Digitizing fee includes revisions until an approved production sew-out on final fabric.",
+     ],
+     acceptance: [
+@@ -423,29 +425,29 @@ const REV07_CONFIG = {
+   responsibilities: [
+     { scope: "Fixed garment and material requirements", owner: "Froni", deliverable: "This pack and written clarifications", approval: "Froni confirms any revision" },
+     { scope: "Factory pattern development", owner: "Garment factory", deliverable: "First pattern, corrected pattern, graded pattern, measurement chart", approval: "Froni approves fit sample and final graded pattern" },
+-    { scope: "Factory construction proposal", owner: "Garment factory", deliverable: "Area-by-area construction engineering without changing fixed requirements", approval: "Froni approves proposal, first fit, and PPS" },
++    { scope: "Factory construction proposal", owner: "Garment factory", deliverable: "Area-by-area construction engineering without changing fixed requirements", approval: "Froni approves proposal, first fit, and pre-production sample" },
+     { scope: "Fabric and trim sourcing", owner: "Garment factory", deliverable: "Mill data, swatches, test evidence, trim proposals", approval: "Froni approves production fabric and trims" },
+     { scope: "Digitizing files and revisions", owner: "External digitizer", deliverable: "Native masters, graded files, stitch plan, color map, tuning revisions", approval: "Froni approves files through physical sew-outs" },
+     { scope: "Embroidery subcontracting", owner: "Garment factory", deliverable: "Subcontractor control, setup, physical strike-offs, production embroidery", approval: "Garment factory remains the sole contracting and responsible party to Froni" },
+-    { scope: "Fit-dependent items", owner: "Garment factory with Froni approval", deliverable: "Final balance, hood geometry, POMs, placement adjustments", approval: "Finalized from the approved fit sample" },
++    { scope: "Fit-dependent items", owner: "Garment factory with Froni approval", deliverable: "Final balance, hood geometry, measurement points, placement adjustments", approval: "Finalized from the approved fit sample" },
+     { scope: "Strike-off-dependent items", owner: "Garment factory with digitizer support", deliverable: "Thread, density, stabilizer, join, lettering, wash results", approval: "Froni approves production-cloth strike-offs" },
+-    { scope: "PPS-dependent items", owner: "Garment factory", deliverable: "Production construction, graded measurement chart, final tape, packing method", approval: "Froni approves PPS" },
+-    { scope: "Bulk manufacture and final inspection", owner: "Garment factory", deliverable: "Garments matching approved PPS and evidence", approval: "Release after final inspection and shipment documents" },
++    { scope: "Pre-production-sample-dependent items", owner: "Garment factory", deliverable: "Production construction, graded measurement chart, final tape, packing method", approval: "Froni approves the pre-production sample" },
++    { scope: "Bulk manufacture and final inspection", owner: "Garment factory", deliverable: "Garments matching the approved pre-production sample and evidence", approval: "Release after final inspection and shipment documents" },
+   ],
+ 
+   developmentStages: [
+     { stage: "Factory technical review and feasibility confirmation", approvalOutput: "Signed yes or no acceptance, deviations list, field data, development and quotation inputs" },
+     { stage: "Construction proposal", approvalOutput: "Complete area-by-area engineering proposal approved in writing" },
+-    { stage: "First pattern", approvalOutput: "First custom pattern, pattern card, proposed POM values, and measurement method sheet" },
++    { stage: "First pattern", approvalOutput: "First custom pattern, pattern card, proposed point-of-measurement values, and measurement method sheet" },
+     { stage: "First fit sample without final embroidery where appropriate", approvalOutput: "Physical fit sample with completed measurement report and marked corrections" },
+     { stage: "Fit corrections", approvalOutput: "Corrected physical fit sample, revised pattern, completed measurement report, and review record against fit comments" },
+     { stage: "Approved graded pattern and updated measurement chart", approvalOutput: "Approved graded nest, pattern files, and final measurement chart" },
+     { stage: "Production-fabric approval", approvalOutput: "Approved swatch, mill data, performance evidence, shade and hand confirmation" },
+     { stage: "Embroidery strike-offs on production fabric", approvalOutput: "Approved front, back, hood, mirror, matte, stabilizer, and wash evidence" },
+     { stage: "Embroidered pre-production sample", approvalOutput: "Complete embroidered garment reviewed for placement, drape, fit, and construction" },
+-    { stage: "PPS approval", approvalOutput: "Signed PPS approval with sealed sample, chart, tape, BOM, and production method" },
+-    { stage: "Bulk production", approvalOutput: "In-line records against sealed PPS and approved production controls" },
+-    { stage: "Final QC and shipment", approvalOutput: "Final inspection report, packing list, shipment evidence, and accepted release" },
++    { stage: "Pre-production sample approval", approvalOutput: "Signed pre-production-sample approval with sealed sample, chart, tape, bill of materials, and production method" },
++    { stage: "Bulk production", approvalOutput: "In-line records against the sealed pre-production sample and approved production controls" },
++    { stage: "Final inspection and shipment", approvalOutput: "Final inspection report, packing list, shipment evidence, and accepted release" },
+   ],
+ 
+   factoryResponse: [
+@@ -453,13 +455,13 @@ const REV07_CONFIG = {
+     "Pattern-development price",
+     "First fit-sample price",
+     "Corrected fit-sample price",
+-    "PPS price",
++    "Pre-production sample price",
+     "Embroidery setup and strike-off charges",
+     "Provisional bulk unit price at 200 units",
+     "Fabric minimum and fabric lead time",
+     "Sample lead time",
+-    "Bulk lead time after PPS",
+-    "Earliest committed ex-factory date after approved PPS",
++    "Bulk lead time after the approved pre-production sample",
++    "Earliest committed ex-factory date after the approved pre-production sample",
+     "Maximum usable embroidery field in centimetres",
+     "Embroidery machine make and field configuration",
+     "Confirmation that embroidery remains under the garment factory's contract and responsibility",
+@@ -470,9 +472,9 @@ const REV07_CONFIG = {
+ };
+ 
+ if (typeof module !== "undefined" && module.exports) {
+-  module.exports = REV07_CONFIG;
++  module.exports = REV08_CONFIG;
+ }
+ 
+ if (typeof window !== "undefined") {
+-  window.REV07_CONFIG = REV07_CONFIG;
++  window.REV08_CONFIG = REV08_CONFIG;
+ }
+diff --git a/src/rev07/diagrams.js b/src/rev08/diagrams.js
+index e7c1fa3..055d647 100644
+--- a/src/rev07/diagrams.js
++++ b/src/rev08/diagrams.js
+@@ -1,6 +1,6 @@
+ "use strict";
+ 
+-(function initRev07Diagrams(global) {
++(function initRev08Diagrams(global) {
+   const svg = (view, label, body, viewBox = "0 0 520 270") => `
+     <svg class="diagram-svg" data-view="${view}" role="img" aria-label="${label}" viewBox="${viewBox}" xmlns="http://www.w3.org/2000/svg">
+       <title>${label}</title>
+@@ -15,15 +15,18 @@
+     </defs>
+     <g class="diagram-lines" data-panel="hood-side-left">
+       <path d="M24 60 Q56 20 118 28 Q148 52 143 112 Q118 171 40 188 Q12 132 24 60 Z"/>
+-      <text x="83" y="211" text-anchor="middle">Left side panel</text>
++      <path class="label-leader" d="M83 188 L83 201"/>
++      <text x="83" y="214" text-anchor="middle" data-label-position="outside">Left side panel</text>
+     </g>
+     <g class="diagram-lines" data-panel="hood-center-gusset">
+       <path d="M222 24 Q260 15 298 24 L311 205 Q260 218 209 205 Z"/>
+-      <text x="260" y="237" text-anchor="middle">Center gusset</text>
++      <path class="label-leader" d="M260 207 L260 225"/>
++      <text x="260" y="239" text-anchor="middle" data-label-position="outside">Center gusset</text>
+     </g>
+     <g class="diagram-lines" data-panel="hood-side-right">
+       <path d="M496 60 Q464 20 402 28 Q372 52 377 112 Q402 171 480 188 Q508 132 496 60 Z"/>
+-      <text x="437" y="211" text-anchor="middle">Right side panel</text>
++      <path class="label-leader" d="M437 188 L437 201"/>
++      <text x="437" y="214" text-anchor="middle" data-label-position="outside">Right side panel</text>
+     </g>
+     <g class="assembly-arrows">
+       <path d="M152 111 L201 111" marker-end="url(#assemblyArrow)"/>
+@@ -40,25 +43,28 @@
+     </defs>
+     <g data-layer="outer-self-fabric">
+       <path class="layer outer" d="M58 50 Q260 8 462 50 L447 86 Q260 50 73 86 Z"/>
+-      <text x="260" y="35" text-anchor="middle">Outer self-fabric layer</text>
++      <path class="label-leader" d="M127 25 L174 42"/>
++      <text x="12" y="22" data-label-position="outside">Outer self-fabric layer</text>
+     </g>
+     <g data-layer="embroidery-zone">
+       <path class="layer stitch" d="M179 74 Q260 55 341 74"/>
+       <circle class="stitch-dot" cx="206" cy="68" r="2"/><circle class="stitch-dot" cx="233" cy="62" r="2"/><circle class="stitch-dot" cx="260" cy="59" r="2"/><circle class="stitch-dot" cx="287" cy="62" r="2"/><circle class="stitch-dot" cx="314" cy="68" r="2"/>
+-      <text x="260" y="107" text-anchor="middle">Embroidery back concealed inside assembly</text>
++      <path class="label-leader" d="M260 77 L260 94"/>
++      <text x="260" y="108" text-anchor="middle" data-label-position="outside">Embroidery back concealed inside assembly</text>
+     </g>
+     <g data-layer="inner-self-fabric">
+       <path class="layer inner" d="M73 127 Q260 91 447 127 L462 163 Q260 121 58 163 Z"/>
+-      <text x="260" y="190" text-anchor="middle">Inner self-fabric layer</text>
++      <path class="label-leader" d="M260 163 L260 178"/>
++      <text x="260" y="192" text-anchor="middle" data-label-position="outside">Inner self-fabric layer</text>
+     </g>
+     <g class="assembly-arrows">
+       <path d="M115 91 L115 119" marker-end="url(#crossArrow)"/>
+       <path d="M405 91 L405 119" marker-end="url(#crossArrow)"/>
+     </g>
+-    <g class="diagram-lines" data-location="hood-attachment"><path d="M55 214 L465 214"/><text x="260" y="238" text-anchor="middle">Finished hood assembly attaches to approved neckline seam</text></g>
++    <g class="diagram-lines" data-location="hood-attachment"><path d="M55 214 L465 214"/><path class="label-leader" d="M260 214 L260 226"/><text x="260" y="241" text-anchor="middle" data-label-position="outside">Finished hood assembly attaches to approved neckline seam</text></g>
+   `);
+ 
+-  const bodyPom = () => svg("body-pom", "Body and sleeve POM methods", `
++  const bodyPom = () => svg("body-pom", "Body and sleeve measurement methods", `
+     <defs>
+       <marker id="pomArrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+         <path d="M0 0 L10 5 L0 10 Z" class="measure-fill"/>
+@@ -83,7 +89,7 @@
+     <g class="pom-line new-method" data-pom-method="armhole-measurement-method"><path d="M334 47 Q368 61 361 94" marker-start="url(#pomArrow)" marker-end="url(#pomArrow)"/><text x="372" y="58">N6</text></g>
+   `);
+ 
+-  const hoodRibPom = () => svg("hood-rib-pom", "Hood and rib POM methods", `
++  const hoodRibPom = () => svg("hood-rib-pom", "Hood and rib measurement methods", `
+     <defs>
+       <marker id="hoodPomArrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+         <path d="M0 0 L10 5 L0 10 Z" class="measure-fill"/>
+@@ -100,7 +106,7 @@
+     <g class="pom-line new-method" data-pom-method="hood-side-panel-geometry"><path d="M57 42 Q122 6 177 30 Q219 73 186 177 Q124 218 59 186 Q29 111 57 42 Z" stroke-dasharray="4 3"/><text x="169" y="25">N9</text></g>
+     <g class="pom-line new-method" data-pom-method="center-gusset-geometry"><path d="M250 30 Q290 20 330 30 L342 197 Q290 210 238 197 Z" stroke-dasharray="4 3"/><text x="337" y="27">N10</text></g>
+     <g class="pom-line new-method" data-pom-method="hood-neckline-seam-length"><path d="M66 184 Q123 214 183 177" marker-start="url(#hoodPomArrow)" marker-end="url(#hoodPomArrow)"/><text x="146" y="200">N11</text></g>
+-    <text x="439" y="44" text-anchor="middle">Cuff rib</text><text x="439" y="159" text-anchor="middle">Hem rib</text>
++    <text x="439" y="80" text-anchor="middle">R1</text><text x="439" y="179" text-anchor="middle">R2</text>
+     <g class="pom-line new-method" data-pom-method="cuff-rib-width"><path d="M500 52 L500 102" marker-start="url(#hoodPomArrow)" marker-end="url(#hoodPomArrow)"/><text x="495" y="80" text-anchor="end">N12</text></g>
+     <g class="pom-line new-method" data-pom-method="cuff-relaxed-opening"><path d="M379 112 L499 112" marker-start="url(#hoodPomArrow)" marker-end="url(#hoodPomArrow)"/><text x="439" y="128" text-anchor="middle">N13</text></g>
+     <g class="pom-line new-method" data-pom-method="hem-rib-dimensions"><path d="M366 137 L512 137" marker-start="url(#hoodPomArrow)" marker-end="url(#hoodPomArrow)"/><path d="M512 143 L512 205" marker-start="url(#hoodPomArrow)" marker-end="url(#hoodPomArrow)"/><text x="499" y="176" text-anchor="end">N14</text></g>
+@@ -114,12 +120,12 @@
+       <g class="locator-box" data-artwork-locator="${view}">
+         ${isFront
+           ? '<rect x="186" y="82" width="148" height="121" rx="3"/><path d="M260 82 L260 203" class="center-guide"/><text x="260" y="139" text-anchor="middle">Production vector pending</text><text x="260" y="156" text-anchor="middle">Cross centered in authority</text>'
+-          : '<rect x="212" y="70" width="96" height="145" rx="3"/><path d="M260 70 L260 215" class="center-guide"/><text x="260" y="137" text-anchor="middle">Canonical scan</text><text x="260" y="154" text-anchor="middle">No back join</text>'}
++          : '<rect x="212" y="70" width="96" height="145" rx="3"/><path d="M260 70 L260 215" class="center-guide"/><text x="260" y="137" text-anchor="middle">Artwork authority scan</text><text x="260" y="154" text-anchor="middle">No back join</text>'}
+       </g>
+     `);
+   };
+ 
+-  global.REV07_DIAGRAMS = {
++  global.REV08_DIAGRAMS = {
+     hoodExploded,
+     hoodCrossSection,
+     bodyPom,
+diff --git a/src/rev07/flats.js b/src/rev08/flats.js
+index 4b18a20..fad9f21 100644
+--- a/src/rev07/flats.js
++++ b/src/rev08/flats.js
+@@ -1,6 +1,6 @@
+ "use strict";
+ 
+-(function initRev07Flats(global) {
++(function initRev08Flats(global) {
+   const svg = (view, label, body, viewBox = "0 0 240 260") => `
+     <svg class="technical-svg" data-view="${view}" role="img" aria-label="${label}" viewBox="${viewBox}" xmlns="http://www.w3.org/2000/svg">
+       <title>${label}</title>
+@@ -11,57 +11,59 @@
+     `<text class="flat-label" x="${x}" y="${y}" text-anchor="${anchor}">${text}</text>`;
+ 
+   const front = () => svg("front", "Front construction flat", `
+-    <g class="flat-lines" data-panel="front-body">
+-      <path d="M76 66 L54 77 L24 126 L45 139 L66 106 L66 216 L174 216 L174 106 L195 139 L216 126 L186 77 L164 66 L146 58 Q120 69 94 58 Z"/>
++    <g class="flat-lines" data-panel="front-body" data-construction="set-in" data-sleeve-length="full" data-body-length-cm="70" data-half-chest-cm="59" data-sleeve-cm="58" data-shoulder-cm="19" data-hem-rib-cm="6" data-cuff-rib-cm="6">
++      <path d="M58 74 L7 176 L28 198 L62 124 L62 228 L178 228 L178 124 L212 198 L233 176 L182 74 L146 58 Q120 69 94 58 Z"/>
+     </g>
+     <g class="flat-lines" data-location="neckline"><path d="M94 58 Q120 78 146 58"/></g>
+     <g class="flat-lines dashed" data-location="hood-attachment"><path d="M91 61 Q120 84 149 61"/></g>
+     <g class="flat-lines" data-panel="front-hood"><path d="M91 62 Q83 34 99 16 Q120 2 141 16 Q157 34 149 62 Q120 79 91 62 Z"/><path d="M99 17 Q120 29 141 17"/></g>
+-    <g class="flat-lines" data-location="shoulder"><path d="M76 66 L94 58"/><path d="M146 58 L164 66"/></g>
+-    <g class="flat-lines" data-location="armhole"><path d="M76 66 Q61 79 66 106"/><path d="M164 66 Q179 79 174 106"/></g>
+-    <g class="flat-lines" data-location="sleeve"><path d="M54 77 L24 126 L45 139 L66 106"/><path d="M186 77 L216 126 L195 139 L174 106"/></g>
+-    <g class="flat-lines" data-location="side-seam"><path d="M66 106 L66 197"/><path d="M174 106 L174 197"/></g>
+-    <g class="flat-lines" data-location="cuff"><path d="M24 126 L45 139"/><path d="M27 121 L48 134"/></g>
+-    <g class="flat-lines" data-location="hem"><path d="M66 216 L174 216"/></g>
+-    <g class="flat-lines" data-location="rib-boundary"><path d="M66 197 L174 197"/><path d="M27 121 L48 134"/><path d="M192 134 L213 121"/></g>
+-    ${label(120, 237, "Front view", "middle")}
+-    ${label(11, 153, "Cuff rib")}
+-    ${label(120, 211, "Hem rib", "middle")}
++    <g class="flat-lines" data-location="shoulder"><path d="M58 74 L94 58"/><path d="M146 58 L182 74"/></g>
++    <g class="flat-lines" data-location="armhole" data-seam-origin="shoulder-point"><path d="M58 74 C61 88 63 106 62 124"/><path d="M182 74 C179 88 177 106 178 124"/></g>
++    <g class="flat-lines" data-location="sleeve"><path d="M58 74 L7 176 L28 198 L62 124"/><path d="M182 74 L233 176 L212 198 L178 124"/></g>
++    <g class="flat-lines" data-location="side-seam"><path d="M62 124 L62 213"/><path d="M178 124 L178 213"/></g>
++    <g class="flat-lines" data-location="cuff"><path d="M7 176 L28 198"/><path d="M212 198 L233 176"/></g>
++    <g class="flat-lines" data-location="hem"><path d="M62 228 L178 228"/></g>
++    <g class="flat-lines" data-location="rib-boundary"><path d="M62 213 L178 213"/><path d="M14 163 L35 185"/><path d="M205 185 L226 163"/></g>
++    ${label(120, 250, "Front view", "middle")}
++    ${label(21, 183, "C1", "middle")}
++    ${label(120, 223, "C2", "middle")}
+   `);
+ 
+   const back = () => svg("back", "Back construction flat", `
+-    <g class="flat-lines" data-panel="back-body">
+-      <path d="M76 66 L54 77 L24 126 L45 139 L66 106 L66 216 L174 216 L174 106 L195 139 L216 126 L186 77 L164 66 L146 58 Q120 63 94 58 Z"/>
++    <g class="flat-lines" data-panel="back-body" data-construction="set-in" data-sleeve-length="full" data-body-length-cm="70" data-half-chest-cm="59" data-sleeve-cm="58" data-shoulder-cm="19" data-hem-rib-cm="6" data-cuff-rib-cm="6">
++      <path d="M58 74 L7 176 L28 198 L62 124 L62 228 L178 228 L178 124 L212 198 L233 176 L182 74 L146 58 Q120 63 94 58 Z"/>
+     </g>
+     <g class="flat-lines" data-location="neckline"><path d="M94 58 Q120 68 146 58"/></g>
+     <g class="flat-lines dashed" data-location="hood-attachment"><path d="M91 61 Q120 72 149 61"/></g>
+     <g class="flat-lines" data-panel="back-hood"><path d="M86 63 Q86 31 101 17 Q120 6 139 17 Q154 31 154 63 Q120 83 86 63 Z"/><path data-panel="hood-center-gusset" d="M111 12 Q120 8 129 12 L133 68 Q120 74 107 68 Z"/></g>
+-    <g class="flat-lines" data-location="shoulder"><path d="M76 66 L94 58"/><path d="M146 58 L164 66"/></g>
+-    <g class="flat-lines" data-location="armhole"><path d="M76 66 Q61 79 66 106"/><path d="M164 66 Q179 79 174 106"/></g>
+-    <g class="flat-lines" data-location="sleeve"><path d="M54 77 L24 126 L45 139 L66 106"/><path d="M186 77 L216 126 L195 139 L174 106"/></g>
+-    <g class="flat-lines" data-location="side-seam"><path d="M66 106 L66 197"/><path d="M174 106 L174 197"/></g>
+-    <g class="flat-lines" data-location="cuff"><path d="M24 126 L45 139"/><path d="M195 139 L216 126"/></g>
+-    <g class="flat-lines" data-location="hem"><path d="M66 216 L174 216"/></g>
+-    <g class="flat-lines" data-location="rib-boundary"><path d="M66 197 L174 197"/><path d="M27 121 L48 134"/><path d="M192 134 L213 121"/></g>
+-    ${label(120, 237, "Back view", "middle")}
+-    ${label(120, 88, "Center gusset", "middle")}
++    <g class="flat-lines" data-location="shoulder"><path d="M58 74 L94 58"/><path d="M146 58 L182 74"/></g>
++    <g class="flat-lines" data-location="armhole" data-seam-origin="shoulder-point"><path d="M58 74 C61 88 63 106 62 124"/><path d="M182 74 C179 88 177 106 178 124"/></g>
++    <g class="flat-lines" data-location="sleeve"><path d="M58 74 L7 176 L28 198 L62 124"/><path d="M182 74 L233 176 L212 198 L178 124"/></g>
++    <g class="flat-lines" data-location="side-seam"><path d="M62 124 L62 213"/><path d="M178 124 L178 213"/></g>
++    <g class="flat-lines" data-location="cuff"><path d="M7 176 L28 198"/><path d="M212 198 L233 176"/></g>
++    <g class="flat-lines" data-location="hem"><path d="M62 228 L178 228"/></g>
++    <g class="flat-lines" data-location="rib-boundary"><path d="M62 213 L178 213"/><path d="M14 163 L35 185"/><path d="M205 185 L226 163"/></g>
++    ${label(120, 250, "Back view", "middle")}
++    ${label(120, 88, "C3", "middle")}
+   `);
+ 
+   const side = () => svg("side", "Side construction flat", `
+-    <g class="flat-lines" data-panel="side-body">
+-      <path d="M103 59 Q91 67 91 83 L81 100 L65 145 L84 154 L99 119 L99 216 L157 216 L160 104 Q164 78 147 64 L134 58 Z"/>
++    <g class="flat-lines" data-panel="side-body" data-construction="set-in" data-sleeve-length="full" data-body-length-cm="70" data-half-chest-cm="59" data-sleeve-cm="58" data-shoulder-cm="19" data-hem-rib-cm="6" data-cuff-rib-cm="6">
++      <path d="M103 60 L142 72 L64 178 L83 196 L134 126 L134 228 L164 228 L164 112 Q165 84 147 65 L134 58 Z"/>
+     </g>
+     <g class="flat-lines" data-panel="side-hood"><path d="M103 60 Q92 34 105 14 Q132 1 149 23 Q158 43 147 65 Q130 76 103 60 Z"/><path data-panel="hood-side-panel" d="M109 17 Q133 7 147 25 Q154 44 145 61 Q126 70 105 59 Q97 35 109 17 Z"/></g>
+-    <g class="flat-lines" data-location="shoulder"><path d="M103 60 L134 58"/></g>
+-    <g class="flat-lines" data-location="armhole"><path d="M134 58 Q164 73 160 104"/></g>
+-    <g class="flat-lines" data-location="sleeve"><path d="M91 83 L65 145 L84 154 L99 119"/></g>
+-    <g class="flat-lines" data-location="side-seam"><path d="M99 119 L99 197"/></g>
++    <g class="flat-lines" data-location="shoulder"><path d="M103 60 L142 72"/></g>
++    <g class="flat-lines" data-location="armhole" data-seam-origin="shoulder-point"><path d="M142 72 C145 88 143 108 134 126"/></g>
++    <g class="flat-lines" data-location="sleeve"><path d="M142 72 L64 178 L83 196 L134 126"/></g>
++    <g class="flat-lines" data-location="side-seam"><path d="M134 126 L134 213"/></g>
+     <g class="flat-lines" data-location="neckline"><path d="M103 60 Q119 69 134 58"/></g>
+     <g class="flat-lines dashed" data-location="hood-attachment"><path d="M101 62 Q119 72 137 60"/></g>
+-    <g class="flat-lines" data-location="cuff"><path d="M65 145 L84 154"/><path d="M68 139 L87 148"/></g>
+-    <g class="flat-lines" data-location="rib-boundary"><path d="M99 197 L158 197"/><path d="M68 139 L87 148"/></g>
+-    <g class="flat-lines" data-location="hem"><path d="M99 216 L157 216"/></g>
+-    ${label(125, 237, "Side view", "middle")}
++    <g class="flat-lines" data-location="cuff"><path d="M64 178 L83 196"/></g>
++    <g class="flat-lines" data-location="rib-boundary"><path d="M134 213 L164 213"/><path d="M73 166 L92 184"/></g>
++    <g class="flat-lines" data-location="hem"><path d="M134 228 L164 228"/></g>
++    ${label(149, 250, "Side view", "middle")}
++    ${label(79, 184, "C1", "middle")}
++    ${label(149, 223, "C2", "middle")}
+   `);
+ 
+   const hoodUp = () => svg("hood-up", "Hood-up construction view", `
+@@ -74,7 +76,7 @@
+     <g class="flat-lines" data-location="shoulder"><path d="M73 100 L89 91"/><path d="M151 91 L167 100"/></g>
+     <g class="flat-lines" data-location="armhole"><path d="M73 100 Q58 108 59 132"/><path d="M167 100 Q182 108 181 132"/></g>
+     ${label(120, 221, "Hood-up view", "middle")}
+-    ${label(120, 70, "Three panels", "middle")}
++    ${label(120, 70, "C4", "middle")}
+   `);
+ 
+   const hoodDown = () => svg("hood-down", "Hood-down construction view", `
+@@ -87,8 +89,8 @@
+     <g class="flat-lines" data-location="shoulder"><path d="M73 82 L89 73"/><path d="M151 73 L167 82"/></g>
+     <g class="flat-lines" data-location="armhole"><path d="M73 82 Q58 91 59 115"/><path d="M167 82 Q182 91 181 115"/></g>
+     ${label(120, 221, "Hood-down view", "middle")}
+-    ${label(120, 127, "Attachment line", "middle")}
++    ${label(120, 127, "C5", "middle")}
+   `);
+ 
+-  global.REV07_FLATS = { front, back, side, hoodUp, hoodDown };
++  global.REV08_FLATS = { front, back, side, hoodUp, hoodDown };
+ })(window);
+diff --git a/src/rev07/render.js b/src/rev08/render.js
+index c095596..a680f7f 100644
+--- a/src/rev07/render.js
++++ b/src/rev08/render.js
+@@ -1,13 +1,13 @@
+ "use strict";
+ 
+-(function renderRev07(global) {
+-  const C = global.REV07_CONFIG;
+-  const F = global.REV07_FLATS;
+-  const D = global.REV07_DIAGRAMS;
+-  const A = global.REV07_ASSETS || { manifest: {}, data: {} };
++(function renderRev08(global) {
++  const C = global.REV08_CONFIG;
++  const F = global.REV08_FLATS;
++  const D = global.REV08_DIAGRAMS;
++  const A = global.REV08_ASSETS || { manifest: {}, data: {} };
+ 
+   if (!C || !F || !D) {
+-    throw new Error("Revision 07 source modules did not load");
++    throw new Error("Revision 08 source modules did not load");
+   }
+ 
+   const esc = (value) => String(value ?? "")
+@@ -43,7 +43,7 @@
+         </header>
+         <div class="page-content" data-audit-box="content">${content}</div>
+         <footer class="page-footer">
+-          <span>Froni FRN-001 | Revision 07 | Factory development and quotation</span>
++          <span>Froni FRN-001 | Revision 08 | Factory development and quotation</span>
+           <span>All measurements in cm unless stated</span>
+         </footer>
+       </section>`;
+@@ -169,6 +169,7 @@
+       </div>
+       <div class="flat-footer">
+         ${constructionLegend()}
++        <div class="flat-callout-key"><strong>Coded callouts:</strong> C1 Cuff rib; C2 Hem rib; C3 Center gusset.</div>
+         <p class="flat-note">${esc(C.garment.flatNote)} Construction locations and panel boundaries are identified for factory review.</p>
+       </div>
+     </div>`;
+@@ -182,6 +183,7 @@
+       </div>
+       <div class="flat-footer">
+         ${constructionLegend()}
++        <div class="flat-callout-key"><strong>Coded callouts:</strong> C1 Cuff rib; C2 Hem rib; C4 Three-panel hood; C5 Hood attachment line.</div>
+         <p class="flat-note">${esc(C.garment.flatNote)} Hood volume and drape are finalized from the approved physical fit sample.</p>
+       </div>
+     </div>`;
+@@ -205,7 +207,7 @@
+     <div class="stack" style="height:100%">
+       <section class="card soft" data-construction-engineering-baseline="true"><p style="margin:0"><strong>Engineering proposal baseline:</strong> ${esc(C.constructionEngineeringBaseline)}</p></section>
+       <table class="matrix micro">
+-        <thead><tr><th>Construction area</th><th>Fixed client requirement</th><th>Factory engineering proposal required</th><th>Approved at first fit sample</th><th>Approved at PPS</th></tr></thead>
++        <thead><tr><th>Construction area</th><th>Fixed client requirement</th><th>Factory engineering proposal required</th><th>Approved at first fit sample</th><th>Approved at pre-production sample</th></tr></thead>
+         <tbody>${C.construction.map((row) => `<tr><td><strong>${esc(row.area)}</strong></td><td>${esc(row.fixed)}</td><td>${esc(row.factoryProposal)}</td><td>${esc(row.firstFit)}</td><td>${esc(row.pps)}</td></tr>`).join("")}</tbody>
+       </table>
+     </div>`;
+@@ -238,7 +240,7 @@
+     return `
+       <div class="pom-layout hood">
+         <div class="stack">
+-          <figure class="diagram-panel" style="flex:1">${D.hoodRibPom()}</figure>
++          <figure class="diagram-panel" style="flex:1">${D.hoodRibPom()}<figcaption class="diagram-code-key"><strong>Rib key:</strong> R1 Cuff rib; R2 Hem rib.</figcaption></figure>
+           <section class="card soft">
+             <h2>Retained hood targets</h2>
+             <p>K hood length: ${C.pom.existing.find((row) => row.code === "K").targets.join(" / ")}</p>
+@@ -252,8 +254,8 @@
+           </section>
+         </div>
+         <div class="stack">
+-          <section class="card soft"><p style="margin:0"><strong>Schematic map:</strong> N1-N6 are drawn on the body and sleeve schematic on page 7. N7-N15 are drawn on the hood and rib schematic on this page. Every row remains without a new target value.</p></section>
+-          ${table(["Key", "Missing pattern-defining POM", "Measurement method", "Value disposition"], rows, "new-pom micro")}
++          <section class="card soft"><p style="margin:0"><strong>Schematic map:</strong> N1-N6 are drawn on the body and sleeve schematic on page 7. N7-N15 are drawn on the hood and rib schematic on this page.</p></section>
++          ${table(["Key", "Missing pattern-defining point of measurement", "Measurement method", "Value disposition"], rows, "new-pom micro")}
+           <section class="card accent">
+             <p style="margin:0"><strong>No new target number is authorized.</strong> ${esc(C.pom.missingTolerance)}</p>
+           </section>
+@@ -268,7 +270,7 @@
+         <tbody>${C.bom.map((row) => `<tr><td><strong>${esc(row.item)}</strong></td><td>${esc(row.fixedSpec)}</td><td>${esc(row.sourcingParty)}</td><td>${esc(row.approvalEvidence)}</td><td>${esc(row.approvalStage)}</td></tr>`).join("")}</tbody>
+       </table>
+       <section class="card soft">
+-        <p style="margin:0">The polybag and cartons on this page are protective materials for factory shipment only. House presentation components are outside the garment manufacturing BOM.</p>
++        <p style="margin:0">The polybag and cartons on this page are protective materials for factory shipment only. House presentation components are outside the garment manufacturing bill of materials.</p>
+       </section>
+     </div>`;
+ 
+@@ -315,12 +317,12 @@
+           </div>
+         </div>
+         <div class="raster-column">
+-          ${assetCard("canonicalBack", "Back canonical scan")}
++          ${assetCard("backArtworkAuthority", "Saint Catherine's scan")}
+           <div class="artwork-lower">
+             <div class="artwork-top">
+               <figure class="diagram-panel">${D.placementLocator("back")}</figure>
+               <div class="stack" style="gap:1.2mm">
+-                <section class="placeholder" data-missing-asset="mirrorComposite"><strong>Acceptance sheet unavailable</strong>The canonical mirror-composite sheet is not present. The physical mirror test remains required.</section>
++                <section class="placeholder" data-missing-asset="mirrorComposite"><strong>Acceptance sheet unavailable</strong>The face mirror-composite sheet is not present. The physical mirror test remains required.</section>
+                 <section class="placeholder" data-missing-asset="approvedAsymmetryMap"><strong>Approved map unavailable</strong>The final approved back-icon asymmetry map has not been supplied.</section>
+               </div>
+             </div>
+@@ -354,9 +356,18 @@
+         <section class="placeholder" data-missing-asset="hoodExteriorLettering"><strong>Production artwork unavailable</strong>Approved exterior hood letterform artwork has not been supplied.</section>
+         <section class="card">
+           <h2>Interior hood locator</h2>
+-          <p class="verse-locator">${esc(C.artwork.hoodInterior.unit)}</p>
++          <div class="hood-reference-grid hood-reference-grid-interior" data-asset-key="hoodInteriorReference">
++            <p class="verse-locator">${esc(C.artwork.hoodInterior.unit)}</p>
++            <div>
++              ${A.data.hoodInteriorReference
++                ? `<img class="hood-reference-image" src="${A.data.hoodInteriorReference}" alt="Interior hood verse placement reference photograph">`
++                : `<div class="placeholder"><strong>Reference unavailable</strong>The supplied interior hood photograph is missing.</div>`}
++              <p class="hood-reference-file"><strong>Reference:</strong> ${esc((A.manifest.hoodInteriorReference?.embeddedPath || "").split(/[\\/]/).pop())}</p>
++            </div>
++          </div>
+           <p>${esc(C.artwork.hoodInterior.placement)}</p>
+           ${list(C.artwork.hoodInterior.lettering)}
++          <p>${esc(C.artwork.hoodInterior.reference)}</p>
+           <p><strong>${esc(C.artwork.hoodInterior.note)}</strong></p>
+         </section>
+         <section class="placeholder" data-missing-asset="hoodInteriorLettering"><strong>Production artwork unavailable</strong>Approved interior verse production artwork has not been supplied.</section>
+@@ -469,7 +480,7 @@
+     return `page ${number}: ${marker}`;
+   };
+ 
+-  global.__rev07Audit = function rev07Audit() {
++  global.__rev08Audit = function rev08Audit() {
+     const pages = [...document.querySelectorAll(".page")];
+     const overflowFailures = [];
+     const safeMarginFailures = [];
+@@ -538,8 +549,34 @@
+     });
+ 
+     const bodyText = document.body.innerText;
++    const registerFragments = [
++      ["can", "onical"],
++      ["ple", "ase"],
++      ["kind", "ly"],
++      ["it is im", "portant"],
++      ["note ", "that"],
++      ["in order ", "to"],
++      ["ens", "ure"],
++      ["compre", "hensive"],
++      ["ro", "bust"],
++      ["seam", "less"],
++      ["lever", "age"],
++      ["uti", "lize"],
++    ];
++    const registerTerms = registerFragments.map((parts) => parts.join(""));
++    pages.forEach((page) => {
++      const pageText = page.innerText;
++      const lowerPageText = pageText.toLowerCase();
++      registerTerms.forEach((term) => {
++        if (lowerPageText.includes(term)) contentFailures.push(`page ${page.dataset.pageNumber} contains blocked register term: ${term}`);
++      });
++      const questionMarks = (pageText.match(/\?/g) || []).length;
++      if (page.dataset.pageNumber !== "14" && questionMarks > 0) {
++        contentFailures.push(`page ${page.dataset.pageNumber} contains ${questionMarks} question mark(s)`);
++      }
++    });
+     const requiredText = [
+-      "Revision 07",
++      "Revision 08",
+       "Final size split is supplied at order placement.",
+       "Factory proposes at first pattern",
+       "Maximum usable embroidery field",
+@@ -556,7 +593,7 @@
+       if (letters.length > 3 && letters === letters.toUpperCase()) contentFailures.push(`all-caps heading: ${heading.textContent.trim()}`);
+     });
+ 
+-    for (const key of ["frontAuthority", "canonicalBack"]) {
++    for (const key of ["frontAuthority", "backArtworkAuthority", "hoodExteriorReference", "hoodInteriorReference"]) {
+       if (!A.data[key]) contentFailures.push(`embedded authority missing: ${key}`);
+     }
+ 
+@@ -573,6 +610,6 @@
+   };
+ 
+   Promise.resolve(document.fonts ? document.fonts.ready : null).then(() => {
+-    global.__REV07_RENDER_DONE = true;
++    global.__REV08_RENDER_DONE = true;
+   });
+ })(window);
+diff --git a/src/rev07/styles.css b/src/rev08/styles.css
+index 54ecf11..6277563 100644
+--- a/src/rev07/styles.css
++++ b/src/rev08/styles.css
+@@ -410,6 +410,13 @@ td {
+   stroke-width: 1.2;
+ }
+ 
++.label-leader {
++  fill: none;
++  stroke: var(--blue);
++  stroke-width: 0.8;
++  vector-effect: non-scaling-stroke;
++}
++
+ .arrow-fill {
+   fill: var(--blue);
+ }
+@@ -525,6 +532,20 @@ td {
+   color: var(--gold);
+ }
+ 
++.flat-callout-key,
++.diagram-code-key {
++  padding: 1mm 2mm;
++  border: 0.25mm solid var(--soft-line);
++  background: #fff;
++  color: var(--ink);
++  font-size: 6.5pt;
++  line-height: 1.2;
++}
++
++.diagram-code-key {
++  margin-top: 1mm;
++}
++
+ .pom-layout {
+   display: grid;
+   grid-template-columns: 0.82fr 1.7fr;
+diff --git a/src/rev07/template.html b/src/rev08/template.html
+index 5fec754..6936c67 100644
+--- a/src/rev07/template.html
++++ b/src/rev08/template.html
+@@ -3,7 +3,7 @@
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+-  <title>Froni FRN-001 custom-development technical pack, Revision 07</title>
++  <title>Froni FRN-001 custom-development technical pack, Revision 08</title>
+   <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+warning: in the working copy of 'src/rev07/assets.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev08/assets.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev07/config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev08/config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev07/diagrams.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev08/diagrams.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev07/flats.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev08/flats.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev07/render.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev08/render.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev07/styles.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev08/styles.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev07/template.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/rev08/template.html', LF will be replaced by CRLF the next time Git touches it
+
+===== ACTIVE BUILD.JS =====
+
+"use strict";
+
+const crypto = require("node:crypto");
+const fs = require("node:fs");
+const path = require("node:path");
+const { spawnSync } = require("node:child_process");
+const { pathToFileURL } = require("node:url");
+const { chromium } = require("playwright");
+
+const root = __dirname;
+const sourceDir = path.join(root, "src", "rev08");
+const templatePath = path.join(sourceDir, "template.html");
+const manifestPath = path.join(sourceDir, "assets.json");
+const configPath = path.join(sourceDir, "config.js");
+const distDir = path.join(root, "dist");
+
+const sourceNames = [
+  "config.js",
+  "assets.json",
+  "template.html",
+  "styles.css",
+  "flats.js",
+  "diagrams.js",
+  "render.js",
+];
+
+const exactAssets = [
+  { key: "frontAuthority", relativePath: "assets/Froni_Edition_One_Front.png" },
+  { key: "backArtworkAuthority", relativePath: "assets/pantocratorStCatherines_2023x3774.jpg" },
+  { key: "hoodExteriorReference", relativePath: "assets/Froni_Edition_One_IAM.jpg" },
+  { key: "hoodInteriorReference", relativePath: "assets/Froni_Edition_One_IAM_Verse.jpg" },
+];
+
+const fail = (message) => {
+  throw new Error(message);
+};
+
+const digestText = (value) => Array.isArray(value) ? value.join("") : value;
+
+const fileDigest = (filePath) => crypto
+  .createHash("sha256")
+  .update(fs.readFileSync(filePath))
+  .digest("hex")
+  .toUpperCase();
+
+function checkSourceSet() {
+  const missing = sourceNames.filter((name) => !fs.existsSync(path.join(sourceDir, name)));
+  if (missing.length) fail(`Missing Revision 08 source files: ${missing.join(", ")}`);
+
+  const blocked = [
+    ["1", "5", "0"].join(""),
+    ["chris", "togram"].join(""),
+    ["woven", " neck label"].join(""),
+    ["lux", "ury"].join(""),
+    ["prem", "ium"].join(""),
+    ["qual", "ity"].join(""),
+  ];
+  const longDash = String.fromCodePoint(0x2014);
+  for (const name of ["build.js", ...sourceNames]) {
+    const filePath = name === "build.js" ? path.join(root, name) : path.join(sourceDir, name);
+    const text = fs.readFileSync(filePath, "utf8");
+    const lower = text.toLowerCase();
+    if (text.includes(longDash)) fail(`${name} contains a prohibited dash glyph`);
+    for (const term of blocked) {
+      if (lower.includes(term)) fail(`${name} contains blocked source text: ${term}`);
+    }
+  }
+}
+
+function loadExactAssets() {
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  const data = {};
+  for (const expected of exactAssets) {
+    const item = manifest[expected.key];
+    if (!item || item.available !== true) fail(`${expected.key} is not recorded as available`);
+    if (item.embeddedPath !== expected.relativePath) fail(`${expected.key} must use ${expected.relativePath}`);
+    if (!item.sourcePath || !item.role || !item.mimeType || !item.width || !item.height || !item.sha256) {
+      fail(`${expected.key} has incomplete authority metadata`);
+    }
+    const filePath = path.resolve(sourceDir, ...expected.relativePath.split("/"));
+    const relative = path.relative(sourceDir, filePath);
+    if (relative.startsWith("..") || path.isAbsolute(relative)) fail(`${expected.key} escapes the Revision 08 source directory`);
+    if (!fs.existsSync(filePath)) fail(`${expected.key} exact asset copy is missing`);
+    const actualDigest = fileDigest(filePath);
+    const recordedDigest = digestText(item.sha256).toUpperCase();
+    if (actualDigest !== recordedDigest) fail(`${expected.key} SHA-256 mismatch`);
+    data[expected.key] = `data:${item.mimeType};base64,${fs.readFileSync(filePath).toString("base64")}`;
+  }
+
+  for (const key of ["frontProductionVector", "mirrorComposite", "hoodExteriorLettering", "hoodInteriorLettering", "approvedAsymmetryMap", "careTapeArtwork", "digitizedMasters"]) {
+    if (!manifest[key] || manifest[key].available !== false) fail(`${key} must remain an explicit unavailable deliverable`);
+  }
+
+  return { manifest, data };
+}
+
+function inspectPdf(filePath) {
+  const result = spawnSync("pdfinfo", [filePath], { encoding: "utf8", windowsHide: true });
+  if (result.error && result.error.code === "ENOENT") return { pages: null, tool: "unavailable" };
+  if (result.status !== 0) fail(`pdfinfo failed for temporary PDF: ${(result.stderr || result.stdout || "unknown error").trim()}`);
+  const match = result.stdout.match(/^Pages:\s+(\d+)$/m);
+  if (!match) fail("pdfinfo did not report a page count for the temporary PDF");
+  return { pages: Number(match[1]), tool: "pdfinfo" };
+}
+
+async function build() {
+  checkSourceSet();
+  const config = require(configPath);
+  if (config.meta.revision !== "08" || config.pages.length !== 14) fail("Document control is not Revision 08 with 14 pages");
+  const assets = loadExactAssets();
+  const outputPath = path.join(distDir, config.meta.outputFilename);
+  const temporaryPath = path.join(distDir, `.${config.meta.outputFilename}.${process.pid}.${Date.now()}.tmp`);
+  fs.mkdirSync(distDir, { recursive: true });
+
+  const browserErrors = [];
+  let browser;
+  let audit;
+  try {
+    browser = await chromium.launch({ headless: true });
+    const page = await browser.newPage({ viewport: { width: 1403, height: 992 }, deviceScaleFactor: 1 });
+    page.on("pageerror", (error) => browserErrors.push(error.message));
+    page.on("console", (message) => {
+      if (message.type() === "error") browserErrors.push(message.text());
+    });
+    await page.addInitScript({ content: `window.REV08_ASSETS = ${JSON.stringify(assets)};` });
+    await page.goto(pathToFileURL(templatePath).href, { waitUntil: "load", timeout: 30000 });
+    await page.waitForFunction(() => window.__REV08_RENDER_DONE === true, null, { timeout: 30000 });
+
+    if (browserErrors.length) fail(`Browser errors:\n${browserErrors.join("\n")}`);
+
+    const imageDimensions = await page.evaluate(() => [...document.querySelectorAll("[data-asset-key]")].map((card) => {
+      const image = card.querySelector("img");
+      return {
+        key: card.dataset.assetKey,
+        width: image ? image.naturalWidth : 0,
+        height: image ? image.naturalHeight : 0,
+      };
+    }));
+    for (const image of imageDimensions) {
+      const expected = assets.manifest[image.key];
+      if (!expected || image.width !== expected.width || image.height !== expected.height) {
+        fail(`${image.key} rendered dimensions ${image.width}x${image.height} do not match the manifest`);
+      }
+    }
+
+    audit = await page.evaluate(() => window.__rev08Audit());
+    const auditFailures = [
+      ...audit.overflowFailures,
+      ...audit.safeMarginFailures,
+      ...audit.markerFailures,
+      ...audit.contentFailures,
+    ];
+    if (auditFailures.length) fail(`Revision 08 DOM audit failed:\n${auditFailures.join("\n")}`);
+
+    await page.emulateMedia({ media: "print" });
+    await page.pdf({
+      path: temporaryPath,
+      format: "A4",
+      landscape: true,
+      printBackground: true,
+      preferCSSPageSize: true,
+      margin: { top: "0", right: "0", bottom: "0", left: "0" },
+    });
+  } catch (error) {
+    if (fs.existsSync(temporaryPath)) fs.rmSync(temporaryPath, { force: true });
+    throw error;
+  } finally {
+    if (browser) await browser.close();
+  }
+
+  const temporaryStat = fs.statSync(temporaryPath);
+  if (temporaryStat.size < 100000) {
+    fs.rmSync(temporaryPath, { force: true });
+    fail(`Temporary PDF is unexpectedly small: ${temporaryStat.size} bytes`);
+  }
+  const pdfInspection = inspectPdf(temporaryPath);
+  if (pdfInspection.pages !== null && pdfInspection.pages !== 14) {
+    fs.rmSync(temporaryPath, { force: true });
+    fail(`Temporary PDF has ${pdfInspection.pages} pages instead of 14`);
+  }
+
+  fs.renameSync(temporaryPath, outputPath);
+  const finalStat = fs.statSync(outputPath);
+  console.log(`Revision 08 source checks: ${sourceNames.length + 1} files`);
+  console.log(`Exact authority assets embedded: ${exactAssets.length}`);
+  console.log(`DOM audit: ${audit.pageCount} pages, ${audit.scannedBoxes} boxes, no failures`);
+  console.log(`Semantic views: ${audit.views.join(", ")}`);
+  console.log(`Construction locations: ${audit.locations.join(", ")}`);
+  console.log(`Temporary PDF inspection: ${pdfInspection.pages ?? audit.pageCount} pages via ${pdfInspection.tool}`);
+  console.log(`Output: ${outputPath}`);
+  console.log(`Size: ${finalStat.size} bytes`);
+}
+
+build().catch((error) => {
+  console.error(error.stack || error.message || String(error));
+  process.exitCode = 1;
+});
+
+===== ACTIVE PACKAGE.JSON =====
+
+{
+  "name": "froni-frn-001-techpack",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Factory tech pack generator for the Froni FRN-001 hoodie",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "playwright": "^1.50.0"
+  }
+}
+
+===== RETAINED REV07 TESTS =====
+
+"use strict";
+
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
+const test = require("node:test");
+
+const root = path.resolve(__dirname, "..");
+const sourceFiles = [
+  "build.js",
+  "src/rev07/config.js",
+  "src/rev07/assets.json",
+  "src/rev07/template.html",
+  "src/rev07/styles.css",
+  "src/rev07/flats.js",
+  "src/rev07/diagrams.js",
+  "src/rev07/render.js",
+];
+
+const absolute = (relativePath) => path.join(root, relativePath);
+const existingSources = () => sourceFiles.filter((file) => fs.existsSync(absolute(file)));
+
+function loadConfig(t) {
+  const configPath = absolute("src/rev07/config.js");
+  if (!fs.existsSync(configPath)) {
+    t.skip("Rev07 config does not exist yet");
+    return null;
+  }
+  delete require.cache[require.resolve(configPath)];
+  return require(configPath);
+}
+
+function loadAssets(t) {
+  const assetPath = absolute("src/rev07/assets.json");
+  if (!fs.existsSync(assetPath)) {
+    t.skip("Rev07 asset manifest does not exist yet");
+    return null;
+  }
+  return JSON.parse(fs.readFileSync(assetPath, "utf8"));
+}
+
+test("declares the complete Revision 07 source set", () => {
+  const missing = sourceFiles.filter((file) => !fs.existsSync(absolute(file)));
+  assert.deepEqual(missing, [], `missing Rev07 source files: ${missing.join(", ")}`);
+});
+
+test("uses consistent Revision 07 document control", (t) => {
+  const config = loadConfig(t);
+  if (!config) return;
+  assert.equal(config.meta.documentId, "FRN-001");
+  assert.equal(config.meta.revision, "07");
+  assert.equal(config.meta.buildDate, "16 Jul 2026");
+  assert.equal(config.meta.outputFilename, "Froni_FRN-001_Tech_Pack_Rev07.pdf");
+  assert.equal(config.meta.classification, "Custom-development technical pack");
+  assert.equal(config.pages.length, 14);
+  assert.ok(config.pages.every((page) => page.title && page.type));
+});
+
+test("contains only current order, contact, neck, and decoration decisions", (t) => {
+  const config = loadConfig(t);
+  if (!config) return;
+  assert.equal(config.order.quantity, 200);
+  assert.equal(config.order.sizeSplit, "Final size split is supplied at order placement.");
+  assert.equal(config.contact.name, "Ferdinand Toma");
+  assert.equal(config.contact.email, "house@froni.co");
+  assert.equal(Object.hasOwn(config.contact, "phone"), false);
+  assert.match(config.garment.neck, /blank neck/i);
+  assert.equal(config.decorations.length, 4);
+  assert.deepEqual(
+    config.decorations.map((item) => item.id),
+    ["front_ornament", "back_icon", "hood_exterior", "hood_interior"],
+  );
+});
+
+test("retains every approved A to M target and separates new POM dispositions", (t) => {
+  const config = loadConfig(t);
+  if (!config) return;
+  const expected = {
+    A: [68, 70, 72, 74], B: [57, 59, 61, 63], C: [24, 25, 26, 27],
+    D: [8, 8, 8.5, 9], E: [57, 58, 59, 60], F: [18, 19, 20, 21],
+    G: [26, 26, 26, 26], H: [49, 51, 53, 55], I: [6, 6, 6, 6],
+    J: [6, 6, 6, 6], K: [38, 38, 38, 38], L: [26.5, 26.5, 26.5, 26.5],
+    M: [10, 10, 10, 10],
+  };
+  assert.deepEqual(
+    Object.fromEntries(config.pom.existing.map((row) => [row.code, row.targets])),
+    expected,
+  );
+  assert.ok(config.pom.existing.every((row) => row.tolerance === "+/- 1 cm"));
+
+  const requiredNew = [
+    "Front neck drop", "Back neck drop", "Across shoulder", "Half bicep",
+    "Sleeve width at defined points", "Armhole measurement method", "Hood face opening",
+    "Hood depth", "Hood side-panel geometry", "Center-gusset geometry",
+    "Hood neckline seam length", "Cuff rib width", "Cuff relaxed opening",
+    "Hem rib dimensions", "Hem relaxed width",
+  ];
+  const allowed = new Set([
+    "Factory proposes at first pattern",
+    "Finalized from approved fit sample",
+    "Derived from approved pattern",
+  ]);
+  assert.deepEqual(config.pom.new.map((row) => row.name), requiredNew);
+  assert.ok(config.pom.new.every((row) => row.targets === null));
+  assert.ok(config.pom.new.every((row) => allowed.has(row.disposition)));
+});
+
+test("covers construction, materials, responsibilities, stages, and factory response", (t) => {
+  const config = loadConfig(t);
+  if (!config) return;
+  for (const term of [
+    "stitch class", "SPI", "seam allowance", "seam finish", "thread ticket",
+    "needle system", "reinforcement", "stabilization",
+  ]) {
+    assert.match(config.constructionEngineeringBaseline, new RegExp(term, "i"));
+  }
+  const constructionAreas = [
+    "Shoulder seam", "Armhole seam", "Sleeve underarm seam", "Body side seam",
+    "Cuff rib attachment", "Hem rib attachment", "Hood side-panel assembly",
+    "Hood center-gusset assembly", "Inner and outer hood joining",
+    "Hood-to-neckline attachment", "Neckline stabilization", "Care-tape attachment",
+    "Embroidery stabilization and removal",
+  ];
+  assert.deepEqual(config.construction.map((row) => row.area), constructionAreas);
+  assert.ok(config.construction.every((row) => row.fixed && row.factoryProposal && row.firstFit && row.pps));
+
+  const bomItems = [
+    "Body French terry", "Rib", "Sewing thread", "Embroidery thread",
+    "Embroidery bobbin", "Embroidery needles", "Temporary embroidery stabilizers",
+    "Permanent localized back stabilizer", "Neckline stabilization",
+    "Printed care, fibre, origin, and wordmark tape", "Factory shipment polybag",
+    "Factory shipment cartons",
+  ];
+  assert.deepEqual(config.bom.map((row) => row.item), bomItems);
+  assert.ok(config.bom.every((row) => row.fixedSpec && row.sourcingParty && row.approvalEvidence && row.approvalStage));
+
+  const stages = [
+    "Factory technical review and feasibility confirmation", "Construction proposal",
+    "First pattern", "First fit sample without final embroidery where appropriate",
+    "Fit corrections", "Approved graded pattern and updated measurement chart",
+    "Production-fabric approval", "Embroidery strike-offs on production fabric",
+    "Embroidered pre-production sample", "PPS approval", "Bulk production",
+    "Final QC and shipment",
+  ];
+  assert.deepEqual(config.developmentStages.map((row) => row.stage), stages);
+  assert.ok(config.developmentStages.every((row) => row.approvalOutput));
+  assert.match(config.developmentStages[4].approvalOutput, /corrected physical fit sample/i);
+  assert.ok(config.responsibilities.length >= 9);
+
+  const responseText = config.factoryResponse.join("\n").toLowerCase();
+  for (const phrase of [
+    "yes or no", "pattern-development price", "first fit-sample price",
+    "corrected fit-sample price", "pps price", "embroidery setup and strike-off charges",
+    "provisional bulk unit price at 200 units", "fabric minimum and fabric lead time",
+    "sample lead time", "bulk lead time after pps", "earliest committed ex-factory date",
+    "maximum usable embroidery field", "embroidery machine make and field configuration",
+    "garment factory's contract and responsibility", "payment terms", "incoterm",
+    "shipping estimate to germany",
+  ]) assert.ok(responseText.includes(phrase), `missing factory response field: ${phrase}`);
+});
+
+test("records exact authority roles and explicit missing production assets", (t) => {
+  const assets = loadAssets(t);
+  if (!assets) return;
+  assert.equal(assets.frontAuthority.role, "Front design reference photograph");
+  assert.equal(assets.frontAuthority.sourcePath, "C:\\froni\\reference\\Froni_Edition_One_Front.png");
+  assert.equal(assets.frontAuthority.embeddedPath, "assets/Froni_Edition_One_Front.png");
+  assert.equal(assets.frontAuthority.mimeType, "image/png");
+  assert.equal(assets.frontAuthority.sha256, "68AD1490D3502161214FE31EA9041F8C675671DD470AE1B7A581DC6AE81154BB");
+  assert.equal(assets.frontAuthority.width, 500);
+  assert.equal(assets.frontAuthority.height, 603);
+  assert.equal(assets.frontAuthority.available, true);
+  assert.equal(assets.canonicalBack.role, "Canonical back icon scan");
+  assert.equal(assets.canonicalBack.sourcePath, "C:\\froni\\reference\\pantocratorStCatherines_2023x3774.jpg");
+  assert.equal(assets.canonicalBack.mimeType, "image/jpeg");
+  assert.equal(assets.canonicalBack.available, true);
+  assert.ok(assets.hoodExteriorReference, "hood exterior reference photograph must be recorded");
+  assert.equal(assets.hoodExteriorReference.role, "Exterior hood embroidery reference photograph");
+  assert.equal(assets.hoodExteriorReference.sourcePath, "C:\\froni\\reference\\Froni_Edition_One_IAM.jpg");
+  assert.equal(assets.hoodExteriorReference.embeddedPath, "assets/Froni_Edition_One_IAM.jpg");
+  assert.equal(assets.hoodExteriorReference.mimeType, "image/jpeg");
+  assert.equal(assets.hoodExteriorReference.sha256, "5D09ADA81A689A51C88149AA5477A1FE5DD51A5B94CF22B7B3D19D838D65C600");
+  assert.equal(assets.hoodExteriorReference.width, 4096);
+  assert.equal(assets.hoodExteriorReference.height, 4096);
+  assert.equal(assets.hoodExteriorReference.available, true);
+  assert.match(fs.readFileSync(absolute("build.js"), "utf8"), /item\.mimeType/);
+  assert.match(fs.readFileSync(absolute("src/rev07/render.js"), "utf8"), /hoodExteriorReference/);
+  for (const key of [
+    "frontProductionVector", "mirrorComposite", "hoodExteriorLettering",
+    "hoodInteriorLettering", "approvedAsymmetryMap", "careTapeArtwork",
+    "digitizedMasters",
+  ]) {
+    assert.equal(assets[key].available, false, `${key} must remain an explicit missing deliverable`);
+  }
+});
+
+test("draws and keys every new POM method without invented hood notches", () => {
+  const diagramText = fs.readFileSync(absolute("src/rev07/diagrams.js"), "utf8");
+  const renderText = fs.readFileSync(absolute("src/rev07/render.js"), "utf8");
+  const expectedMethods = [
+    "front-neck-drop", "back-neck-drop", "across-shoulder", "half-bicep",
+    "sleeve-width-defined-points", "armhole-measurement-method",
+    "hood-face-opening", "hood-depth", "hood-side-panel-geometry",
+    "center-gusset-geometry", "hood-neckline-seam-length", "cuff-rib-width",
+    "cuff-relaxed-opening", "hem-rib-dimensions", "hem-relaxed-width",
+  ];
+  const foundMethods = [...diagramText.matchAll(/data-pom-method="([^"]+)"/g)].map((match) => match[1]);
+  assert.deepEqual(foundMethods, expectedMethods);
+  assert.doesNotMatch(diagramText, /class="notch"/);
+  assert.match(diagramText, /notches are derived from the approved pattern/i);
+  assert.match(renderText, /N1-N6 are drawn on the body and sleeve schematic on page 7/i);
+  assert.match(renderText, /N7-N15 are drawn on the hood and rib schematic on this page/i);
+});
+
+test("prints a vertical Greek locator and visible construction-location legend", () => {
+  const renderText = fs.readFileSync(absolute("src/rev07/render.js"), "utf8");
+  assert.match(renderText, /data-greek-stack="true"/);
+  assert.match(renderText, /hoodExterior\.string\.split\(\/\\s\+\//);
+  const expectedLocations = [
+    "shoulder", "armhole", "sleeve", "side-seam", "cuff", "hem",
+    "rib-boundary", "neckline", "hood-attachment",
+  ];
+  const foundLocations = [...renderText.matchAll(/data-visible-location="([^"]+)"/g)].map((match) => match[1]);
+  assert.deepEqual(foundLocations, expectedLocations);
+});
+
+test("active Revision 07 sources contain no stale canon or prohibited copy", () => {
+  const texts = existingSources().map((file) => [file, fs.readFileSync(absolute(file), "utf8")]);
+  const forbidden = [
+    ["1", "5", "0"].join(""),
+    ["christo", "gram"].join(""),
+    ["woven", " neck label"].join(""),
+    ["one of ", "1", "5", "0"].join(""),
+    "luxury", "premium", "quality",
+  ];
+  for (const [file, text] of texts) {
+    const lower = text.toLowerCase();
+    for (const term of forbidden) assert.equal(lower.includes(term), false, `${file} contains prohibited term ${term}`);
+    assert.equal(text.includes(String.fromCodePoint(0x2014)), false, `${file} contains an em dash`);
+    assert.equal(/\[(?:email|phone)\]/i.test(text), false, `${file} contains a contact placeholder`);
+  }
+});
+
+test("page and section headings use sentence or title case", (t) => {
+  const config = loadConfig(t);
+  if (!config) return;
+  const headings = [
+    ...config.pages.map((page) => page.title),
+    ...(config.sectionTitles || []),
+  ];
+  const allCaps = headings.filter((heading) => {
+    const letters = heading.replace(/[^A-Za-z]/g, "");
+    return letters.length > 3 && letters === letters.toUpperCase();
+  });
+  assert.deepEqual(allCaps, []);
+});
+
+===== ACTIVE REV08 TESTS =====
+
+"use strict";
+
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
+const test = require("node:test");
+const vm = require("node:vm");
+
+const root = path.resolve(__dirname, "..");
+const revisionSourceFiles = [
+  "src/rev08/config.js",
+  "src/rev08/assets.json",
+  "src/rev08/template.html",
+  "src/rev08/styles.css",
+  "src/rev08/flats.js",
+  "src/rev08/diagrams.js",
+  "src/rev08/render.js",
+];
+
+const absolute = (relativePath) => path.join(root, relativePath);
+
+const loadConfig = (revision) => {
+  const configPath = absolute(`src/${revision}/config.js`);
+  delete require.cache[require.resolve(configPath)];
+  return require(configPath);
+};
+
+const loadAssets = (revision) => JSON.parse(
+  fs.readFileSync(absolute(`src/${revision}/assets.json`), "utf8"),
+);
+
+const sha256 = (filePath) => require("node:crypto")
+  .createHash("sha256")
+  .update(fs.readFileSync(filePath))
+  .digest("hex")
+  .toUpperCase();
+
+const loadBrowserModule = (relativePath, exportName) => {
+  const context = { window: {} };
+  vm.runInNewContext(fs.readFileSync(absolute(relativePath), "utf8"), context);
+  return context.window[exportName];
+};
+
+const collectStrings = (value, strings = []) => {
+  if (typeof value === "string") strings.push(value);
+  else if (Array.isArray(value)) value.forEach((item) => collectStrings(item, strings));
+  else if (value && typeof value === "object") Object.values(value).forEach((item) => collectStrings(item, strings));
+  return strings;
+};
+
+const numericTokens = (value) => collectStrings(value)
+  .flatMap((text) => text.match(/\d+(?:\.\d+)?/g) || [])
+  .concat((() => {
+    const tokens = [];
+    const visit = (item) => {
+      if (typeof item === "number") tokens.push(String(item));
+      else if (Array.isArray(item)) item.forEach(visit);
+      else if (item && typeof item === "object") Object.values(item).forEach(visit);
+    };
+    visit(value);
+    return tokens;
+  })());
+
+test("selects a complete Revision 08 source set", () => {
+  const missing = revisionSourceFiles.filter((file) => !fs.existsSync(absolute(file)));
+  assert.deepEqual(missing, [], `missing Revision 08 source files: ${missing.join(", ")}`);
+  assert.match(fs.readFileSync(absolute("build.js"), "utf8"), /src["'],\s*["']rev08/);
+});
+
+test("runs both retained Revision 07 and active Revision 08 tests", () => {
+  const packageJson = JSON.parse(fs.readFileSync(absolute("package.json"), "utf8"));
+  assert.equal(packageJson.scripts.test, "node --test tests/*.test.js");
+});
+
+test("uses Revision 08 document control without changing page order", () => {
+  const previous = loadConfig("rev07");
+  const current = loadConfig("rev08");
+  assert.equal(current.meta.documentId, "FRN-001");
+  assert.equal(current.meta.revision, "08");
+  assert.equal(current.meta.buildDate, "16 Jul 2026");
+  assert.equal(current.meta.outputFilename, "Froni_FRN-001_Tech_Pack_Rev08.pdf");
+  assert.deepEqual(
+    current.pages.map(({ number, type }) => ({ number, type })),
+    previous.pages.map(({ number, type }) => ({ number, type })),
+  );
+  assert.equal(current.pages.length, 14);
+  assert.ok(current.revisionRecord.includes(
+    "Set-in sleeve flats corrected; flat labels converted to coded callouts; interior verse locator image added; full plain-register language pass.",
+  ));
+});
+
+test("embeds the supplied interior hood reference under the required filename", () => {
+  const assets = loadAssets("rev08");
+  const item = assets.hoodInteriorReference;
+  assert.ok(item);
+  assert.equal(item.role, "Interior hood verse placement reference photograph");
+  assert.equal(item.sourcePath, "C:\\Users\\tomaf\\Downloads\\comp_hood.jpeg");
+  assert.equal(item.embeddedPath, "assets/Froni_Edition_One_IAM_Verse.jpg");
+  assert.equal(item.mimeType, "image/jpeg");
+  assert.equal(item.width, 4096);
+  assert.equal(item.height, 4096);
+  assert.equal(item.sha256, "E5686F731F85D03FD98116AA3FF4F3506F60DFDB52EFB05F6F66E056B0E04A94");
+  assert.equal(item.available, true);
+  const embedded = absolute(`src/rev08/${item.embeddedPath}`);
+  assert.equal(fs.existsSync(embedded), true);
+  assert.equal(sha256(embedded), item.sha256);
+
+  const buildText = fs.readFileSync(absolute("build.js"), "utf8");
+  const renderText = fs.readFileSync(absolute("src/rev08/render.js"), "utf8");
+  assert.match(buildText, /hoodInteriorReference/);
+  assert.match(buildText, /Froni_Edition_One_IAM_Verse\.jpg/);
+  assert.match(renderText, /data-asset-key="hoodInteriorReference"/);
+  assert.match(renderText, /A\.data\.hoodInteriorReference/);
+});
+
+test("adds the interior reference block without altering its specification bullets", () => {
+  const previous = loadConfig("rev07");
+  const current = loadConfig("rev08");
+  assert.equal(current.artwork.hoodInterior.unit, previous.artwork.hoodInterior.unit);
+  assert.equal(current.artwork.hoodInterior.placement, previous.artwork.hoodInterior.placement);
+  assert.deepEqual(current.artwork.hoodInterior.lettering, previous.artwork.hoodInterior.lettering);
+  assert.equal(current.artwork.hoodInterior.note, previous.artwork.hoodInterior.note);
+  assert.equal(
+    current.artwork.hoodInterior.reference,
+    "The photograph shows intended interior verse placement and proportion only.",
+  );
+});
+
+test("redraws front, back, and side flats as full-length set-in sleeve views", () => {
+  const flatText = fs.readFileSync(absolute("src/rev08/flats.js"), "utf8");
+  assert.equal((flatText.match(/data-construction="set-in"/g) || []).length, 3);
+  assert.equal((flatText.match(/data-sleeve-length="full"/g) || []).length, 3);
+  assert.equal((flatText.match(/data-seam-origin="shoulder-point"/g) || []).length, 3);
+  for (const field of [
+    'data-body-length-cm="70"',
+    'data-half-chest-cm="59"',
+    'data-sleeve-cm="58"',
+    'data-shoulder-cm="19"',
+    'data-hem-rib-cm="6"',
+    'data-cuff-rib-cm="6"',
+  ]) {
+    assert.equal((flatText.match(new RegExp(field, "g")) || []).length, 3, `missing M-basis field ${field}`);
+  }
+  assert.doesNotMatch(flatText, /raglan/i);
+  for (const expectedHoodPath of [
+    "M91 62 Q83 34 99 16 Q120 2 141 16 Q157 34 149 62 Q120 79 91 62 Z",
+    "M86 63 Q86 31 101 17 Q120 6 139 17 Q154 31 154 63 Q120 83 86 63 Z",
+    "M103 60 Q92 34 105 14 Q132 1 149 23 Q158 43 147 65 Q130 76 103 60 Z",
+  ]) assert.ok(flatText.includes(expectedHoodPath), `hood geometry changed: ${expectedHoodPath}`);
+  for (const expectedAttachmentPath of [
+    "M91 61 Q120 84 149 61",
+    "M91 61 Q120 72 149 61",
+    "M101 62 Q119 72 137 60",
+  ]) assert.ok(flatText.includes(expectedAttachmentPath), `hood attachment changed: ${expectedAttachmentPath}`);
+});
+
+test("uses coded or outside labels on every affected flat and schematic", () => {
+  const flatText = fs.readFileSync(absolute("src/rev08/flats.js"), "utf8");
+  const diagramText = fs.readFileSync(absolute("src/rev08/diagrams.js"), "utf8");
+  const renderText = fs.readFileSync(absolute("src/rev08/render.js"), "utf8");
+  const flats = loadBrowserModule("src/rev08/flats.js", "REV08_FLATS");
+  const diagrams = loadBrowserModule("src/rev08/diagrams.js", "REV08_DIAGRAMS");
+  const flatMarkup = Object.values(flats).map((draw) => draw()).join("\n");
+  const diagramMarkup = [
+    diagrams.hoodExploded(), diagrams.hoodCrossSection(), diagrams.bodyPom(), diagrams.hoodRibPom(),
+  ].join("\n");
+  for (const phrase of ["Cuff rib", "Hem rib", "Center gusset", "Three panels", "Attachment line"]) {
+    assert.doesNotMatch(flatMarkup, new RegExp(`<text[^>]*>[^<]*${phrase}`, "i"));
+  }
+  assert.doesNotMatch(diagramMarkup, /<text[^>]*>\s*(?:Cuff rib|Hem rib)\s*<\/text>/i);
+  for (const code of ["C1", "C2", "C3", "C4", "C5"]) assert.match(flatMarkup, new RegExp(`>${code}<`));
+  assert.match(diagramMarkup, />R1</);
+  assert.match(diagramMarkup, />R2</);
+  assert.match(renderText, /C1 Cuff rib/);
+  assert.match(renderText, /C5 Hood attachment line/);
+  assert.match(renderText, /R1 Cuff rib/);
+  assert.match(renderText, /R2 Hem rib/);
+  assert.match(diagramText, /data-label-position="outside"/);
+  assert.match(diagramText, /class="label-leader"/);
+});
+
+test("enforces the plain register on every rendered page", () => {
+  const current = loadConfig("rev08");
+  const prose = collectStrings(current).join("\n");
+  const sourceText = revisionSourceFiles
+    .map((file) => fs.readFileSync(absolute(file), "utf8"))
+    .join("\n");
+  const banned = [
+    "canonical", "please", "kindly", "it is important", "note that", "in order to",
+    "ensure", "comprehensive", "robust", "seamless", "leverage", "utilize",
+  ];
+  for (const term of banned) {
+    assert.equal(prose.toLowerCase().includes(term), false, `config prose contains ${term}`);
+    assert.equal(sourceText.toLowerCase().includes(term), false, `Revision 08 source contains ${term}`);
+  }
+  for (const acronym of ["POM", "BOM", "PPS", "SPI", "QC"]) {
+    assert.doesNotMatch(sourceText, new RegExp(`\\b${acronym}\\b`), `expand ${acronym} in visible prose`);
+  }
+  assert.equal(sourceText.includes(String.fromCodePoint(0x2014)), false);
+  assert.equal(/\bbecause\b/i.test(prose), false, "requirements must state responsibility without explanatory phrasing");
+  assert.equal(collectStrings(current).filter((text) => text.includes("?")).length, 0);
+
+  const renderText = fs.readFileSync(absolute("src/rev08/render.js"), "utf8");
+  assert.match(renderText, /registerFragments/);
+  assert.match(renderText, /questionMarks/);
+  assert.match(renderText, /page\.dataset\.pageNumber !== "14"/);
+});
+
+test("preserves all numeric specification data", () => {
+  const previous = loadConfig("rev07");
+  const current = loadConfig("rev08");
+  assert.deepEqual(
+    current.pom.existing.map(({ code, targets, tolerance }) => ({ code, targets, tolerance })),
+    previous.pom.existing.map(({ code, targets, tolerance }) => ({ code, targets, tolerance })),
+  );
+  assert.deepEqual(current.bom.map((row) => row.item), previous.bom.map((row) => row.item));
+  assert.deepEqual(current.embroidery.setup.map((row) => row[0]), previous.embroidery.setup.map((row) => row[0]));
+  for (const section of ["pom", "bom"]) {
+    assert.deepEqual(numericTokens(current[section]), numericTokens(previous[section]), `${section} numeric tokens changed`);
+  }
+  assert.deepEqual(numericTokens(current.embroidery.setup), numericTokens(previous.embroidery.setup));
+  assert.deepEqual(numericTokens(current.embroidery.backBudget), numericTokens(previous.embroidery.backBudget));
+  assert.deepEqual(numericTokens(current.artwork.hoodExterior), numericTokens(previous.artwork.hoodExterior));
+  const { reference: interiorReference, ...currentInterior } = current.artwork.hoodInterior;
+  assert.equal(interiorReference, "The photograph shows intended interior verse placement and proportion only.");
+  assert.deepEqual(numericTokens(currentInterior), numericTokens(previous.artwork.hoodInterior));
+});
+
+test("preserves factory-cost causation for embroidery execution faults", () => {
+  const current = loadConfig("rev08");
+  assert.ok(current.embroidery.ownership.includes(
+    "The garment factory bears the cost of strike-offs repeated due to embroidery execution faults.",
+  ));
+});
+
+test("states the no-new-target requirement once without doubled emphasis", () => {
+  const renderText = fs.readFileSync(absolute("src/rev08/render.js"), "utf8");
+  assert.doesNotMatch(renderText, /Every row remains without a new target value\./);
+  assert.match(renderText, /No new target number is authorized\./);
+});
+
+===== FULL SELECTED-DATA DIFF (PAGES 7, 8, 9, 11) =====
+
+diff --git "a/C:\\cipher\\techpack\\dist\\review\\rev08\\evidence\\pages-07-08-09-11-rev07.json" "b/C:\\cipher\\techpack\\dist\\review\\rev08\\evidence\\pages-07-08-09-11-rev08.json"
+index 718c963..ec335f8 100644
+--- "a/C:\\cipher\\techpack\\dist\\review\\rev08\\evidence\\pages-07-08-09-11-rev07.json"
++++ "b/C:\\cipher\\techpack\\dist\\review\\rev08\\evidence\\pages-07-08-09-11-rev08.json"
+@@ -278,7 +278,7 @@
+       "fixedSpec": "Factory proposes a thread suited to the specified cloth and clean exterior",
+       "sourcingParty": "Garment factory",
+       "approvalEvidence": "Construction proposal and sewn sample",
+-      "approvalStage": "First fit and PPS"
++      "approvalStage": "First fit and pre-production sample"
+     },
+     {
+       "item": "Embroidery thread",
+@@ -320,28 +320,28 @@
+       "fixedSpec": "Factory proposes only if needed; must be concealed and compatible with wash requirements",
+       "sourcingParty": "Garment factory",
+       "approvalEvidence": "Material proposal and sewn sample, or written confirmation none is needed",
+-      "approvalStage": "First fit and PPS"
++      "approvalStage": "First fit and pre-production sample"
+     },
+     {
+       "item": "Printed care, fibre, origin, and wordmark tape",
+       "fixedSpec": "Required content only; blank neck and no other applied label",
+       "sourcingParty": "Garment factory",
+       "approvalEvidence": "Artwork proof, print sample, content check",
+-      "approvalStage": "PPS approval"
++      "approvalStage": "Pre-production sample approval"
+     },
+     {
+       "item": "Factory shipment polybag",
+       "fixedSpec": "Clean individual protective bag for factory shipment only",
+       "sourcingParty": "Garment factory",
+       "approvalEvidence": "Material and dimensions submitted",
+-      "approvalStage": "PPS approval"
++      "approvalStage": "Pre-production sample approval"
+     },
+     {
+       "item": "Factory shipment cartons",
+       "fixedSpec": "Export cartons suitable for factory shipment to Germany",
+       "sourcingParty": "Garment factory",
+       "approvalEvidence": "Carton specification and packing count",
+-      "approvalStage": "PPS approval"
++      "approvalStage": "Pre-production sample approval"
+     }
+   ],
+   "page_11": {
+@@ -363,6 +363,7 @@
+         "Planning range 5-8k stitches",
+         "One file with fixed lettering size and variable repeat"
+       ],
++      "reference": "The photograph shows intended interior verse placement and proportion only.",
+       "note": "Document wording is a locator only. Production lettering artwork is pending."
+     },
+     "embroidery": {
+@@ -435,7 +436,7 @@
+         "Editable native Wilcom .EMB masters and graded production outputs are delivered to and owned by Froni.",
+         "Digitizer supplies files and revisions, including one remote tuning round after the first production-cloth strike-off.",
+         "Physical strike-offs remain under the garment factory's contract and responsibility, including subcontracted embroidery.",
+-        "Strike-offs repeated because of embroidery execution faults are at the garment factory's cost.",
++        "The garment factory bears the cost of strike-offs repeated due to embroidery execution faults.",
+         "Digitizing fee includes revisions until an approved production sew-out on final fabric."
+       ],
+       "acceptance": [
+warning: in the working copy of 'C:\cipher\techpack\dist\review\rev08\evidence\pages-07-08-09-11-rev07.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'C:\cipher\techpack\dist\review\rev08\evidence\pages-07-08-09-11-rev08.json', LF will be replaced by CRLF the next time Git touches it
+
+===== RAW VERIFICATION TRANSCRIPT =====
+
+FRONI FRN-001 REVISION 08 - RAW VERIFICATION TRANSCRIPT
+
+Recorded 2026-07-16 Europe/Berlin
+
+
+
+===== FINAL SUCCESSFUL BUILD =====
+COMMAND: npm run build
+> froni-frn-001-techpack@2.0.0 build
+> node build.js
+
+Revision 08 source checks: 8 files
+Exact authority assets embedded: 4
+DOM audit: 14 pages, 1361 boxes, no failures
+Semantic views: back, back-artwork-locator, body-pom, front, front-artwork-locator, hood-cross-section, hood-down, hood-exploded, hood-rib-pom, hood-up, side
+Construction locations: armhole, cuff, hem, hood-attachment, neckline, rib-boundary, shoulder, side-seam, sleeve
+Temporary PDF inspection: 14 pages via unavailable
+Output: C:\cipher\techpack\dist\Froni_FRN-001_Tech_Pack_Rev08.pdf
+Size: 26155728 bytes
+
+===== CURRENT TEST RUN =====
+COMMAND: npm test
+
+> froni-frn-001-techpack@2.0.0 test
+> node --test tests/*.test.js
+
+✔ declares the complete Revision 07 source set (2.3416ms)
+✔ uses consistent Revision 07 document control (2.3735ms)
+✔ contains only current order, contact, neck, and decoration decisions (1.0444ms)
+✔ retains every approved A to M target and separates new POM dispositions (0.9829ms)
+✔ covers construction, materials, responsibilities, stages, and factory response (1.0761ms)
+✔ records exact authority roles and explicit missing production assets (1.2562ms)
+✔ draws and keys every new POM method without invented hood notches (0.5652ms)
+✔ prints a vertical Greek locator and visible construction-location legend (0.3537ms)
+✔ active Revision 07 sources contain no stale canon or prohibited copy (2.3685ms)
+✔ page and section headings use sentence or title case (1.0128ms)
+✔ selects a complete Revision 08 source set (2.4921ms)
+✔ runs both retained Revision 07 and active Revision 08 tests (0.3018ms)
+✔ uses Revision 08 document control without changing page order (3.626ms)
+✔ embeds the supplied interior hood reference under the required filename (13.2585ms)
+✔ adds the interior reference block without altering its specification bullets (1.4215ms)
+✔ redraws front, back, and side flats as full-length set-in sleeve views (0.4297ms)
+✔ uses coded or outside labels on every affected flat and schematic (2.532ms)
+✔ enforces the plain register on every rendered page (6.8772ms)
+✔ preserves all numeric specification data (1.9611ms)
+✔ preserves factory-cost causation for embroidery execution faults (0.7293ms)
+✔ states the no-new-target requirement once without doubled emphasis (0.2718ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 118.4128
+
+===== JAVASCRIPT SYNTAX CHECKS =====
+COMMAND: node --check <active files>
+build.js: exit 0
+src/rev08/config.js: exit 0
+src/rev08/flats.js: exit 0
+src/rev08/diagrams.js: exit 0
+src/rev08/render.js: exit 0
+tests/rev08.test.js: exit 0
+
+===== BANNED REGISTER SWEEP =====
+COMMAND: rg -n -i --fixed-strings -- <term> build.js src/rev08
+em dash character: zero matches
+canonical: zero matches
+please: zero matches
+kindly: zero matches
+thank you: zero matches
+we would appreciate: zero matches
+it is important: zero matches
+please note: zero matches
+note that: zero matches
+in order to: zero matches
+ensure: zero matches
+comprehensive: zero matches
+robust: zero matches
+seamless: zero matches
+leverage: zero matches
+utilize: zero matches
+keep in mind: zero matches
+additionally: zero matches
+furthermore: zero matches
+
+===== RENDERED QUESTION-MARK SCAN =====
+COMMAND: Playwright DOM scan of all .page elements
+Page 01: 0 question mark(s)
+Page 02: 0 question mark(s)
+Page 03: 0 question mark(s)
+Page 04: 0 question mark(s)
+Page 05: 0 question mark(s)
+Page 06: 0 question mark(s)
+Page 07: 0 question mark(s)
+Page 08: 0 question mark(s)
+Page 09: 0 question mark(s)
+Page 10: 0 question mark(s)
+Page 11: 0 question mark(s)
+Page 12: 0 question mark(s)
+Page 13: 0 question mark(s)
+Page 14: 0 question mark(s)
+Outside page 14: 0 question mark(s)
+
+===== INTERIOR ASSET IDENTITY =====
+COMMAND: SHA-256 supplied file vs embedded asset
+Supplied: C:\Users\tomaf\Downloads\comp_hood.jpeg
+Embedded: C:\cipher\techpack\src\rev08\assets\Froni_Edition_One_IAM_Verse.jpg
+Supplied SHA-256: E5686F731F85D03FD98116AA3FF4F3506F60DFDB52EFB05F6F66E056B0E04A94
+Embedded SHA-256: E5686F731F85D03FD98116AA3FF4F3506F60DFDB52EFB05F6F66E056B0E04A94
+Byte-identical: true
+Manifest dimensions: 4096x4096
+Manifest filename: assets/Froni_Edition_One_IAM_Verse.jpg
+
+===== GIT DIFF STAT =====
+COMMAND: git diff --stat -- techpack
+(no tracked diff output; techpack is untracked)
+
+===== GIT STATUS =====
+COMMAND: git status --short -- techpack
+?? techpack/
+
+===== REV07 TO REV08 NO-INDEX STAT =====
+COMMAND: git diff --no-index --stat -- techpack/src/rev07 techpack/src/rev08
+ .../rev08/assets/Froni_Edition_One_IAM_Verse.jpg   | Bin 0 -> 8712169 bytes
+ techpack/src/{rev07 => rev08}/assets.json          |  16 +++-
+ techpack/src/{rev07 => rev08}/config.js            |  82 +++++++++++----------
+ techpack/src/{rev07 => rev08}/diagrams.js          |  32 ++++----
+ techpack/src/{rev07 => rev08}/flats.js             |  76 +++++++++----------
+ techpack/src/{rev07 => rev08}/render.js            |  75 ++++++++++++++-----
+ techpack/src/{rev07 => rev08}/styles.css           |  21 ++++++
+ techpack/src/{rev07 => rev08}/template.html        |   2 +-
+ 8 files changed, 191 insertions(+), 113 deletions(-)
+warning: in the working copy of 'techpack/src/rev07/assets.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/assets.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev07/config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev07/diagrams.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/diagrams.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev07/flats.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/flats.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev07/render.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/render.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev07/styles.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/styles.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev07/template.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'techpack/src/rev08/template.html', LF will be replaced by CRLF the next time Git touches it
+
+===== SELECTED DATA NUMERIC CHECK =====
+COMMAND: numeric token sequence comparison for pages 7, 8, 9, and 11
+Revision 07 numeric token count: 117
+Revision 08 numeric token count: 117
+Numeric token sequences identical: true
+
+===== DELIVERABLE FRESHNESS AND PNG PATHS =====
+COMMAND: filesystem stat
+PDF: C:\cipher\techpack\dist\Froni_FRN-001_Tech_Pack_Rev08.pdf
+PDF bytes: 26155728
+PDF modified: 2026-07-16T18:55:51.837Z
+Latest active source modified: 2026-07-16T18:55:21.849Z
+PDF newer than active source: true
+PNG page 3: C:\cipher\techpack\dist\review\rev08\Froni_FRN-001_Rev08_page-03.png
+PNG page 4: C:\cipher\techpack\dist\review\rev08\Froni_FRN-001_Rev08_page-04.png
+PNG page 11: C:\cipher\techpack\dist\review\rev08\Froni_FRN-001_Rev08_page-11.png

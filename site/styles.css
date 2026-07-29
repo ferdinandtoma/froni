@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/assets/fonts/eb-garamond-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  background: #131114;
+  color: #ede6d6;
+  font-family: "EB Garamond", Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 20rem;
+  min-height: 100%;
+  background: #131114;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: #131114;
+  color: #ede6d6;
+}
+
+.site-header,
+.capture,
+.site-footer {
+  width: min(100%, 72rem);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.site-header {
+  padding-top: 1.5rem;
+}
+
+.wordmark {
+  display: block;
+  width: 8rem;
+  height: auto;
+}
+
+.capture {
+  align-self: center;
+  display: grid;
+  gap: 3rem;
+  padding-block: 4rem;
+}
+
+.edition {
+  max-width: 36rem;
+}
+
+.edition h1,
+.edition p {
+  margin: 0;
+  font: inherit;
+}
+
+.edition p + p,
+.edition h1 + p {
+  margin-top: 0.75rem;
+}
+
+.signup {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 36rem;
+}
+
+.signup-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+input,
+button {
+  min-height: 3rem;
+  border: 1px solid #ede6d6;
+  border-radius: 0;
+  font: inherit;
+}
+
+input {
+  min-width: 0;
+  padding: 0.75rem;
+  background: transparent;
+  color: #ede6d6;
+}
+
+button {
+  padding-inline: 1rem;
+  background: #4e2a3a;
+  color: #ede6d6;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid #c9a227;
+  outline-offset: 3px;
+}
+
+.site-footer {
+  padding-block: 1.5rem;
+}
+
+@media (max-width: 30rem) {
+  .signup-controls {
+    grid-template-columns: 1fr;
+  }
+}

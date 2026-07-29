@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <title>Froni foundation questionnaire</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <noscript>
+      <p class="noscript">This private questionnaire requires JavaScript.</p>
+    </noscript>
+
+    <header class="topbar">
+      <a class="identity" href="#start" aria-label="Froni foundation questionnaire">
+        <img src="/brand-wordmark.svg" alt="Froni">
+        <span>Foundation questionnaire</span>
+      </a>
+
+      <div class="topbar-actions">
+        <span id="save-state" class="save-state" role="status">Loading</span>
+        <button id="download-backup" class="secondary-button" type="button">Download backup</button>
+        <label class="secondary-button file-button">
+          Import backup
+          <input id="import-backup" type="file" accept="application/json,.json">
+        </label>
+      </div>
+    </header>
+
+    <div class="shell" id="start">
+      <aside class="sidebar" aria-label="Questionnaire navigation">
+        <div class="progress-panel">
+          <div class="progress-copy">
+            <span>Progress</span>
+            <strong id="progress-value">0%</strong>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <span id="progress-bar"></span>
+          </div>
+          <p id="progress-detail">0 of 0 visible questions addressed</p>
+        </div>
+
+        <nav id="chapter-nav" class="chapter-nav"></nav>
+      </aside>
+
+      <main class="main">
+        <section class="intro" aria-labelledby="page-title">
+          <p class="eyebrow">Private local context questionnaire</p>
+          <h1 id="page-title">Before the work begins</h1>
+          <p>
+            This questionnaire gives context. It does not make brand decisions.
+            Choose the closest answer, use the text field to qualify or reject
+            the choices, and attach references where useful. Complete it in as
+            many sittings as you need.
+          </p>
+          <div class="intro-rules">
+            <span>Nothing is sent externally</span>
+            <span>Every question may remain unresolved</span>
+            <span>Answers save locally</span>
+          </div>
+        </section>
+
+        <form id="questionnaire" novalidate></form>
+
+        <section class="finish-panel" aria-labelledby="finish-title">
+          <p class="eyebrow">End of questionnaire</p>
+          <h2 id="finish-title">Review before handing it over</h2>
+          <p>
+            The final context report will distinguish answered, undecided,
+            skipped, and not-applicable questions. Download a backup before
+            closing the questionnaire, then tell Codex in this task that the
+            answers are ready.
+          </p>
+          <button id="download-backup-bottom" class="primary-button" type="button">
+            Download backup
+          </button>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="/questions.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
