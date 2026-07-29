@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-29T19:27:01.627Z",
+  "drafts": {},
+  "submissions": [
+    {
+      "decisionId": "identity-01",
+      "number": "01.01",
+      "round": 1,
+      "question": "Where should Froni’s recognition live when an edition may change its color, imagery, layout, and atmosphere completely?",
+      "selection": "fixed-frame",
+      "selectionTitle": "Fixed wordmark and grid",
+      "note": "Use A as the skeleton: the underlying grid and record logic stay fixed, while the visible design remains free to change with the edition.",
+      "intent": "accept_with_qualification",
+      "source": "chat",
+      "submittedAt": "2026-07-29T18:57:19Z"
+    },
+    {
+      "decisionId": "identity-02",
+      "number": "01.02",
+      "round": 1,
+      "question": "What exact job should the Froni wordmark do on the website?",
+      "selection": "persistent-locator",
+      "selectionTitle": "Persistent house locator",
+      "note": "",
+      "intent": "accept",
+      "submittedAt": "2026-07-29T19:01:00.474Z"
+    },
+    {
+      "decisionId": "identity-03",
+      "number": "01.03",
+      "round": 1,
+      "question": "What exact job should the F brandmark do on the website?",
+      "selection": "navigation-control",
+      "selectionTitle": "Navigation control",
+      "note": "i dont really see how the image and the option make sense, I cant see what you mean on the image",
+      "intent": "iterate",
+      "submittedAt": "2026-07-29T19:03:52.764Z"
+    },
+    {
+      "decisionId": "identity-03",
+      "number": "01.03",
+      "round": 2,
+      "question": "If the F brandmark controls navigation, where exactly should it appear?",
+      "selection": "",
+      "selectionTitle": "No variant selected",
+      "note": "nvm, this should look like this, no menu",
+      "intent": "iterate",
+      "submittedAt": "2026-07-29T19:14:15.813Z"
+    },
+    {
+      "decisionId": "identity-03",
+      "number": "01.03",
+      "round": 3,
+      "question": "With navigation removed, where should the F brandmark live digitally?",
+      "selection": "",
+      "selectionTitle": "No variant selected",
+      "note": "nowhere, its not needed, maybe in the legal pages, but nowhere in the current site",
+      "intent": "iterate",
+      "submittedAt": "2026-07-29T19:19:31.072Z"
+    },
+    {
+      "decisionId": "identity-03",
+      "number": "01.03",
+      "round": 3,
+      "question": "With navigation removed, where should the F brandmark live digitally?",
+      "selection": "",
+      "selectionTitle": "No current-site role",
+      "note": "The F brandmark is not needed anywhere in the current site. It may be reconsidered for legal pages later.",
+      "intent": "accept_with_qualification",
+      "source": "workflow",
+      "submittedAt": "2026-07-29T19:19:31.072Z"
+    },
+    {
+      "decisionId": "identity-04",
+      "number": "01.04",
+      "round": 1,
+      "question": "Beyond the settled skeleton, what else must remain invariant across every edition?",
+      "selection": "",
+      "selectionTitle": "No variant selected",
+      "note": "we shouldnt make decisions like these, permanent, the site will change with each edition",
+      "intent": "iterate",
+      "submittedAt": "2026-07-29T19:22:13.542Z"
+    },
+    {
+      "decisionId": "identity-04",
+      "number": "01.04",
+      "round": 1,
+      "question": "Beyond the settled skeleton, what else must remain invariant across every edition?",
+      "selection": "",
+      "selectionTitle": "No permanent design set",
+      "note": "No design or structural choice is permanent. The website changes with each edition; prior decisions describe the current site only. Legal, accessibility, performance, commerce, and record completeness remain operating obligations rather than house style.",
+      "intent": "accept_with_qualification",
+      "source": "workflow",
+      "submittedAt": "2026-07-29T19:22:13.542Z"
+    },
+    {
+      "decisionId": "identity-05",
+      "number": "01.05",
+      "round": 1,
+      "question": "When something works in one edition, what presumption should the next edition inherit?",
+      "selection": "re-earn-everything",
+      "selectionTitle": "Re-earn everything",
+      "note": "after this, save everything, put it in the repo, and create a doc that wil have all the context necceary to continue with this, signing off...",
+      "intent": "iterate",
+      "submittedAt": "2026-07-29T19:27:01.627Z"
+    },
+    {
+      "decisionId": "identity-05",
+      "number": "01.05",
+      "round": 1,
+      "question": "When something works in one edition, what presumption should the next edition inherit?",
+      "selection": "re-earn-everything",
+      "selectionTitle": "Re-earn everything",
+      "note": "Nothing carries forward by default. Every edition begins from its own work and may reuse a prior solution only after independently earning it again.",
+      "intent": "accept",
+      "source": "workflow",
+      "submittedAt": "2026-07-29T19:27:01.627Z"
+    }
+  ],
+  "confirmed": {
+    "identity-01": {
+      "decisionId": "identity-01",
+      "number": "01.01",
+      "round": 1,
+      "question": "Where should Froni’s recognition live when an edition may change its color, imagery, layout, and atmosphere completely?",
+      "selection": "fixed-frame",
+      "selectionTitle": "Fixed wordmark and grid",
+      "note": "Use A as the skeleton: the underlying grid and record logic stay fixed, while the visible design remains free to change with the edition.",
+      "intent": "accept_with_qualification",
+      "source": "chat",
+      "submittedAt": "2026-07-29T18:57:19Z",
+      "scope": "current-site only"
+    },
+    "identity-02": {
+      "decisionId": "identity-02",
+      "number": "01.02",
+      "round": 1,
+      "question": "What exact job should the Froni wordmark do on the website?",
+      "selection": "persistent-locator",
+      "selectionTitle": "Persistent house locator",
+      "note": "",
+      "intent": "accept",
+      "submittedAt": "2026-07-29T19:01:00.474Z",
+      "scope": "current-site only"
+    },
+    "identity-03": {
+      "decisionId": "identity-03",
+      "number": "01.03",
+      "round": 3,
+      "question": "With navigation removed, where should the F brandmark live digitally?",
+      "selection": "",
+      "selectionTitle": "No current-site role",
+      "note": "The F brandmark is not needed anywhere in the current site. It may be reconsidered for legal pages later.",
+      "intent": "accept_with_qualification",
+      "source": "workflow",
+      "submittedAt": "2026-07-29T19:19:31.072Z",
+      "scope": "current-site only"
+    },
+    "identity-04": {
+      "decisionId": "identity-04",
+      "number": "01.04",
+      "round": 1,
+      "question": "Beyond the settled skeleton, what else must remain invariant across every edition?",
+      "selection": "",
+      "selectionTitle": "No permanent design set",
+      "note": "No design or structural choice is permanent. The website changes with each edition; prior decisions describe the current site only. Legal, accessibility, performance, commerce, and record completeness remain operating obligations rather than house style.",
+      "intent": "accept_with_qualification",
+      "source": "workflow",
+      "submittedAt": "2026-07-29T19:22:13.542Z"
+    },
+    "identity-05": {
+      "decisionId": "identity-05",
+      "number": "01.05",
+      "round": 1,
+      "question": "When something works in one edition, what presumption should the next edition inherit?",
+      "selection": "re-earn-everything",
+      "selectionTitle": "Re-earn everything",
+      "note": "Nothing carries forward by default. Every edition begins from its own work and may reuse a prior solution only after independently earning it again.",
+      "intent": "accept",
+      "source": "workflow",
+      "submittedAt": "2026-07-29T19:27:01.627Z"
+    }
+  },
+  "pending": null
+}

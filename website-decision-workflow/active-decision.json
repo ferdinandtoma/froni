@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "roadmapId": "identity-06",
+  "round": 1,
+  "number": "01.06",
+  "chapterId": "identity",
+  "chapter": "Permanent identity",
+  "title": "Difference between editions",
+  "question": "How much visual difference should the process permit between consecutive editions?",
+  "context": "Nothing carries forward by default. Each edition re-earns every design and structural choice from its own work. This decision sets the permitted distance between consecutive sites without turning similarity into a requirement.",
+  "boundary": "Choose the ceiling of permitted difference, not a mandatory amount of change. Functional obligations remain regardless of the visual distance.",
+  "guardrails": [
+    "No prior design survives through inertia.",
+    "The new edition remains plainly attributable to Froni through its name and responsibility.",
+    "Legal, accessibility, performance, commerce, and record completeness do not reset."
+  ],
+  "variants": [
+    {
+      "id": "no-visual-ceiling",
+      "title": "No visual ceiling",
+      "position": "Permit a complete redesign between editions, including grid, typography, color, image behavior, composition, motion, and navigation structure, when the new work earns it.",
+      "consequence": "Each edition can establish the full visual world it requires without preserving resemblance to its predecessor.",
+      "risk": "Recognition must come from authorship, exact records, and the work itself rather than visual familiarity.",
+      "preview": "inherit-none",
+      "recommended": true
+    },
+    {
+      "id": "one-voluntary-echo",
+      "title": "One voluntary echo",
+      "position": "Permit a complete redesign, but ask each edition to retain one deliberately chosen echo from the previous site when that echo genuinely serves the new work.",
+      "consequence": "Consecutive editions can feel related without creating a permanent house system.",
+      "risk": "A voluntary echo can become a ritual and quietly recreate the continuity rule that was rejected.",
+      "preview": "invariant-structure",
+      "recommended": false
+    },
+    {
+      "id": "controlled-transition",
+      "title": "Controlled transition",
+      "position": "Allow radical visual change, but preserve one shared structural relationship during the public handoff between editions, then let the permanent records diverge.",
+      "consequence": "Visitors receive a legible transition even when the new edition is visually unrelated.",
+      "risk": "The transition device may constrain both editions and become an unnecessary bridge.",
+      "preview": "invariant-surface",
+      "recommended": false
+    }
+  ]
+}
