@@ -1,6 +1,8 @@
 # Edition One window mechanic, scope
 
-Dated 3 Aug 2026. Scope only, nothing here is built. Decisions land with Ferdinand before build. Written against the 3 Aug ruling in `SourceOfTruth.md` section 4: cap 200; the window closes at the 200th order or 24 hours from open, whichever comes first; under-200 close handling is parked; the order-count-becomes-edition-size rule starts at Edition Two.
+Dated 3 Aug 2026. Ruled the same evening: cap mechanism A (app pool), open scheduled, close manual with the app endpoint kept as an emergency lever only, count paid per Source of Truth 17.14, hosting decided at build. The decision list below stands as the record of the options weighed.
+
+Scope only, nothing here is built. Decisions landed with Ferdinand as above. Written against the 3 Aug ruling in `SourceOfTruth.md` section 4: cap 200; the window closes at the 200th order or 24 hours from open, whichever comes first; under-200 close handling is parked; the order-count-becomes-edition-size rule starts at Edition Two.
 
 ## Ground facts
 
