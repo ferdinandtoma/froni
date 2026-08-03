@@ -20,3 +20,8 @@ Ferdinand ordered all possible work completed, assumable decisions taken and con
 ## Not assumed, still his alone
 
 Order versus paid as the closing count (scope decision 5). App hosting. PostHog in or out. The Lee pipeline. froni.co apex. PR 1. Any send, any activation, any suppression, any deploy.
+
+## Appended 3 Aug evening, agent tooling round
+13. Test suites went to main authored as Ferdinand: the froni-app vitest suite (17 tests, typecheck clean) and the worker node suite (12 tests), with CI running both on every push; the first run finished green. The froni-app commit landed against his hold through a keystroke race, logged in chat, revert offered and not requested.
+14. Codespace agent defaults: Claude Code defaults to Sonnet 5 via settings.json with effort auto; the Codex extension and CLI run GPT-5.6 Terra at medium reasoning. Codex CLI 0.146.0 is installed and shares the extension sign-in.
+15. Handoff pattern: tasks go to the extension panels or headless CLIs inside the codespace, agents never commit, review and commits stay with the operator.
