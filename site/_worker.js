@@ -1,8 +1,41 @@
 /*
   Cloudflare Pages advanced-mode worker.
   This keeps the public page scriptless while relaying signup requests to
-  Klaviyo server-side. The dashboard's direct uploader supports this file.
+  Klaviyo server-side. Reach measurement is server-side too: PostHog EU,
+  ruled in 3 Aug 2026. No cookies, no scripts, a daily-rotating hashed
+  identifier from IP and user agent, never stored raw.
 */
+
+const POSTHOG_HOST = 'https://eu.i.posthog.com';
+
+async function posthogDistinctId(request) {
+  const day = new Date().toISOString().slice(0, 10);
+  const ip = request.headers.get('cf-connecting-ip') || '';
+  const ua = request.headers.get('user-agent') || '';
+  const data = new TextEncoder().encode(day + ':' + ip + ':' + ua);
+  const digest = await crypto.subtle.digest('SHA-256', data);
+  return Array.from(new Uint8Array(digest), (b) => b.toString(16).padStart(2, '0')).join('');
+}
+
+function posthogCapture(env, ctx, request, event, properties) {
+  if (!env.POSTHOG_API_KEY) return;
+  ctx.waitUntil(
+    (async () => {
+      const distinct_id = await posthogDistinctId(request);
+      await fetch(POSTHOG_HOST + '/i/v0/e/', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          api_key: env.POSTHOG_API_KEY,
+          event,
+          distinct_id,
+          properties,
+          timestamp: new Date().toISOString()
+        })
+      }).catch(() => {});
+    })()
+  );
+}
 
 const SECURITY_HEADERS = {
   'Content-Security-Policy': "default-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; img-src 'self'; font-src 'self'; style-src 'self'; script-src 'none'; upgrade-insecure-requests",
@@ -74,7 +107,7 @@ function cleanCampaign(value) {
   return /^[a-z0-9-]{1,40}$/.test(v) ? v : '';
 }
 
-async function subscribe(request, env) {
+async function subscribe(request, env, ctx) {
   const url = new URL(request.url);
   const signupSource = cleanSource(url.searchParams.get('utm_source'));
   const signupCampaign = cleanCampaign(url.searchParams.get('utm_campaign'));
@@ -109,6 +142,11 @@ async function subscribe(request, env) {
 
   /* A filled honeypot is a bot: answer as success, relay nothing. */
   if (honeypot) return ok();
+
+  posthogCapture(env, ctx, request, 'signup_submitted', {
+    signup_source: signupSource || undefined,
+    signup_campaign: signupCampaign || undefined
+  });
 
   if (
     email.length > 254 ||
@@ -174,7 +212,7 @@ async function subscribe(request, env) {
 }
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
     let response;
 
@@ -198,12 +236,24 @@ export default {
           headers: { Allow: 'POST' }
         });
       } else {
-        response = await subscribe(request, env);
+        response = await subscribe(request, env, ctx);
       }
     } else if (url.pathname.startsWith('/api/')) {
       response = new Response(null, { status: 404 });
     } else {
       response = await env.ASSETS.fetch(request);
+
+      if (
+        request.method === 'GET' &&
+        (response.headers.get('content-type') || '').includes('text/html')
+      ) {
+        posthogCapture(env, ctx, request, '$pageview', {
+          $current_url: url.origin + url.pathname,
+          path: url.pathname,
+          signup_source: cleanSource(url.searchParams.get('utm_source')) || undefined,
+          signup_campaign: cleanCampaign(url.searchParams.get('utm_campaign')) || undefined
+        });
+      }
 
       const signupSource = cleanSource(url.searchParams.get('utm_source'));
       const signupCampaign = cleanCampaign(url.searchParams.get('utm_campaign'));
