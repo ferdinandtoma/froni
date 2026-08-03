@@ -29,7 +29,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
       console.log(`[edition-pool] ${shop}: ordered=${ordered} remaining=${remaining}`);
     } catch (error) {
       /* Webhooks must 200 fast; the pool self-heals on the next order or the close job. */
-      console.error("[edition-pool] sync failed", error);
+      console.error("[edition-pool] sync failed", JSON.stringify({ message: (error as any)?.message, gql: (error as any)?.graphQLErrors ?? (error as any)?.body?.errors ?? null }));
     }
   }
 

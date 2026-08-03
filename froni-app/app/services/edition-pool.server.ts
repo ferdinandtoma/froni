@@ -32,7 +32,7 @@ const POOL_QUERY = `#graphql
             id
             inventoryLevels(first: 5) {
               nodes {
-                location { id }
+                location { id } quantities(names: ["available"]) { quantity }
               }
             }
           }
@@ -63,15 +63,15 @@ const ORDERS_QUERY = `#graphql
 `;
 
 const SET_QUANTITIES = `#graphql
-  mutation editionSetAvailable($input: InventorySetQuantitiesInput!) {
-    inventorySetQuantities(input: $input) {
+  mutation editionSetAvailable($input: InventorySetQuantitiesInput!, $key: String!) {
+    inventorySetQuantities(input: $input) @idempotent(key: $key) {
       userErrors { field message }
     }
   }
 `;
 
 async function gql(graphql: AdminGraphql, query: string, variables?: Record<string, unknown>) {
-  const response = await graphql(query, { variables });
+  let response!: Response; try { response = await graphql(query, { variables }); } catch (e: any) { console.error("[edition-pool] graphql threw", JSON.stringify({ message: e?.message, gql: e?.graphQLErrors ?? e?.body?.errors ?? null })); throw e; }
   const body = (await response.json()) as { data?: any; errors?: unknown };
   if (body.errors) throw new Error(`Admin API error: ${JSON.stringify(body.errors)}`);
   return body.data;
@@ -96,21 +96,20 @@ export async function unitsOrdered(graphql: AdminGraphql, productId: string): Pr
 
 async function setEveryVariantAvailable(graphql: AdminGraphql, productId: string, available: number) {
   const data = await gql(graphql, POOL_QUERY, { productId });
-  const quantities: Array<{ inventoryItemId: string; locationId: string; quantity: number }> = [];
+  const quantities: Array<{ inventoryItemId: string; locationId: string; quantity: number; changeFromQuantity: number }> = [];
   for (const variant of data.product.variants.nodes) {
     for (const level of variant.inventoryItem.inventoryLevels.nodes) {
       quantities.push({
         inventoryItemId: variant.inventoryItem.id,
         locationId: level.location.id,
-        quantity: available,
+        quantity: available, changeFromQuantity: level.quantities?.[0]?.quantity ?? 0,
       });
     }
   }
   const result = await gql(graphql, SET_QUANTITIES, {
-    input: {
+    key: globalThis.crypto?.randomUUID?.() ?? String(Date.now()), input: {
       name: "available",
       reason: "correction",
-      ignoreCompareQuantity: true,
       quantities,
     },
   });
