@@ -157,6 +157,7 @@ button {
 .legal {
   max-width: 36rem;
   padding-block: 2rem 4rem;
+  line-height: 1.55;
 }
 
 .legal h1,
