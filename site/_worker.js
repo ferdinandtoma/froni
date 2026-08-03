@@ -245,6 +245,7 @@ export default {
 
       if (
         request.method === 'GET' &&
+        response.ok &&
         (response.headers.get('content-type') || '').includes('text/html')
       ) {
         posthogCapture(env, ctx, request, '$pageview', {
