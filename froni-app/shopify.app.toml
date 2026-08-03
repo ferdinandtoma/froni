@@ -13,9 +13,9 @@ include_config_on_deploy = true
 automatically_update_urls_on_dev = true
 
 [access_scopes]
-# Covers the candidate cap and close mechanisms in docs/Froni_Edition_One_Window_Scope_03Aug2026.md.
-# Trim to the chosen mechanism after Ferdinand rules.
-scopes = "read_products,write_products,read_inventory,write_inventory,read_publications,write_publications,read_orders"
+# Ruled 3 Aug 2026 evening: cap mechanism A, manual close, paid count.
+# The pool needs exactly these four.
+scopes = "read_products,read_orders,read_inventory,write_inventory"
 
 [webhooks]
 api_version = "2026-10"
