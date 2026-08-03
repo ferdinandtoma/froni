@@ -9,7 +9,6 @@ name = "froni.app"
 
 [build]
 dev_store_url = "zkg1yj-ze.myshopify.com"
-include_config_on_deploy = true
 automatically_update_urls_on_dev = true
 
 [access_scopes]
