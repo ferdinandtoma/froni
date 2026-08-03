@@ -7,10 +7,10 @@
   into every variant's available quantity, so the door closes at the 200th unit
   regardless of size mix.
 
-  Committed 3 Aug 2026 as part of the assumed-decisions wave. Not deployed, not
-  tested against a live store. Dormant until Ferdinand rules decisions 1 and 3
-  in the scope document. Decision 5 (orders created versus paid) is encoded here
-  as orders created; one word from Ferdinand flips ORDERS_QUERY below.
+  Ruled 3 Aug 2026, evening round: cap mechanism A (this pool), open scheduled,
+  close manual with the /jobs/close endpoint kept as an emergency lever only,
+  and the count that closes the door is PAID units, encoded in ORDERS_QUERY.
+  Still not deployed and untested against a live store; hosting decision pends.
 
   Env expected at deploy:
     EDITION_PRODUCT_ID  gid://shopify/Product/...  (the Edition One product)
@@ -42,11 +42,12 @@ const POOL_QUERY = `#graphql
   }
 `;
 
-/* Orders created counts the door per the 3 Aug ruling wording. If Ferdinand
-   rules paid (Source of Truth 17.14), add financial_status:paid here. */
+/* Paid units count the door, ruled 3 Aug 2026 evening, matching SoT 17.14.
+   An order that is later refunded drops out of the filter and frees its slot,
+   which is correct while the window is open; numbers assign at packing. */
 const ORDERS_QUERY = `#graphql
   query editionOrders($cursor: String) {
-    orders(first: 250, after: $cursor, query: "status:any") {
+    orders(first: 250, after: $cursor, query: "status:any financial_status:paid") {
       pageInfo { hasNextPage endCursor }
       nodes {
         cancelledAt
