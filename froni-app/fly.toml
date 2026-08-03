@@ -1,0 +1,23 @@
+app = "froni-edition"
+primary_region = "fra"
+
+[env]
+  PORT = "3000"
+  DATABASE_URL = "file:/data/prod.sqlite"
+  EDITION_CAP = "200"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+[mounts]
+  source = "froni_data"
+  destination = "/data"
+
+[[vm]]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1

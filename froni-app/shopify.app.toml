@@ -1,9 +1,9 @@
 # Froni app configuration.
-# application_url and redirect_urls are placeholders until the hosting decision lands;
+# Hosting ruled 3 Aug 2026: Fly.io, app froni-edition, region fra.
 # `shopify app dev` rewrites them per run (automatically_update_urls_on_dev = true).
 
 client_id = "91ef1811d3119c40ab480aff3fc66d01"
-application_url = "https://example.com"
+application_url = "https://froni-edition.fly.dev"
 embedded = true
 name = "froni.app"
 
@@ -33,4 +33,4 @@ api_version = "2026-10"
   topics = [ "orders/paid" ]
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://froni-edition.fly.dev/auth/callback" ]
