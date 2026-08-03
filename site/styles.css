@@ -120,3 +120,56 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
+.signup-note {
+  margin: 0;
+}
+
+.form-states {
+  max-width: 36rem;
+}
+
+.form-state {
+  display: none;
+  margin: 0;
+}
+
+.form-state:target {
+  display: block;
+}
+
+.legal-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-footer a,
+.legal a {
+  color: inherit;
+}
+
+.legal-page {
+  width: min(100%, 72rem);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.legal {
+  max-width: 36rem;
+  padding-block: 2rem 4rem;
+}
+
+.legal h1,
+.legal h2 {
+  font: inherit;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+.legal h2 {
+  margin-top: 2rem;
+}
+
+.legal p {
+  margin: 0 0 0.75rem;
+}

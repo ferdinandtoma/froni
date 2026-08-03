@@ -31,9 +31,9 @@
 
     <main class="capture">
       <section class="edition" aria-labelledby="edition-title">
-        <h1 id="edition-title">Christ Pantocrator, embroidered on a heavyweight hoodie.</h1>
-        <p>200 made to order in Portugal.</p>
-        <p>November 22.</p>
+        <h1 id="edition-title">Edition One: a black hoodie carrying the Christ Pantocrator of Sinai, sixth century, needle-painted in thread.</h1>
+        <p>Cut and sewn in Portugal. 200, numbered, never remade.</p>
+        <p>The address receives the record of the making and first notice when the edition opens.</p>
       </section>
 
       <form class="signup" action="/api/subscribe" method="post">
@@ -43,9 +43,22 @@
           <button type="submit">Receive word</button>
         </div>
         <input name="website" type="text" tabindex="-1" autocomplete="off" hidden>
+        <p class="signup-note">One email follows to confirm the address.</p>
       </form>
+
+      <div class="form-states">
+        <p class="form-state" id="check-inbox">Sent. One click in your inbox confirms.</p>
+        <p class="form-state" id="confirmed">Confirmed. First word comes to this address.</p>
+        <!-- [COPY: error line below awaits approval] -->
+        <p class="form-state" id="error">The address did not send. Try again.</p>
+      </div>
     </main>
 
-    <footer class="site-footer">[COPY: legal footer]</footer>
+    <footer class="site-footer">
+      <nav class="legal-links" aria-label="Legal">
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutzerkl&auml;rung</a>
+      </nav>
+    </footer>
   </body>
 </html>
