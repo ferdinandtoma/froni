@@ -1,6 +1,6 @@
 # Shop legal drafts, 3 Aug 2026
 
-Drafts for the three Shopify policy slots, written for the Edition One window. English, consumer sales, German law. Not yet read by a lawyer; Ferdinand reads before anything goes live. Two choices stay open and are marked in place: who bears return carriage, and the delivery period figure once the production schedule is fixed.
+Drafts for the three Shopify policy slots, written for the Edition One window. English, consumer sales, German law. Not yet read by a lawyer; Ferdinand reads before anything goes live. Both choices are ruled, 10 August 2026: the house bears return carriage, and dispatch is within eight weeks of the window closing.
 
 ## Terms of sale
 
@@ -16,7 +16,7 @@ Prices. The price shown is the price paid. It includes value added tax where app
 
 Payment. The methods shown at checkout. An order counts toward the edition when its payment is complete.
 
-Production and delivery. The edition is made to order and enters production after the window closes. The expected delivery period is stated on the product page. FILL_DELIVERY_PERIOD_WHEN_SCHEDULE_FIRM
+Production and delivery. The edition is made to order and enters production after the window closes. The expected delivery period is stated on the product page. Dispatch is within eight weeks of the window closing.
 
 Withdrawal. Consumers have the right to withdraw within fourteen days of receiving the goods. The full notice and the model form follow below. A made to order garment from a standard size run is not exempt from this right; it applies.
 
@@ -34,7 +34,7 @@ How. Send an unambiguous statement to Ferdinand Toma, Froni, Bettenhaeuser Stras
 
 Effects. If you withdraw, we refund every payment received from you, including delivery, without undue delay and at the latest fourteen days after the day your statement reaches us, using the means of payment you used, at no fee to you. We may withhold the refund until the goods are back with us or you prove you have sent them, whichever is earlier.
 
-Return. Send the goods back without undue delay and at the latest fourteen days after the day you told us you withdraw. CHOICE_FOR_FERDINAND: either "We bear the cost of the return." or "You bear the direct cost of the return." You are liable for a loss in value only where it results from handling beyond what is needed to establish the nature, characteristics and functioning of the goods.
+Return. Send the goods back without undue delay and at the latest fourteen days after the day you told us you withdraw. We bear the cost of the return. You are liable for a loss in value only where it results from handling beyond what is needed to establish the nature, characteristics and functioning of the goods.
 
 Model withdrawal form. To Ferdinand Toma, Froni, Bettenhaeuser Strasse 36, 34266 Niestetal, Germany, house@froni.co: I hereby withdraw from my contract of sale of the following goods. Ordered on, received on, name, address, date, signature where sent on paper.
 
@@ -44,6 +44,6 @@ Regions. Germany, the European Union, the United Kingdom, the United States and 
 
 What you pay. The listed price and nothing further. Delivery is included. Outside the European Union the house pays duties, import taxes and clearance before the parcel reaches you; there is nothing to pay on arrival.
 
-When. Edition One is made to order. Production begins after the window closes. The expected delivery period is stated on the product page and repeated in the order confirmation. FILL_DELIVERY_PERIOD_WHEN_SCHEDULE_FIRM
+When. Edition One is made to order. Production begins after the window closes. The expected delivery period is stated on the product page and repeated in the order confirmation. Dispatch is within eight weeks of the window closing.
 
 Dispatch. Each parcel ships tracked. The tracking link comes by email at dispatch. Each piece is numbered at packing, in the order of the making.
