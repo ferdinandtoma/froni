@@ -21,7 +21,7 @@ Legal entity: existing Einzelunternehmen, owner Ferdinand Toma. VAT ID `DE456732
 Mail: `house@froni.co`.
 
 **Addresses.** LOCKED.
-- `Bettenhäuser Strasse 36, 34266 Niestetal, Hesse, Germany` is the customer-facing address for Impressum, GPSR and returns.
+- `Bettenhäuser Strasse 34, 34266 Niestetal, Hesse, Germany` is the customer-facing address for Impressum, GPSR and returns. House number ruled 34 by Ferdinand 28 Aug 2026, final; 36 was wrong wherever it appeared. See the 28 Aug revision entry.
 - `Alte Strasse 6, 34266 Niestetal, Hesse, Germany` is home and internal billing only.
 
 Both records carried this differently and it caused live errors. See 17.1. Every customer-facing surface takes Bettenhäuser. Billing, vendor account opening and platform organisation records may carry Alte Strasse. Ferdinand supplied Alte Strasse 6 to Lopes & Carvalho on 21 Jul 2026 as the billing address, which is correct. Klaviyo's organisation address is `Alte Straße 6` with an eszett, which is a billing surface and acceptable; no normalisation decision has been made on `Strasse` versus `Straße`.
@@ -324,7 +324,7 @@ Consequence to carry: the certificate carries nouns and dates. The back can say 
 
 - Upwork is DEAD as of 24 Jul 2026. The front-vector post there is abandoned.
 - Lee should not take the redraw. She stated her job is to copy the art accurately and asked whether a line drawing exists, which places her as a digitizer working from supplied artwork rather than an originator. Handing her the redraw makes her both author and digitizer with no independent look before 60,000 stitches. PROPOSED, not ruled.
-- The model has offered a structure pass: centreline strokes, uniform weight, three layers, 40 by 48 canvas, border removed, 30 mm join band clear, drawn once and mirrored. PROPOSED, unanswered.
+- The model has offered a structure pass: centerline strokes, uniform weight, three layers, 40 by 48 canvas, border removed, 30 mm join band clear, drawn once and mirrored. PROPOSED, unanswered.
 
 **The one real authorship decision, unruled.** With the border gone the lower scrolls have nowhere to land. In the carving they run out and die into the frame. Unframed they need a resolved termination, either curling back on themselves or tapering out. That choice sets how the whole panel sits on the chest.
 
@@ -548,7 +548,7 @@ Férias window slate, ruled 3 Aug 2026. Lanes ranked: commerce machine, built in
 
 ## 17. Corrections and conflicts resolved
 
-**17.1 Address.** The Codex record carried `Alte Strasse 6` as the external identity address, `Bettenhäuser Strasse 36` as fulfilment and return, and listed the public legal address as an unresolved decision. That is wrong. Ferdinand confirmed on 24 Jul 2026 that Bettenhäuser Strasse 36 is the customer-facing address for Impressum, GPSR and returns and that Alte Strasse 6 is home and internal billing only. The Claude record separately reported this as still open on 24 Jul 2026, which was also wrong. It is settled and section 1 governs.
+**17.1 Address.** The Codex record carried `Alte Strasse 6` as the external identity address, `Bettenhäuser Strasse 36` as fulfilment and return, and listed the public legal address as an unresolved decision. That is wrong. Ferdinand confirmed on 24 Jul 2026 that Bettenhäuser Strasse 36 is the customer-facing address for Impressum, GPSR and returns and that Alte Strasse 6 is home and internal billing only. The Claude record separately reported this as still open on 24 Jul 2026, which was also wrong. It is settled and section 1 governs. The house number itself was later corrected to 34; see the 28 Aug 2026 revision entry.
 
 **17.2 The Balboa total.** Both prior records carry $3,700 as the commission total. The live commission is **$3,200** across three files. The $500 front was quoted blind against a dense ornament at about 46 cm that does not exist. The front is uncommissioned and unpriced.
 
@@ -674,3 +674,13 @@ Supersede, never rewrite. Each entry is dated and states what changed and where 
 3. Codex ruled in as a second execution lane: up to 70 percent of weekly usage, 5.6 models, and every code prompt carries a model and usage section.
 4. The 1 Sep follow-up reworded to a general form at Ferdinand's direction; the text stands drafted, the Tuesday send not yet authorized.
 5. Bookkeeping: the morning entry reached origin/main as 41ec5dc through Ferdinand's own paste; a duplicate append in the codespace was trimmed and the file verified byte-identical to the working copy.
+
+**28 Aug 2026.** Boot session: address ruling, Lee reply, foot calibration, section 12 ratifications.
+
+1. Bettenhäuser Strasse house number ruled 34 by Ferdinand, final. The 31 Jul master on his machine had recorded this correction; the 3 Aug rebuild from the 28 Jul base missed it and 36 went live. Section 1 corrected; the live Impressum and privacy page fixed by commit f3e93d7 and verified serving 34. Section 1.
+2. The Pages project is git-connected with automatic production deploys from main; a push to main is a deploy. The 2 Aug local wrangler direct-upload path is dead, and C:\froni\site is stale against site/ in the repository since 3 Aug and is not the deploy source. Section 11.
+3. Lee replied 28 Aug 15:23 Berlin, ahead of the armed 17:00 line: pleased with progress, modifications before the next stitch-out, sample expected Monday 31 Aug. She asked how much of the halo's gold leaf remains and whether to use metallic thread. Answered same day in Ferdinand's name: no metallic thread anywhere, matte 40 weight stands with 60 at her discretion, halo and punched marks sewn as the scan shows them, worn where worn, as with the hands. The 17:00 check-first fired, found her reply and stood down; nothing was sent. Section 7.
+4. The 1 Sep factory follow-up stands drafted and not wired; Ferdinand skipped authorization 28 Aug. Section 8.
+5. Front ornament foot calibrated against the accepted render: the lyre winds counterclockwise, carving and render agreeing, so the 2 Aug clockwise wind was corrected; the separate outboard curl-back spirals at x = +-455 are replaced by the render's outer-lamina wrap, about 1.28x the volute radius, tucking over the eye; the arch low point raised to about 1.08 volute radii below the eye; lesser runs close into small counterclockwise curls. Files and overlays in C:\froni\ornament-structure; the SVG awaits Ferdinand's Photopea pass. The 24 Aug entry's 10 Aug palmette and chain rebuild left no surviving artifact on disk or in the repository; the 2 Aug state is the latest that exists, and the ornament notes record this. Section 10.
+6. Brand Canon Rev 1 section 12 ruled 28 Aug: items 1, 2, 3 and 5 ratified as written (wordmark clear space and minimum sizes, color usage matrix, document type hierarchy, EB Garamond as the ops face with the packaging brief re-render as Rev 3 once tools/brand commits). Item 4 ratified as amended: the Klaviyo shell ground is bone, #EDE6D6, with tenebrae text, not white. The canon document carries the delta.
+7. The two SoT lineages ruled for reconciliation 28 Aug: one merged file, both lineages' rulings dated and kept, drafted for Ferdinand's review before it replaces the master, the repository copy and the project copy. Until that review, this file remains operative. Known conflict for the review: status vocabulary, retired 29 Jul in the 31 Jul lineage, in load-bearing use here and in Brand Canon Rev 1 since.
